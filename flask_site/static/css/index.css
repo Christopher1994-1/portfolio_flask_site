@@ -1,0 +1,342 @@
+.two-front-boxes {
+    box-sizing: border-box;
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    background-color: rgb(242, 242, 242)
+}
+
+
+.box1 {
+    display: inline-block;
+    padding: 20px;
+    text-align: left;
+    background-color: rgb(204, 204, 204);
+    height: 301px;
+}
+
+
+
+.two-boxes-h1 {
+    color: black;
+}
+
+
+.box1 .two-boxes-p {
+    width: 330px;
+    line-height: 25px;
+    color: black;
+    font-size: 17px;
+}
+
+.get-in-touch-btn {
+    padding: 10px;
+}
+
+.get-in-touch-btn button {
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.get-in-touch-btn button:hover {
+    color: white;
+    background-color: rgb(53, 53, 53);
+}
+
+
+.check-out-github {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.check-out-github img {
+    width: 1000px;
+    height: 350px;
+}
+
+
+.check-out-github .links {
+    box-sizing: border-box;
+    font-size: 130px;
+    height: 0%;
+    position: relative;
+    bottom: 260px;
+}
+
+.check-out-github .links .links-github {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 60px;
+    background-color: white;
+}
+
+.check-out-github .links .links-github a {
+    color: rgb(82, 14, 82);
+}
+
+
+.check-out-github .links .links-linkedin a {
+    color: darkblue;
+}
+
+
+.check-out-github .links .links-github:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.check-out-github .links .links-github a:hover {
+    color: darkred;
+
+}
+
+
+.check-out-github .links .links-linkedin {
+    display: inline-block;
+    padding: 20px;
+    background-color: white;
+    border-radius: 60px;
+}
+
+
+.check-out-github .links .links-linkedin:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.check-out-github .links .links-linkedin a:hover {
+    color: darkred;
+
+}
+
+
+.box2 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+.img {
+    width: 330px;
+    height: 300px;
+}
+
+
+.web-design {
+    width: 1200px;
+    margin: auto;
+}
+
+
+.web-design .web-contents .web-design-img img {
+    width: 700px;
+    height: 400px;
+}
+
+.web-design {
+    text-align: center;
+}
+
+
+.web-design-a {
+    width: 420px;
+    margin: auto;
+    font-size: 30px;
+    position: relative;
+    bottom: 270px;
+    height: 0%;
+}
+
+.web-design-a a {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+
+.programming {
+    text-align: center;
+}
+
+.programming .pro-contents .programming-img img {
+    width: 700px;
+    height: 400px;
+}
+
+.programming {
+    width: 1200px;
+    margin: auto;
+}
+
+
+.programming-a {
+    width: 200px;
+    margin: auto;
+    position: relative;
+    bottom: 240px;
+    right: 90px;
+    font-size: 30px;
+}
+
+.programming-a a {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+
+
+
+.contents img {
+    height: 100px;
+    width: 100px;
+}
+
+
+.portfolio-h1 {
+    text-align: center;
+}
+
+.my-skills h1 {
+    text-align: center;
+}
+
+.contents {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+
+@media(max-width:991px) {
+    .two-front-boxes {
+        width: 400px;
+        margin: auto;
+        padding: 20px;
+        display: grid;
+    }
+
+    .box1 {
+        width: 330px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .box1 p {
+        font-size: 15px;
+        width: 220px;
+    }
+
+
+    .check-out-github {
+        width: 300px;
+    }
+
+    .check-out-github h1 {
+        font-size: 25px;
+    }
+
+    .check-out-github img {
+        width: 300px;
+        height: 420px;
+    }
+
+
+    .check-out-github .links {
+        position: relative;
+        bottom: 380px;
+    }
+
+    .check-out-github .links .links-linkedin {
+        margin-top: 10px;
+    }
+
+    .portfolio-h1 {
+        width: 200px;
+        margin: auto;
+    }
+
+
+    .web-design {
+        width: 310px;
+        margin: auto;
+        height: 300px;
+    }
+
+    .web-design .web-contents .web-design-img img {
+        width: 310px;
+        height: 300px;
+    }
+
+
+    .web-design .web-contents .web-design-a {
+        position: relative;
+        bottom: 200px;
+        width: 200px;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .web-design .web-contents .web-design-a a {
+        color:white;
+        text-shadow: 2px 2px black;
+    }
+
+    .web-design .web-contents .web-design-a a:hover {
+        color: darkred;
+    }
+
+    .programming {
+        width: 310;
+        margin: auto;
+        height: 300px;
+    }
+
+    .programming .pro-contents .programming-img img {
+        width: 310px;
+        height: 300px;
+    }
+
+    .programming .pro-contents .programming-a {
+        position: relative;
+        bottom: 180px;
+        width: 200px;
+        left: 7px;
+        color: white;
+        text-align: center;
+        margin: auto;
+    }
+
+    .programming .pro-contents .programming-a a {
+        color: white;
+        text-shadow: 2px 2px black;
+        font-size: 15px;
+    }
+
+    .programming .pro-contents .programming-a a:hover {
+        color: darkred;
+    }
+
+    .contents {
+        justify-content: initial;
+        display: inline;
+        width: 200px;
+        margin: auto;
+    }
+
+    .contents img {
+        margin: auto;
+        position: relative;
+        left: 190px;
+    }
+
+
+
+
+
+
+
+}

@@ -1,6 +1,127 @@
 {% extends "base.html" %}
 
+
+
 {% block content %}
-hello world
+<link rel="stylesheet" href="/static/css/index.css">
+
+<br>
+<br>
+<br><br><br><br><br>
+
+<div class="two-front-boxes">
+
+    <div class="box1">
+        <div class="two-boxes-h1">
+                <h1>Hi. I'm Christopher</h1>
+        </div>
+
+        <div class="two-boxes-p">
+            <p>I'm a freelance Python full stack developer, specializing in back-end programming. Check out my work in the projects dropdown and feel free to get in touch.</p>
+        </div>
+
+        <div class="get-in-touch-btn">
+            <a href="{{ url_for('contact') }}"><button>GET IN TOUCH</button></a>
+        </div>
+    </div>
+
+        <div class="box2">
+            <img class="img" src="/static/images/IMG_E3263.JPG" alt="me">
+
+
+        </div>
+
+</div>
+<br><br>
+
+<div class="check-out-github">
+    <h1>~ Check out my links ~</h1>
+
+    <img src="/static/images/programming.jpg" alt="">
+
+    <div class="links">
+
+        <div class="links-github">
+            <a href="https://github.com/Christopher1994-1" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+
+        <div class="links-linkedin">
+            <a href="https://www.linkedin.com/in/christopher-van-niekirk-887625235/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+    </div>
+
+</div>
+
+<br>
+
+<div class="portfolio-h1">
+    <h1>My Portfolio</h1>
+</div>
+<br>
+
+<div class="web-design">
+    <div class="web-contents">
+        <div class="web-design-img">
+            <img src="/static/images/web-design.jpg" alt="">
+        </div>
+        <div class="web-design-a">
+            <a href="#"><h1>Web Development</h1></a>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="programming">
+    <div class="pro-contents">
+        <div class="programming-img">
+            <img src="/static/images/programming2.jpg" alt="">
+        </div>
+        <div class="programming-a">
+            <a href="#"><h1>Programming</h1></a>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="my-skills">
+    <h1>My Skills</h1>
+    <br>
+
+    <div class="contents">
+
+    <div class="python">
+        <img src="/static/images/python.JPG" alt="python">
+    </div>
+
+    <div class="MySQL">
+        <img src="/static/images/mysql.JPG" alt="MySQL">
+    </div>
+
+    <div class="HTML">
+        <img src="/static/images/html.JPG" alt="HTML">
+    </div>
+
+    <div class="css">
+        <img src="/static/images/css.JPG" alt="css">
+    </div>
+
+    <div class="js">
+        <img src="/static/images/javascript.PNG" alt="javascript">
+    </div>
+
+    <div class="flask">
+        <img src="/static/images/flask.JPG" alt="flask">
+    </div>
+
+
+    </div>
+
+</div>
+
+<br> 
+<br>
 
 {% endblock %}
