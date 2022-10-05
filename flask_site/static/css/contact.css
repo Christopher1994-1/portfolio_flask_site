@@ -1,0 +1,20 @@
+.content-section {
+    width: 1000px;
+    border-radius: 30px;
+    margin: auto;
+    padding: 20px;
+}
+
+.registerbtn {
+    padding: 10px;
+    width: 100%;
+}
+
+.get-in-touch {
+    font-size: 30px;
+}
+
+#sign-up-alert {
+    width: 1000px;
+    margin: auto;
+}

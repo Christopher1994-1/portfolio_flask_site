@@ -1,0 +1,35 @@
+img {
+    width: 400px;
+    height: 400px;
+}
+
+.about-div {
+    width: 1000px;
+    display: flex;
+    background-color: rgb(219, 219, 219);
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.about-box1 {
+    width: 400px;
+    padding: 10px;
+    display: inline-block;
+}
+
+
+.about-div hr {
+    width: 270px;
+}
+
+.about-box1 p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.about-box2 {
+    width: 200px;
+    display: inline-block;
+    margin-left: 20px;
+}

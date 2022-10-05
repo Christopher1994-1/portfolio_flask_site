@@ -60,3 +60,31 @@
 .box2 button:hover {
     background-color: rgb(95, 95, 95);
 }
+
+.this-site {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    border-radius: 30px;
+    padding: 5px;
+    background-color: rgb(105, 105, 105);
+}
+
+.this-site h1 {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+
+.check-out-this {
+    width: 360px;
+    margin: auto;
+}
+
+
+.links-github2 {
+    width: 190px;
+    padding: 10px;
+    margin: auto;
+    font-size: 200px;
+}

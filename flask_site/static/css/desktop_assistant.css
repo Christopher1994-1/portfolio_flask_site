@@ -7,7 +7,7 @@
 }
 
 .first-div hr {
-    width: 250px;
+    width: 100% ;
 }
 
 
@@ -103,4 +103,36 @@
 
 .commands span {
     text-decoration: underline;
+}
+
+
+
+
+/* 
+###################################################################################################
+password gui page */
+
+
+.gui-img {
+    width: 350px;
+    margin: auto;
+}
+
+
+.first-div p a {
+    color: blue;
+}
+
+.first-div p a:hover {
+    color: darkred;
+}
+
+
+.gui-img2 {
+    width: 500px;
+    margin-left: 330px;
+}
+
+.gui-img3 {
+    margin-left: 300px;
 }
