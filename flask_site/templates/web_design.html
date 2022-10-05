@@ -3,8 +3,24 @@
 
 
 {% block content %}
+<link rel="stylesheet" href="/static/css/web-design.css">
+
+<br><br><br><br><br><br><br><br>
 
 
-<h1>Web Design Page</h1>
+<div class="front-web-design-boxes">
+    <div class="box1">
+        <a href="{{ url_for('archive_site') }}"><button>Archive Website</button></a>
+    </div>
+
+    <div class="box2">
+        <a href="{{ url_for('investor_site') }}"><button>Investor Website</button></a>
+
+    </div>
+
+</div>
+
+<br><br>
+
 
 {% endblock %}

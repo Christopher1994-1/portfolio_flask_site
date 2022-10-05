@@ -34,3 +34,24 @@ def contact():
 @app.route('/web_design.html')
 def web_design():
     return render_template('web_design.html')
+
+
+@app.route('/archive_site.html')
+def archive_site():
+    return render_template('archive_site.html')
+
+
+@app.route('/investor_site.html')
+def investor_site():
+    return render_template('investor_site.html')
+
+
+@app.route('/programming.html')
+def programming():
+    return render_template('programming.html')
+
+
+
+@app.route('/desktop_assistant.html')
+def desktop_assistant():
+    return render_template('desktop_assistant.html')

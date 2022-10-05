@@ -4,6 +4,7 @@
     margin: auto;
     padding: 20px;
     display: flex;
+    border-radius: 15px;
     background-color: rgb(242, 242, 242)
 }
 
@@ -12,10 +13,15 @@
     display: inline-block;
     padding: 20px;
     text-align: left;
+    border-radius: 15px;
     background-color: rgb(204, 204, 204);
     height: 301px;
 }
 
+
+.box2 img {
+    border-radius: 15px;
+}
 
 
 .two-boxes-h1 {
@@ -50,11 +56,13 @@
     width: 1200px;
     margin: auto;
     text-align: center;
+    border-radius: 25px;
 }
 
 .check-out-github img {
     width: 1000px;
     height: 350px;
+    border-radius: 25px;
 }
 
 
@@ -161,6 +169,15 @@
 .programming .pro-contents .programming-img img {
     width: 700px;
     height: 400px;
+}
+
+.web-design .web-contents .web-design-img img {
+    border-radius: 25px;
+}
+
+
+.programming .pro-contents .programming-img img {
+    border-radius: 25px;
 }
 
 .programming {

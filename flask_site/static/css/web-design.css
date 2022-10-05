@@ -1,0 +1,62 @@
+.front-web-design-boxes {
+    border-radius: 25px;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+}
+
+.box1 {
+    border: 2px solid black;
+    width: 400px;
+    border-radius: 25px;
+    height: 400px;
+    display: inline-block;
+    background-image: url("/static/images/archive-site_400x400.jpg");
+}
+
+.box1 button {
+    border: 2px solid black;
+    color: white;
+    text-shadow: 2px 2px black;
+    width: 200px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: auto;
+    background-color: rgb(173, 173, 173);
+}
+
+.box1 button:hover {
+    background-color: rgb(95, 95, 95);
+}
+
+
+.box2 {
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    background-image: url("/static/images/investor-site_400x400.jpg");
+}
+
+
+.box2 button {
+    border: 2px solid black;
+    color: white;
+    text-shadow: 2px 2px black;
+    width: 200px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: auto;
+    background-color: rgb(173, 173, 173);
+}
+
+
+.box2 button:hover {
+    background-color: rgb(95, 95, 95);
+}

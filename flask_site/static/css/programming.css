@@ -1,0 +1,25 @@
+.front-programming-boxes {
+    width: 1000px;
+    margin: auto;
+    background-color: rgb(231, 231, 231);
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.front-programming-boxes .list {
+    padding: 10px;
+    width: 700px;
+    margin-left: 30px;
+    font-size: 20px;
+    color: black;
+}
+
+.front-programming-boxes .list ul a {
+    list-style-type: circle;
+    color: black;
+}
+
+.front-programming-boxes .list ul a:hover {
+    color: darkred;
+    text-shadow: 1px 1px black;
+}

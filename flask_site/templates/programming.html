@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+<link rel="stylesheet" href="/static/css/programming.css">
+
+<br><br><br><br><br><br><br><br>
+
+
+<div class="front-programming-boxes">
+
+    <h1>Programming Projects</h1>
+
+    <div class="list">
+    <ul>
+        <a href="{{ url_for('desktop_assistant') }}"><li>Desktop Assistant</li></a>
+        <a href="#"><li>Password GUI (Graphical User Interface)</li></a>
+        <a href="#"><li>Contacts GUI (Graphical User Interface)</li></a>
+    </ul>
+    </div>
+
+</div>
+
+<br><br>
+
+
+{% endblock %}
