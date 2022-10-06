@@ -1,4 +1,5 @@
 from cmath import log
+import imp
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import os
@@ -33,7 +34,6 @@ mysql_psw = os.environ.get('my_thing')
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 
-# Initialize the database
-db = SQLAlchemy(app)
-image_search = ImageSearch(app, tensorflow=False)
+
+
 from flask_site import routes

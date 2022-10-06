@@ -9,6 +9,7 @@ import time
 import smtplib
 
 
+
 ##############################################################################
 # functions
 default_value = "None Given"
