@@ -100,3 +100,4 @@ def password_gui():
 @app.route('/contacts_gui.html')
 def contacts_gui():
     return render_template('contacts_gui.html')
+
