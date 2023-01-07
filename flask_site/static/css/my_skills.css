@@ -12,7 +12,7 @@
   }
   
   
-  .skill1 img{
+  .skill1 img {
     width: 80px;
     height: 80px;
     margin: 10px;
@@ -23,36 +23,10 @@
 
 
 
-  /* .main {
-    display: flex;
+
+@media(max-width:991px) {
+  .main {
     flex-direction: column;
-    align-items: center;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 300px;
   }
-  
-  .main h1 {
-    font-size: 36px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #333;
-    margin: 20px 0;
-  }
-  
-  .skill {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .skill i {
-    font-size: 32px;
-    color: #333;
-  } */
+}

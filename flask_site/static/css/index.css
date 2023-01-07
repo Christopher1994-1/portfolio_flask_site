@@ -162,6 +162,12 @@
 }
 
 
+.web-design-a a:hover {
+    color: rgb(189, 189, 189);
+    text-shadow: 5px 5px rgb(0, 0, 0);
+}
+
+
 .programming {
     text-align: center;
 }
@@ -198,6 +204,11 @@
 .programming-a a {
     color: white;
     text-shadow: 2px 2px black;
+}
+
+.programming-a a:hover {
+    color: rgb(189, 189, 189);
+    text-shadow: 5px 5px rgb(0, 0, 0);
 }
 
 
@@ -299,11 +310,12 @@
 
     .web-design .web-contents .web-design-a a {
         color:white;
-        text-shadow: 2px 2px black;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,10);
     }
 
     .web-design .web-contents .web-design-a a:hover {
-        color: darkred;
+        color: rgb(175, 175, 175);
+        box-shadow: 5px 5px black;
     }
 
     .programming {

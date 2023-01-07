@@ -23,3 +23,17 @@
     color: darkred;
     text-shadow: 1px 1px black;
 }
+
+
+
+
+@media(max-width:991px) {
+    .front-programming-boxes {
+        width: 400px;
+    }
+
+    .front-programming-boxes .list {
+        width: 350px;
+    }
+
+}

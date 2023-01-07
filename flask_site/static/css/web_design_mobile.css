@@ -1,0 +1,21 @@
+/* Code for the mobile version of the weather app */
+@media(max-width:991px) {
+    .about-this-site {
+        width: 400px;
+    }
+
+    .see-code {
+        width: 400px;
+    }
+
+    .img1 {
+        width: 400px;
+    }
+
+    .img1 img {
+        width: 400px;
+    }
+
+
+
+}

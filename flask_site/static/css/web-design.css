@@ -464,3 +464,52 @@
 }
 
 
+
+
+@media(max-width:991px) {
+    #main-hr {
+        width: 300px;
+    }
+
+    .front-web-design-boxes2 {
+        width: 400px;
+    }
+    .site-description-tag {
+        width: 350px;
+    }
+    .site-description-tag p {
+        width: 350px;
+    }
+    .picture-container-box1 {
+        width: 350px;
+    }
+    .button-container {
+        width: 350px;
+    }
+
+
+    .front-web-design-boxes3 {
+        width: 400px;
+    }
+    .picture-container-box2 {
+        width: 350px;
+    }
+
+
+
+    .front-web-design-boxes4 {
+        width: 400px;
+    }
+    .picture-container-box3 {
+        width: 350px;
+    }
+
+
+
+
+
+    .this-site {
+        width: 350px;
+    }
+
+}
