@@ -1,65 +1,439 @@
-.front-web-design-boxes {
-    border-radius: 25px;
-    width: 1000px;
+.web-design-main-header {
+    width: 400px;
+    border: 2px solid rgb(240, 240, 240);
     margin: auto;
     text-align: center;
-    background-color: rgb(233, 233, 233);
+    margin-bottom: 30px;
+    border-radius: 30px;
+    background: rgb(240, 240, 240);
+    background: linear-gradient(to right, darkgrey, lightgrey);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
 }
 
-.box1 {
-    border: 2px solid black;
-    width: 400px;
+
+
+
+#main-hr {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    top: 15px;
+}
+
+
+/* css for the all container containing all sites */
+.front-web-design-boxes2 {
+    border: 2px solid gainsboro;
+    width: 1000px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    background: gainsboro;
+}
+
+/* ####################### */
+
+
+
+
+/* Main box for the first site */
+.main-box1 {
+    background: gainsboro;
+}
+
+/* css for the website description header above the picture */
+.site-description-tag {
+    width: 780px;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+    background: rgb(58, 58, 58);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+/* css for the website description header paragraph */
+.site-description-tag p {
+    font-weight: bold;
+    width: 750px;
+    color: white;
+    margin: auto;
+}
+/* css for the website description header paragraph clickable part */
+.site-description-tag p a {
+    color: white;
+    text-decoration: none;
+}
+.site-description-tag p a:hover {
+    color: rgb(190, 36, 36);
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+/* css for the main container holding the wesbite picture example */
+.picture-container-box1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    width: 800px;
     border-radius: 25px;
     height: 400px;
     display: inline-block;
-    background-image: url("/static/images/archive-site_400x400.jpg");
+    background-image: url("/static/images/weather-thing2.png");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
 }
 
-.box1 button {
-    border: 2px solid black;
-    color: white;
-    text-shadow: 2px 2px black;
-    width: 200px;
-    border-radius: 15px;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bolder;
+/* css for the main container containing the button/buttons */
+.button-container {
+    display: flex;
+    width: 600px;
     margin: auto;
-    background-color: rgb(173, 173, 173);
+    text-align: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.box1 button:hover {
-    background-color: rgb(95, 95, 95);
+.button-1 button{
+    margin-right: 5px;
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    transition: 0.3s;
+    width: 180px;
+    height: 30px;
+    cursor: pointer;
+}
+.button-1 button:hover {
+    background-color: grey;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 
-.box2 {
-    border: 2px solid black;
+
+
+
+.button-2 button{
+    margin-left: 5px;
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    transition: 0.3s;
+    width: 180px;
+    height: 30px;
+    cursor: pointer;
+}
+.button-2 button:hover {
+    background-color: grey;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css for the second website example */
+.front-web-design-boxes3 {
+    border: 2px solid gainsboro;
+    width: 1000px;
+    margin: auto;
+    padding: 5px;
+    margin-top: 30px;
+    border-radius: 20px;
+    text-align: center;
+    background: gainsboro;
+}
+
+/* ####################### */
+
+
+
+
+/* Main box for the first site */
+.main-box1 {
+    background: gainsboro;
+}
+
+/* css for the website description header above the picture */
+.site-description-tag {
+    width: 780px;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+    background: rgb(58, 58, 58);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+/* css for the website description header paragraph */
+.site-description-tag p {
+    font-weight: bold;
+    width: 750px;
+    color: white;
+    margin: auto;
+}
+/* css for the website description header paragraph clickable part */
+.site-description-tag p a {
+    color: white;
+    text-decoration: none;
+}
+.site-description-tag p a:hover {
+    color: rgb(190, 36, 36);
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+/* css for the main container holding the wesbite picture example */
+.picture-container-box3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    width: 800px;
     border-radius: 25px;
-    width: 400px;
     height: 400px;
     display: inline-block;
-    background-image: url("/static/images/investor-site_400x400.jpg");
+    background-image: url("/static/images/final-archive.png");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
 }
 
-
-.box2 button {
-    border: 2px solid black;
-    color: white;
-    text-shadow: 2px 2px black;
-    width: 200px;
-    border-radius: 15px;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bolder;
+/* css for the main container containing the button/buttons */
+.button-container {
+    display: flex;
+    width: 600px;
     margin: auto;
-    background-color: rgb(173, 173, 173);
+    text-align: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button-1 button{
+    margin-right: 5px;
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    transition: 0.3s;
+    width: 180px;
+    height: 30px;
+    cursor: pointer;
+}
+.button-1 button:hover {
+    background-color: grey;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 
-.box2 button:hover {
-    background-color: rgb(95, 95, 95);
+
+
+
+.button-23 button{
+    margin-left: 5px;
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    transition: 0.3s;
+    width: 180px;
+    height: 30px;
+    pointer-events: none;
+    opacity: 0.6;
+    cursor: none;
 }
+.button-23 button:hover {
+    background-color: grey;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css for the second website example */
+.front-web-design-boxes4 {
+    border: 2px solid gainsboro;
+    width: 1000px;
+    margin: auto;
+    padding: 5px;
+    margin-top: 30px;
+    border-radius: 20px;
+    text-align: center;
+    background: gainsboro;
+}
+
+/* ####################### */
+
+
+
+
+/* Main box for the first site */
+.main-box1 {
+    background: gainsboro;
+}
+
+/* css for the website description header above the picture */
+.site-description-tag {
+    width: 780px;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+    background: rgb(58, 58, 58);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+/* css for the website description header paragraph */
+.site-description-tag p {
+    font-weight: bold;
+    width: 750px;
+    color: white;
+    margin: auto;
+}
+/* css for the website description header paragraph clickable part */
+.site-description-tag p a {
+    color: white;
+    text-decoration: none;
+}
+.site-description-tag p a:hover {
+    color: rgb(190, 36, 36);
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+/* css for the main container holding the wesbite picture example */
+.picture-container-box2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    width: 800px;
+    border-radius: 25px;
+    height: 400px;
+    display: inline-block;
+    background-image: url("/static/images/investor-site.jpg");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+/* css for the main container containing the button/buttons */
+.button-container {
+    display: flex;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button-1 button{
+    margin-right: 5px;
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    transition: 0.3s;
+    width: 180px;
+    height: 30px;
+    cursor: pointer;
+}
+.button-1 button:hover {
+    background-color: grey;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.button-23 button{
+    margin-left: 5px;
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    transition: 0.3s;
+    width: 180px;
+    height: 30px;
+    pointer-events: none;
+    opacity: 0.6;
+    cursor: none;
+}
+.button-23 button:hover {
+    background-color: grey;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
 
 .this-site {
     width: 1000px;
@@ -88,3 +462,5 @@
     margin: auto;
     font-size: 200px;
 }
+
+

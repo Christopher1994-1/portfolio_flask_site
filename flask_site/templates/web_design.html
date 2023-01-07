@@ -8,17 +8,111 @@
 <br><br><br><br><br><br><br><br>
 
 
-<div class="front-web-design-boxes">
-    <div class="box1">
-        <a href="{{ url_for('archive_site') }}"><button>Archive Website</button></a>
-    </div>
+<h1 class="web-design-main-header">My Web Applications</h1>
 
-    <div class="box2">
-        <a href="{{ url_for('investor_site') }}"><button>Investor Website</button></a>
+
+<div class="front-web-design-boxes2">
+
+    <div class="main-box1">
+        <div class="site-description-tag">
+            <p>This website is a Django-based website that incorporates the <a href="https://openweathermap.org/" target="_blank">OpenWeather</a> and Geo-Names 
+                APIs to display real-time weather data for a specific location</p>
+        </div>
+
+        <div class="picture-container-box1">
+            <!-- holding the picture background -->
+        </div>
+
+
+
+        <div class="button-container">
+            <div class="button-1">
+                <a href="{{ url_for('weather_site') }}"><button>See Details</button></a>
+            </div>
+
+            <div class="button-2">
+                <a href="http://cejweatherapp.pythonanywhere.com/" target="_blank"><button>Site Example</button></a>
+            </div>
+        </div>
 
     </div>
 
 </div>
+
+<hr id="main-hr">
+
+<div class="front-web-design-boxes3">
+
+    <div class="main-box1">
+        <div class="site-description-tag">
+            <p>A recreated investor website I built using Python's Flask framework and the TweleveData
+                APi to get real time stock information.</p>
+        </div>
+
+        <div class="picture-container-box2">
+            <!-- holding the picture background -->
+        </div>
+
+
+
+        <div class="button-container">
+            <div class="button-1">
+                <a href="{{ url_for('investor_site') }}"><button>See Details</button></a>
+            </div>
+
+            <div class="button-23">
+                <button>Site Example</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<hr id="main-hr">
+
+
+
+<div class="front-web-design-boxes4">
+
+    <div class="main-box1">
+        <div class="site-description-tag">
+            <p>This family archive website, built with Flask and MySQL, offers a secure login system and allows 
+                users to submit and access historical documents, creating an organized resource for preserving 
+                and sharing family history.</p>
+        </div>
+
+        <div class="picture-container-box3"> <!-- the only thing you need to update is the box number -->
+            <!-- holding the picture background -->
+        </div>
+
+
+
+        <div class="button-container">
+            <div class="button-1">
+                <a href="{{ url_for('archive_site') }}"><button>See Details</button></a>
+            </div>
+
+            <div class="button-23">
+                <button>Site Example</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
 
 <br><br>
 

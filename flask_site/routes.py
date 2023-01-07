@@ -38,18 +38,18 @@ def send_email(first_name, last_name=default_value, company=default_value, email
 ##############################################################################
 # website routes
 
-
+# Home page
 @app.route('/')
 def index():
     return render_template('index.html')
 
-
+# The about page
 @app.route('/about1.html')
 def about1():
     return render_template('about1.html')
 
 
-
+# contact page
 @app.route('/contact.html', methods=["POST", "GET"])
 def contact():
     form = ContactMe()
@@ -71,9 +71,19 @@ def web_design():
     return render_template('web_design.html')
 
 
+@app.route('/full_calculator.html')
+def full_calculator():
+    return render_template('full_calculator.html')
+
+
 @app.route('/archive_site.html')
 def archive_site():
     return render_template('archive_site.html')
+
+
+@app.route('/weather_site.html')
+def weather_site():
+    return render_template('weather_site.html')
 
 
 @app.route('/investor_site.html')
