@@ -36,87 +36,59 @@
     font-size: 17px;
 }
 
+/* css code for the buttons container for the first box */
+/* .main-box-buttons {
+    border: 2px solid black;
+} */
+/* css code for the first button in the button container */
 .get-in-touch-btn {
     padding: 10px;
+    display: inline-block;
+}
+
+.get-in-touch-btn a {
+    cursor: pointer;
 }
 
 .get-in-touch-btn button {
     padding: 10px;
     font-weight: bolder;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .get-in-touch-btn button:hover {
     color: white;
     background-color: rgb(53, 53, 53);
+    cursor: pointer;
 }
 
-
-.check-out-github {
-    width: 1200px;
-    margin: auto;
-    text-align: center;
-    border-radius: 25px;
-}
-
-.check-out-github img {
-    width: 1000px;
-    height: 350px;
-    border-radius: 25px;
-}
-
-
-.check-out-github .links {
-    box-sizing: border-box;
-    font-size: 130px;
-    height: 0%;
-    position: relative;
-    bottom: 260px;
-}
-
-.check-out-github .links .links-github {
+/* css code for the second button in the button container */
+.resume-btn {
     display: inline-block;
-    padding: 20px;
-    border-radius: 60px;
-    background-color: white;
+    padding: 10px;
 }
 
-.check-out-github .links .links-github a {
-    color: rgb(82, 14, 82);
+.resume-btn a {
+    cursor: pointer;
 }
 
-
-.check-out-github .links .links-linkedin a {
-    color: darkblue;
+.resume-btn button {
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-
-.check-out-github .links .links-github:hover {
-    background-color: rgb(44, 44, 44);
-}
-
-.check-out-github .links .links-github a:hover {
-    color: darkred;
-
+.resume-btn button:hover {
+    color: white;
+    background-color: rgb(53, 53, 53);
+    cursor: pointer;
 }
 
 
-.check-out-github .links .links-linkedin {
-    display: inline-block;
-    padding: 20px;
-    background-color: white;
-    border-radius: 60px;
-}
 
 
-.check-out-github .links .links-linkedin:hover {
-    background-color: rgb(44, 44, 44);
-}
-
-.check-out-github .links .links-linkedin a:hover {
-    color: darkred;
-
-}
 
 
 .box2 {
@@ -186,30 +158,11 @@
     border-radius: 25px;
 }
 
-.programming {
-    width: 1200px;
-    margin: auto;
-}
 
 
-.programming-a {
-    width: 200px;
-    margin: auto;
-    position: relative;
-    bottom: 240px;
-    right: 90px;
-    font-size: 30px;
-}
 
-.programming-a a {
-    color: white;
-    text-shadow: 2px 2px black;
-}
 
-.programming-a a:hover {
-    color: rgb(189, 189, 189);
-    text-shadow: 5px 5px rgb(0, 0, 0);
-}
+
 
 
 
@@ -220,9 +173,7 @@
 }
 
 
-.portfolio-h1 {
-    text-align: center;
-}
+
 
 .my-skills h1 {
     text-align: center;
@@ -361,11 +312,5 @@
         position: relative;
         left: 190px;
     }
-
-
-
-
-
-
 
 }

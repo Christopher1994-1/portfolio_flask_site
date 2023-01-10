@@ -1,0 +1,116 @@
+/* css code for the main container */
+.resume-container {
+    width: 80%;
+    margin: auto;
+    background: gainsboro;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3), 0 10px 10px rgba(0,0,0,0.5);
+}
+
+#hr {
+    width: 80%;
+    margin: auto;
+}
+
+/* css code for the name, job title, and links */
+.resume-name-header {
+    text-align: center;
+}
+.resume-name-header h4 {
+    color: rgb(185, 53, 53);
+    margin-bottom: 3px;
+}
+.resume-name-header h4 a{
+    color: rgb(0, 0, 0);
+}
+.resume-name-header h4 a:hover{
+    color: rgb(185, 53, 53);
+}
+
+
+
+
+/* css code for the skills header and paragraph */
+
+.resume-skills {
+    border-bottom: 2px solid black;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.resume-skills h1 {
+    margin-bottom: 5px;
+}
+
+.resume-skills ul {
+    margin-left: 10px;
+}
+
+.resume-skills ul li {
+    list-style-type: circle;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+
+
+
+/* css code for the resume projects */
+.resume-projects {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.resume-projects h1 {
+    margin-bottom: 10px;
+}
+
+.resume-projects h2 {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.resume-projects ul {
+    margin-left: 30px;
+    margin-bottom: 5px;
+    line-height: 22px;
+}
+
+.resume-projects h5 {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+/* css code for the summary */
+.resume-summary {
+    border-bottom: 2px solid black;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.resume-summary h1 {
+    margin-bottom: 10px;
+}
+
+.resume-summary p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 22px;
+
+}

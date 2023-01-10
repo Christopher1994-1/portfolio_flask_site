@@ -111,3 +111,17 @@ def password_gui():
 def contacts_gui():
     return render_template('contacts_gui.html')
 
+
+# resume route
+@app.route('/resume.html')
+def resume():
+    return render_template('resume.html')
+
+
+
+#test route
+@app.route('/test.html')
+def test():
+    return render_template('test.html')
+
+

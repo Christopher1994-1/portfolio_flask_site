@@ -1,0 +1,290 @@
+/* Main container for highlighted projects  */
+.highlighted-projects {
+    width: 80%;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;  /* add this line */
+    align-items: center;
+    flex-direction: column;
+    background: gainsboro;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3), 0 10px 10px rgba(0,0,0,0.5);
+}
+
+
+
+
+/* css code for the 'Highlighted Projects' header */
+.highlighted-projects-header {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+
+
+
+/* ================================= first project css code ========================================= */
+/* all css code for the first project */
+/* main container for project 1 and 3 */
+.project-1 {
+    width: 90%;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    background: linear-gradient(to right, white, #949494);
+    border: 2px solid black;
+}
+
+/* css code for the project-1 image */
+.project-1_image {
+    flex: 1;
+    display: inline-block;
+}
+/* css code for making the image itself rounded */
+.project-1_image img {
+    border-radius: 20px;
+}
+
+
+/* css code for the inner elements of the first project, header, paragraph, and buttons */
+.inner-project-1-elements {
+    margin-left: 5px;
+}
+
+/* css code for the header and paragraph divs to be spaced apart */
+.project-1_header {
+    margin-bottom: 15px;
+}
+.project-1_paragraph {
+    margin-bottom: 20px;
+}
+
+/* css code for the first button */
+.project-1_btn-1 {
+    display: inline-block;
+    margin-right: 5px;
+}
+/* css code for the a tag  */
+.project-1_btn-1 button a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.project-1_btn-1 button a:hover {
+    color: red;
+}
+/* css code for the design of button 1 */
+.project-1_btn-1 button {
+    /* button styles */
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    background-color: grey;
+    color: white;
+    box-shadow: 1px 1px 0px black;
+    /* transition to smooth out hover effect */
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+}
+.project-1_btn-1 button:hover {
+    /* hover styles */
+    background-color: black;
+    color: red;
+    box-shadow: 1px 1px 0px rgb(255, 0, 0);
+}
+
+
+
+
+/* css code for the second button */
+.project-1_btn-2 {
+    display: inline-block;
+}
+
+/* css code for the a tag  */
+.project-1_btn-2 button a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.project-1_btn-2 button a:hover {
+    color: red;
+}
+/* css code for the design of button 1 */
+.project-1_btn-2 button {
+    /* button styles */
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    background-color: grey;
+    color: white;
+    box-shadow: 1px 1px 0px black;
+    /* transition to smooth out hover effect */
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+}
+.project-1_btn-2 button:hover {
+    /* hover styles */
+    background-color: black;
+    color: red;
+    box-shadow: 1px 1px 0px rgb(255, 0, 0);
+}
+
+/* ================================= end first project css code ========================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================= second project css code ========================================= */
+
+/* all css code for the second project */
+/* main container for project 2 */
+.project-2 {
+    width: 90%;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(to left, white, #949494);
+    border: 2px solid black;
+}
+
+/* css code for the project-2 image */
+.project-2_image {
+    display: inline-block;
+}
+
+/* css code for making the image itself rounded */
+.project-2_image img {
+    border-radius: 20px;
+}
+
+/* css code for the inner elements of the second project, header, paragraph, and buttons */
+.inner-project-2-elements {
+    text-align: right;
+    margin-right: 5px;
+}
+
+/* css code for the header and paragraph divs to be spaced apart */
+.project-2_header {
+    margin-bottom: 15px;
+}
+.project-2_paragraph {
+    margin-bottom: 20px;
+}
+
+
+/* ================================= end second project css code ========================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px) {
+    /* main css code for the project 1 container div */
+    .project-1 {
+        display: flex;
+        justify-content: center;
+        border: 2px solid black;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* css code for the image */
+    .project-1_image {
+        display: none;
+    }
+    /* css code for the header */
+    .project-1_header {
+        width: 50%;
+        text-align: center;
+        position: relative;
+        margin-bottom: 5px;
+
+    }
+    /* css code for the paragraph */
+    .project-1_paragraph {
+        display: inline;
+        position: relative;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    /* css code for the project-1 project-1 buttons */
+    .project-1_buttons {
+        width: 60%;
+        position: relative;
+        text-align: center;
+        display: inline;
+    }
+
+    /* main css code for the project 1 container div */
+    .project-2 {
+        display: flex;
+        justify-content: center;
+        border: 2px solid black;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* css code for the image */
+    .project-2_image {
+        display: none;
+    }
+    /* css code for the header */
+    .project-2_header {
+        width: 50%;
+        text-align: center;
+        position: relative;
+        margin-bottom: 5px;
+
+    }
+    /* css code for the paragraph */
+    .project-2_paragraph {
+        display: inline;
+        position: relative;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    /* css code for the project-2 project-2 buttons */
+    .project-2_buttons {
+        width: 60%;
+        position: relative;
+        text-align: center;
+        display: inline;
+    }
+
+
+
+
+
+}

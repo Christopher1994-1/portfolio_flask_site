@@ -5,6 +5,8 @@
 {% block content %}
 <link rel="stylesheet" href="/static/css/index.css">
 <link rel="stylesheet" href="/static/css/my_skills.css">
+<link rel="stylesheet" href="/static/css/highlight_projects.css">
+<link rel="stylesheet" href="/static/css/homepage-links.css">
 
 <br>
 <br>
@@ -18,11 +20,17 @@
         </div>
 
         <div class="two-boxes-p">
-            <p>I'm a freelance Python full stack developer, specializing in back-end programming. Check out my work in the projects dropdown and feel free to get in touch.</p>
+            <p>I'm a freelance Python full stack developer, specializing in back-end programming but have skills in front-end. Check out my work in the projects dropdown and feel free to get in touch.</p>
         </div>
 
-        <div class="get-in-touch-btn">
-            <a href="{{ url_for('contact') }}"><button>GET IN TOUCH</button></a>
+        <div class="main-box-buttons">
+            <div class="get-in-touch-btn">
+                <a href="{{ url_for('contact') }}"><button>GET IN TOUCH</button></a>
+            </div>
+
+            <div class="resume-btn">
+                <a href="{{ url_for('resume') }}"><button>RESUME</button></a>
+            </div>
         </div>
     </div>
 
@@ -36,7 +44,120 @@
 <br><br>
 
 
-<div class="check-out-github">
+<div class="highlighted-projects">
+
+    <div class="highlighted-projects-header">
+        <h1>Highlighted Projects</h1>
+    </div>
+
+
+    <div class="project-1">
+
+        <div class="project-1_image">
+            <img src="/static/images/weather-thing2.png" alt="project image" width="400" height="200">
+        </div>
+
+        <div class="inner-project-1-elements">
+            <div class="project-1_header">
+                <h2>Weather App</h2>
+            </div>
+
+            <div class="project-1_paragraph">
+                <p>I developed a comprehensive website using the Django framework, integrating the Open 
+                    Weather API and Geo-Names API to deliver real-time weather information for user-specified cities.</p>
+            </div>
+
+
+            <div class="project-1_buttons">
+
+                <div class="project-1_btn-1">
+                    <button><a href="{{ url_for('weather_site') }}">View Project</a></button>
+                </div>
+
+                <div class="project-1_btn-2">
+                    <button><a href="https://github.com/Christopher1994-1/weather_site_django/tree/main/first_site/events" target="_blank">View Code</a></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="project-2">
+
+
+        <div class="inner-project-2-elements">
+
+            <div class="project-2_header">
+                <h2>Advanced Calculator GUI</h2>
+            </div>
+
+            <div class="project-2_paragraph">
+                <p>I developed a comprehensive calculator application using Python's Tkinter library and object-oriented programming techniques.</p>
+            </div>
+
+
+            <div class="project-1_buttons">
+
+                <div class="project-1_btn-1">
+                    <button><a href="{{ url_for('full_calculator') }}">View Project</a></button>
+                </div>
+
+                <div class="project-1_btn-2">
+                    <button><a href="https://github.com/Christopher1994-1/full_calculator_gui_oop" target="_blank">View Code</a></button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="project-2_image">
+            <img src="/static/images/cal_picture.jpg" alt="project image" width="400" height="200">
+        </div>
+
+    </div>
+
+
+    <div class="project-1">
+
+        <div class="project-1_image">
+            <img src="/static/images/investor-site.jpg" alt="project image" width="400" height="200">
+        </div>
+
+        <div class="inner-project-1-elements">
+            <div class="project-1_header">
+                <h2>Rebuild Investor Website</h2>
+            </div>
+
+            <div class="project-1_paragraph">
+                <p>This site was my second attempt at building a flask website, this time focusing more on 
+                    HTML/CSS aesthetics rather than backend functionality. It is a remake site of Annaly Capital 
+                    investor website. Though, it does make use of an API</p>
+            </div>
+
+
+            <div class="project-1_buttons">
+
+                <div class="project-1_btn-1">
+                    <button><a href="{{ url_for('investor_site') }}">View Project</a></button>
+                </div>
+
+                <div class="project-1_btn-2">
+                    <button><a href="https://github.com/Christopher1994-1/products_flask_site/tree/main/flask_site" target="_blank">View Code</a></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+<br>
+<div class="homepage-links">
     <h1>~ Check out my links ~</h1>
 
     <img src="/static/images/programming.jpg" alt="">
@@ -57,80 +178,12 @@
 
 <br>
 
-<div class="portfolio-h1">
-    <h1>My Portfolio</h1>
-</div>
-<br>
 
-
-<div class="web-design">
-    <div class="web-contents">
-        <div class="web-design-img">
-            <img src="/static/images/web-design.jpg" alt="">
-        </div>
-        <div class="web-design-a">
-            <a href="{{ url_for('web_design') }}"><h1>Web Development</h1></a>
-        </div>
-    </div>
-</div>
 
 
 <br>
 
 
-<div class="programming">
-    <div class="pro-contents">
-        <div class="programming-img">
-            <img src="/static/images/programming2.jpg" alt="">
-        </div>
-        <div class="programming-a">
-            <a href="{{ url_for('programming') }}"><h1>Programming</h1></a>
-        </div>
-    </div>
-</div>
-
-<br>
-
-<div class="main">
-
-    <h1>My Skills</h1>
-
-    <div class="skill1">
-      <img src="/static/images/python_icon.png" alt="">
-    </div>
-
-
-    <div class="skill1">
-        <img src="/static/images/js_icon.png" alt="">
-    </div>
-
-
-    <div class="skill1">
-        <img src="/static/images/html_icon.png" alt="">
-    </div>
-
-
-    <div class="skill1">
-        <img src="/static/images/css_icon.png" alt="">
-    </div>
-  
-  
-    <div class="skill1">
-        <img src="/static/images/mysql_icon.png" alt="">
-    </div>
-  
-  
-    <div class="skill1">
-        <img src="/static/images/flask_icon.png" alt="">
-    </div>
-
-    <div class="skill1">
-        <img src="/static/images/django_icon.png" alt="">
-    </div>
-
-
-
-  </div>
 
 <br> 
 <br>

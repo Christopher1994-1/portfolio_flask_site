@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<link rel="stylesheet" href="/static/css/resume.css">
+
+
+
+<br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+<div class="resume-container">
+
+    <div class="resume-name-header">
+        <h1>CEJ Van Niekirk</h1>
+        <h4>Software Developer - Python Developer</h4>
+        <h4><a href="https://github.com/Christopher1994-1">Github Account</a> | <a href="https://www.linkedin.com/in/cej-van-niekirk-887625235/">Linkdin Account</a></h4>
+    </div>
+
+    <hr id="hr">
+
+    <div class="resume-skills">
+        <h1>My Skills</h1>
+        <ul>
+            <li>•Python</li>
+            <li>•MySQL</li>
+            <li>•HTML</li>
+            <li>•CSS</li>
+            <li>•Flask</li>
+            <li>•JavaScript</li>
+            <li>•Django</li>
+            <li>•Tkinter</li>
+            <li>•Visual Studio IDE</li>
+        </ul>
+
+    </div>
+
+
+    <div class="resume-projects">
+        <h1>Projects</h1>
+
+
+        <h2>Advanced Calculator GUI</h2>
+        <ul>
+            <li>I developed a comprehensive calculator application using Python's Tkinter library and object-oriented programming techniques.</li>
+            <li>The application features four main options: a basic calculator, a scientific calculator, a currency converter using real-time exchange rates from the ExchangeRate API, and a temperature converter.</li>
+            <li>The user interface is intuitive and easy to use, allowing users to quickly and easily access the various calculator functions.</li>
+            <li>This project demonstrates my ability to design and implement complex software solutions using a variety of programming concepts and tools in Python.</li>
+        </ul>
+
+            <h5><a href="{{ url_for('full_calculator') }}" target="_blank">See Project</a> | <a href="https://github.com/Christopher1994-1/full_calculator_gui_oop/blob/main/main_app.py" target="_blank">See Code</a></h5>
+
+
+        <h2>Django Weather Website</h2>
+            <ul>
+                <li>I developed a comprehensive website using the Django framework, integrating the Open Weather API and Geo-Names API to deliver real-time weather information for user-specified cities.</li>
+                <li>In addition to providing current weather conditions, the website has the capability to function as a news aggregator, offering a diverse range of news sources and updates.</li>
+                <li>My project showcases my strong skills in web development and API integration, as well as my ability to create functional and user-friendly websites</li>
+            </ul>
+        <h5><a href="{{ url_for('weather_site') }}" target="_blank">See Project</a> | <a href="https://github.com/Christopher1994-1/weather_site_django/tree/main/first_site/events" target="_blank">See Code</a></h5>
+
+
+
+        <h2>Flask Family Archive Website</h2>
+        <ul>
+            <li>My very first web application using Flask, featuring a simple design with HTML/CSS. What it lacks in design pays for in functionality.</li>
+            <li>A wide range of functionalities such as user registration, login, admin approval processes and integration with multiple MySQL databases for secure storage and retrieval of data.</li>
+            <li>The application has a robust approval process for new users, automatic email notifications for approval status, and allows registered users to search stored family archival information.</li>
+            <li>This project demonstrates my expertise in using Flask, MySQL, and custom email automation, resulting in a polished and professional end product.</li>
+        </ul>
+        <h5><a href="{{ url_for('archive_site') }}" target="_blank">See Project</a> | <a href="https://github.com/Christopher1994-1/family_archive_site/tree/main/flask_site" target="_blank">See Code</a></h5>
+
+
+        <h2>Desktop Voice Assistant</h2>
+        <ul>
+            <li>I developed a desktop voice assistant using Python and advanced speech recognition technology.</li>
+            <li>This assistant is able to run in the background, listening for a user-defined "wake word" to activate it.</li>
+            <li>Once activated, it is capable of performing a wide range of tasks including providing the weather forecast, opening websites, taking notes, giving information about a specific topic, and even sending text messages to contacts.</li>
+            <li>The integration of speech recognition, logic and text-to-speech technologies allows for a highly functional and convenient user experience.</li>
+        </ul>
+        <h5><a href="{{ url_for('desktop_assistant') }}" target="_blank">See Project</a> | <a href="https://github.com/Christopher1994-1/desktop_assistant/blob/main/desktop_main.py" target="_blank">See Code</a></h5>
+
+
+
+    </div>
+
+
+
+    <div class="resume-summary">
+        <h1>Summary</h1>
+        <p>I am a quick learner, obsessive problem solver, and creative thinker. I am a strong team player 
+            and have strong communication skills. I have a passion for programming and building software 
+            and web applications, and am always striving to learn more and improve as both a software 
+            developer and an individual.</p>
+
+    </div>
+    <br>
+</div>
+
+
+<br><br><br>
+
+
+{% endblock %}

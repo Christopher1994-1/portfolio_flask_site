@@ -1,0 +1,113 @@
+/* CSS code for Linkdin and Github links */
+
+.homepage-links {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid;
+    border: none;
+}
+
+.homepage-links img {
+    width: 90%;
+    height: 350px;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3), 0 10px 10px rgba(0,0,0,0.5);
+}
+
+
+
+
+.homepage-links .links {
+    box-sizing: border-box;
+    font-size: 130px;
+    height: 0%;
+    position: relative;
+    bottom: 260px;
+}
+
+.homepage-links .links .links-github {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 60px;
+    background-color: white;
+}
+
+.homepage-links .links .links-github a {
+    color: rgb(82, 14, 82);
+}
+
+
+.homepage-links .links .links-linkedin a {
+    color: darkblue;
+}
+
+
+.homepage-links .links .links-github:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.homepage-links .links .links-github a:hover {
+    color: darkred;
+
+}
+
+
+.homepage-links .links .links-linkedin {
+    display: inline-block;
+    padding: 20px;
+    background-color: white;
+    border-radius: 60px;
+}
+
+
+.homepage-links .links .links-linkedin:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.homepage-links .links .links-linkedin a:hover {
+    color: darkred;
+
+}
+
+
+
+
+
+@media(max-width:991px) {
+
+    .homepage-links {
+        width: 80%;
+    }
+
+    .homepage-links h1 {
+        font-size: 25px;
+    }
+
+    .homepage-links img {
+        width: 90%;
+        height: 420px;
+    }
+
+
+    .homepage-links .links {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        bottom: 380px;
+    }
+
+
+    .homepage-links .links .links-github {
+        margin-bottom: 5px;
+    }
+
+    .homepage-links .links .links-linkedin {
+        margin-top: 1px;
+    }
+
+
+
+}
