@@ -1,39 +1,20 @@
-.front-programming-boxes {
-    width: 1000px;
+/* Programming Header */
+.programming-header {
+    width: 40%;
     margin: auto;
-    background-color: rgb(231, 231, 231);
-    border-radius: 25px;
-    padding: 30px;
-}
-
-.front-programming-boxes .list {
+    background: gainsboro;
+    border-radius: 20px;
+    text-align: center;
     padding: 10px;
-    width: 700px;
-    margin-left: 30px;
-    font-size: 20px;
-    color: black;
 }
 
-.front-programming-boxes .list ul a {
-    list-style-type: circle;
-    color: black;
-}
-
-.front-programming-boxes .list ul a:hover {
-    color: darkred;
-    text-shadow: 1px 1px black;
-}
-
-
-
-
-@media(max-width:991px) {
-    .front-programming-boxes {
-        width: 400px;
-    }
-
-    .front-programming-boxes .list {
-        width: 350px;
-    }
-
+/* CSS code for the "Many Other Projects" html class */
+.many-other-projects {
+    width: 40%;
+    margin: auto;
+    background: gainsboro;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }

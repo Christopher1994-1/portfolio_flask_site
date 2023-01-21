@@ -8,21 +8,13 @@
 
 <br><br><br><br><br><br><br><br>
 
-
-<div class="front-programming-boxes">
-
+<div class="programming-header">
     <h1>Programming Projects</h1>
-
-    <div class="list">
-    <ul>
-        <a href="{{ url_for('desktop_assistant') }}"><li>Desktop Assistant</li></a>
-        <a href="{{ url_for('password_gui') }}"><li>Password GUI (Graphical User Interface)</li></a>
-        <a href="{{ url_for('contacts_gui') }}"><li>Contacts GUI (Graphical User Interface)</li></a>
-        <a href="{{ url_for('full_calculator') }}"><li>Advanced Calculator GUI (Graphical User Interface)</li></a>
-    </ul>
-    </div>
-
 </div>
+
+
+{% include 'card_group_backend.html' %}
+
 
 <br><br>
 

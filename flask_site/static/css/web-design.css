@@ -1,16 +1,16 @@
 /* The main header that says "My Web Applications" */
 .web-design-main-header {
-    width: 400px;
-    border: 2px solid rgb(240, 240, 240);
+    width: 40%;
     margin: auto;
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    margin-top: 60px;
     position: relative;
-    border-radius: 30px;
-    background: rgb(240, 240, 240);
-    background: linear-gradient(to right, darkgrey, lightgrey);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    background: gainsboro;
+    padding: 10px;
+}
+.web-design-main-header {
+    margin-top: 40px;
 }
 
 
