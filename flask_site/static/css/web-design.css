@@ -1,9 +1,12 @@
+/* The main header that says "My Web Applications" */
 .web-design-main-header {
     width: 400px;
     border: 2px solid rgb(240, 240, 240);
     margin: auto;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    position: relative;
     border-radius: 30px;
     background: rgb(240, 240, 240);
     background: linear-gradient(to right, darkgrey, lightgrey);
@@ -436,7 +439,7 @@
 
 
 .this-site {
-    width: 1000px;
+    width: 85%;
     margin: auto;
     text-align: center;
     border-radius: 30px;
@@ -451,8 +454,12 @@
 
 
 .check-out-this {
-    width: 360px;
+    width: 70%;
     margin: auto;
+    background: gainsboro;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 
@@ -461,6 +468,9 @@
     padding: 10px;
     margin: auto;
     font-size: 200px;
+}
+.links-github2 a {
+    color: rgb(87, 2, 87);
 }
 
 
@@ -512,4 +522,17 @@
         width: 350px;
     }
 
+}
+
+
+@media(max-width:591px) {
+    .web-design-main-header {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .this-site {
+        margin-top: 0;
+        width: 90%;
+    }
 }

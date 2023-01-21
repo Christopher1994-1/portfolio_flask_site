@@ -35,6 +35,16 @@ def send_email(first_name, last_name=default_value, company=default_value, email
 
 
 
+
+
+
+
+
+
+
+
+
+
 ##############################################################################
 # website routes
 
@@ -42,6 +52,11 @@ def send_email(first_name, last_name=default_value, company=default_value, email
 @app.route('/')
 def index():
     return render_template('index.html')
+
+
+
+
+
 
 # The about page
 @app.route('/about1.html')
@@ -65,51 +80,16 @@ def contact():
     return render_template('contact.html', form=form)
 
 
-
+# dropdown website design
 @app.route('/web_design.html')
 def web_design():
     return render_template('web_design.html')
 
 
-@app.route('/full_calculator.html')
-def full_calculator():
-    return render_template('full_calculator.html')
-
-
-@app.route('/archive_site.html')
-def archive_site():
-    return render_template('archive_site.html')
-
-
-@app.route('/weather_site.html')
-def weather_site():
-    return render_template('weather_site.html')
-
-
-@app.route('/investor_site.html')
-def investor_site():
-    return render_template('investor_site.html')
-
-
+# dropdown programming
 @app.route('/programming.html')
 def programming():
     return render_template('programming.html')
-
-
-
-@app.route('/desktop_assistant.html')
-def desktop_assistant():
-    return render_template('desktop_assistant.html')
-
-
-@app.route('/password_gui.html')
-def password_gui():
-    return render_template('password_gui.html')
-
-
-@app.route('/contacts_gui.html')
-def contacts_gui():
-    return render_template('contacts_gui.html')
 
 
 # resume route
@@ -118,10 +98,65 @@ def resume():
     return render_template('resume.html')
 
 
+# contacts page
+@app.route('/contacts_gui.html')
+def contacts_gui():
+    return render_template('contacts_gui.html')
+
+
+
+
+
+
+
+
+# Programming Projects ~ Full Calcualtor ~
+@app.route('/full_calculator.html')
+def full_calculator():
+    return render_template('full_calculator.html')
+
+# Programming Projects ~ Password GUI ~
+@app.route('/password_gui.html')
+def password_gui():
+    return render_template('password_gui.html')
+
+# Programming Projects ~ Desktop Assistant ~
+@app.route('/desktop_assistant.html')
+def desktop_assistant():
+    return render_template('desktop_assistant.html')
+
+
+
+
+
+
+# Website Design Projects ~ Archive Site ~
+@app.route('/archive_site.html')
+def archive_site():
+    return render_template('archive_site.html')
+
+# Website Design Projects ~ Weather Site ~
+@app.route('/weather_site.html')
+def weather_site():
+    return render_template('weather_site.html')
+
+# Website Design Projects ~ Investor Site ~
+@app.route('/investor_site.html')
+def investor_site():
+    return render_template('investor_site.html')
+
+# Website Design Projects ~ Smoke Shop ~
+@app.route('/smoke_shop.html')
+def smoke_shop():
+    return render_template('smoke_shop.html')
+
+
+
 
 #test route
 @app.route('/test.html')
 def test():
     return render_template('test.html')
+
 
 
