@@ -150,6 +150,11 @@ def investor_site():
 def smoke_shop():
     return render_template('smoke_shop.html')
 
+# Website Design Projects ~ Starbucks Site ~
+@app.route('/starbucks_site.html')
+def starbucks_site():
+    return render_template('starbucks_site.html')
+
 
 
 
