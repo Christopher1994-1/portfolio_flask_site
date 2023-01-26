@@ -536,3 +536,11 @@
         width: 90%;
     }
 }
+
+
+
+@media(max-width:414px){
+    .web-design-main-header {
+        width: 60%;
+    }
+}

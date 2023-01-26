@@ -314,3 +314,10 @@
     }
 
 }
+
+
+@media(max-width:414px){
+    .two-boxes-p p {
+        width: 90%;
+    }
+}
