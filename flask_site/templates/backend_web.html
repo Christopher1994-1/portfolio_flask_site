@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+<link rel="stylesheet" href="/static/css/web-design.css">
+
+
+<br><br><br><br><br><br>
+
+
+<h1 class="web-design-main-header">My Backend Web Apps</h1>
+
+<br>
+
+{% include 'backend_card.html' %}
+
+<br><br>
+
+<div class="this-site">
+    <h1>
+        This site you are on was also developed by me
+    </h1>
+</div>
+
+<br>
+
+<h2 class="check-out-this">Check Out The Code For This Site</h2>
+
+<div class="links-github2">
+    <a href="https://github.com/Christopher1994-1/portfolio_flask_site" target="_blank"><i class="fa fa-github"></i></a>
+</div>
+
+
+{% endblock %}

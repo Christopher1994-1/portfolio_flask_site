@@ -86,6 +86,12 @@ def web_design():
     return render_template('web_design.html')
 
 
+# dropdown backend web
+@app.route('/backend_web.html')
+def backend_web():
+    return render_template('backend_web.html')
+
+
 # dropdown programming
 @app.route('/programming.html')
 def programming():
@@ -154,6 +160,12 @@ def smoke_shop():
 @app.route('/starbucks_site.html')
 def starbucks_site():
     return render_template('starbucks_site.html')
+
+
+# Website Design Projects ~ Tattoo Shop ~
+@app.route('/tattoo_shop.html')
+def tattoo_shop():
+    return render_template('tattoo_shop.html')
 
 
 

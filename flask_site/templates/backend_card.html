@@ -1,0 +1,51 @@
+{% block card_group %}
+
+<div style="width:90%; margin:auto; margin-top:30px; background-color: gainsboro; padding: 10px;">
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="/static/images/final-archive.png" class="card-img-top"  height="200" />
+        <div class="card-body">
+          <h5 class="card-title">Flask Archive Website</h5>
+          <p class="card-text">
+            This family archive website, built with Flask and MySQL, offers a secure login system and allows users 
+            to submit and access historical documents, creating an organized resource for preserving and sharing 
+            family history.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">
+            <a href="{{ url_for('archive_site') }}" style="text-decoration: none;">Learn More</a> | 
+            <a href="https://github.com/Christopher1994-1/archive_flask_website/blob/main/flask_site/routes.py"  style="text-decoration: none;">See Code</a>
+          </small>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="/static/images/weather-thing2.png" class="card-img-top" height="200"/>
+        <div class="card-body">
+          <h5 class="card-title">Django Weather Website</h5>
+          <p class="card-text">
+            I developed a comprehensive website using the Django framework, integrating the Open Weather API and 
+            Geo-Names API to deliver real-time weather information for user-specified cities.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">
+            <a href="{{ url_for('weather_site') }}" style="text-decoration: none;">Learn More</a> | 
+            <a href="https://github.com/Christopher1994-1/weather_site_django/blob/main/first_site/events/views.py"  style="text-decoration: none;">See Code</a>
+          </small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+{% endblock %}
