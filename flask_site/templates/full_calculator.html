@@ -3,124 +3,12 @@
 
 
 {% block content %}
-<link rel="stylesheet" href="/static/css/desktop_assistant.css">
+
 
 <br><br><br><br><br><br><br><br>
 
 
-<div class="first-div">
-    <h1>Advanced Calculator (Graphical User Interface)</h1>
-    <hr>
-    <p>I developed a comprehensive calculator application using Python's Tkinter library 
-        and object-oriented programming techniques. The application features four main 
-        functions: a basic calculator, a scientific calculator, a currency converter 
-        using real-time exchange rates from the ExchangeRate API, and a temperature 
-        converter. The user interface is intuitive and easy to use, allowing users to 
-        quickly and easily access the various calculator functions. This project demonstrates 
-        my ability to design and implement complex software solutions using a variety of 
-        programming concepts and tools in Python.</p>
-</div>
-
-<br>
-
-<div class="second-div">
-    <img src="/static/images/programming.jpg" alt="">
-</div>
-
-
-<div class="third-div">
-    <a href="https://github.com/Christopher1994-1/full_calculator_gui_oop/blob/main/main_app.py" target="_blank"><h1>Check Out The Code</h1></a>
-</div>
-
-
-<div class="links-github">
-    <div class="inside-github">
-        <a href="https://github.com/Christopher1994-1/full_calculator_gui_oop" target="_blank"><i class="fa fa-github"></i></a>
-    </div>
-</div>
-<br>
-
-
-
-
-<div class="commands">
-    <p>This is the standard option of the calculator which is the dafault option. It does the basic calculations you would expect from a calculator.</p>
-</div>
-<br>
-
-<div class="gui-img">
-    <img src="https://raw.githubusercontent.com/Christopher1994-1/full_calculator_gui_oop/main/images/standard_look.png" alt="">
-
-</div>
-
-<br>
-
-
-
-<div class="commands">
-    <p>The calculator has some options on the menu bar so the user can easily go between the four options the calculator provides.</p>
-</div>
-<br>
-
-<div class="gui-img">
-    <img src="https://raw.githubusercontent.com/Christopher1994-1/full_calculator_gui_oop/main/images/standard_look_switch.png" alt="">
-
-</div>
-
-<br>
-
-
-
-
-<div class="commands">
-    <p>This is the advanced option of the calculator. In this option you can do more advanced calculations including finding the square root of a number, the mod and expont.</p>
-</div>
-<br>
-
-<div class="gui-img">
-    <img src="https://raw.githubusercontent.com/Christopher1994-1/full_calculator_gui_oop/main/images/advanced_look.png" alt="">
-
-</div>
-
-<br>
-
-
-
-
-
-
-
-<div class="commands">
-    <p>This is the currency exchange option, I am using the ExchangeRate API for up to date rates. The user types in a number in the first 0 input and which ever currency they have selected will be exchanged on the bottom output. The currency exchange will be updated if they change currency after adding a number.</p>
-</div>
-<br>
-
-<div class="gui-img">
-    <img src="https://raw.githubusercontent.com/Christopher1994-1/full_calculator_gui_oop/main/images/currency_exchange_look.png" alt="">
-
-</div>
-
-<br>
-
-
-
-
-
-
-
-<div class="commands">
-    <p>Finally, this is the temperature converter option, much like the currency exchange option and the same layout but without the use of an API and just some standard class methods to do the convertering.</p>
-</div>
-<br>
-
-<div class="gui-img">
-    <img src="https://raw.githubusercontent.com/Christopher1994-1/full_calculator_gui_oop/main/images/temp_look.png" alt="">
-
-</div>
-
-<br>
-
-
+{% include 'programming_showcase_cal.html' %}
 
 
 {% endblock %}

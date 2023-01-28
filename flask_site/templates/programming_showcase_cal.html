@@ -19,12 +19,12 @@
 <div class="main_container">
 
     <div class="second_container">
-        {% for text in images %}
+        {% for image_url, text in images.items() %}
 
         <div class="image_text_container">
 
             <div class="slider_img">
-                <img src="https://raw.githubusercontent.com/Christopher1994-1/portfolio_flask_site/main/flask_site/static/images/programming/evr_project.jpeg" alt="" height="280" width="200">
+                <img src="{{ image_url }}" alt="" height="280" width="200">
             </div>
 
             <div class="slider_text">

@@ -1,0 +1,402 @@
+.project_name_and_description {
+  width: 70%;
+  margin: auto;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 40px;
+  background: gainsboro;
+  box-shadow: 0px 0px 10px 5px #5a5a5a;
+}
+.project_name_and_description p {
+  font-weight: bold;
+  line-height: 30px;
+}
+
+
+
+
+.main_container {
+  width: 50%;
+  margin: auto;
+  border-radius: 30px;
+  padding: 40px;
+  display: flex;
+  background: linear-gradient(to right, #D3D3D3, #696969);
+  margin-bottom: 60px;
+  box-shadow: 0px 0px 10px 5px #3d3d3d;
+}
+
+
+.second_container {
+  background: white;
+  width: 80%;
+  margin: auto;
+  border-radius: 80px;
+}
+
+.image_text_container {
+  width: 80%;
+  display: inline-block;
+}
+
+
+.slider_img {
+  border: 2px solid black;
+  display: inline-block;
+}
+
+.slider_text {
+  display: inline-block;
+  position: absolute;
+  width: 15%;
+  margin-top: 60px;
+  margin-left: 10px;
+}
+.slider_text p {
+  font-weight: bold;
+  line-height: 20px;
+}
+
+
+
+
+
+
+.arrow_buttons {
+  padding: 10px;
+}
+
+.arrow_buttons {
+  font-size: 20px;
+  margin-top: 100px;
+}
+
+.arrow_buttons a {
+  cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+
+
+.buttom_links {
+  background-image: url("/static/images/programming.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  margin: auto;
+  padding: 10px;
+  width: 40%;
+  box-shadow: 0px 0px 10px 5px #3d3d3d;
+}
+
+
+.check-out-this-link {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.check-out-this-link a {
+  color: white;
+  text-shadow: 2px 2px black;
+  text-decoration: none;
+}
+.check-out-this-link a:hover {
+  color: gainsboro;
+}
+
+
+
+.links-github .inside-github {
+  width: 55%;
+  border-radius: 70px;
+  background-color: white;
+  text-shadow: 1px 1px black;
+  margin: auto;
+}
+
+.links-github {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+
+.links-github a {
+  font-size: 170px;
+  color: rgb(84, 25, 107);
+  text-shadow: 2px 2px black;
+}
+
+
+
+
+
+
+@media(max-width:1103px) {
+  .main_container {
+    width: 60%;
+  }
+
+  .slider_text {
+    width: 20% ;
+  }
+
+  .arrow_buttons {
+    margin-top: 70px;
+  }
+
+  .buttom_links {
+    width: 70%;
+  }
+
+}
+
+
+
+
+@media(max-width:979px) {
+  .main_container {
+    width: 70%;
+  }
+
+  .slider_text {
+    width: 25% ;
+  }
+
+  .arrow_buttons {
+    margin-top: 70px;
+  }
+
+}
+
+
+
+
+@media(max-width:867px) {
+  .main_container {
+    width: 80%;
+  }
+
+  .slider_text {
+    width: 25% ;
+  }
+
+  .arrow_buttons {
+    margin-top: 70px;
+  }
+
+}
+
+
+
+@media(max-width:706px) {
+  .main_container {
+    width: 90%;
+  }
+
+  .slider_text {
+    width: 25% ;
+  }
+
+  .arrow_buttons {
+    margin-top: 70px;
+  }
+
+  .buttom_links {
+    width: 70%;
+  }
+
+}
+
+
+
+@media(max-width:597px) {
+  .project_name_and_description {
+    width: 90%;
+  }
+
+
+
+  .main_container {
+    width: 90%;
+    display: block;
+    height: 65%;
+  }
+
+  .second_container {
+    width: 100%;
+  }
+
+  .slider_text {
+    width: 35% ;
+  }
+
+  .arrow_buttons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+  }
+
+  .arrow_buttons a {
+    font-size: 30px;
+  }
+
+
+  .buttom_links {
+    width: 80%;
+  }
+
+}
+
+
+
+@media(max-width:495px) {
+  .project_name_and_description {
+    width: 90%;
+  }
+
+
+
+  .main_container {
+    width: 100%;
+    display: block;
+    height: 65%;
+  }
+
+  .second_container {
+    width: 100%;
+    border: 2px solid black;
+  }
+
+  .slider_text {
+    width: 35% ;
+  }
+  .slider_text p {
+    font-size: 15px;
+  }
+
+  .arrow_buttons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+  }
+
+  .arrow_buttons a {
+    font-size: 30px;
+  }
+
+
+  .buttom_links {
+    width: 80%;
+  }
+
+}
+
+
+
+
+@media(max-width:452px) {
+  .project_name_and_description {
+    width: 90%;
+  }
+
+
+
+  .main_container {
+    width: 100%;
+    display: block;
+    height: 65%;
+  }
+
+  .second_container {
+    width: 100%;
+    border: 2px solid black;
+  }
+
+  .slider_text {
+    width: 30% ;
+  }
+  .slider_text p {
+    font-size: 13px;
+  }
+
+  .arrow_buttons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+  }
+
+  .arrow_buttons a {
+    font-size: 30px;
+  }
+
+
+  .buttom_links {
+    width: 80%;
+  }
+
+  .links-github .inside-github {
+    width: 90%;
+  }
+
+}
+
+
+
+
+@media(max-width:427px) {
+  .project_name_and_description {
+    width: 90%;
+  }
+
+
+
+  .main_container {
+    width: 100%;
+    display: block;
+    height: 65%;
+  }
+
+  .second_container {
+    width: 110%;
+    border: 2px solid black;
+  }
+
+
+  .slider_text {
+    width: 25% ;
+  }
+  .slider_text p {
+    font-size: 11px;
+  }
+
+  .arrow_buttons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 55%;
+    margin: auto;
+  }
+
+  .arrow_buttons a {
+    font-size: 30px;
+  }
+
+
+  .buttom_links {
+    width: 90%;
+  }
+
+  .links-github .inside-github {
+    width: 90%;
+  }
+
+}
