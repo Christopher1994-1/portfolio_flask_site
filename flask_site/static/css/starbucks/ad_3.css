@@ -1,0 +1,53 @@
+.ad_three {
+    display: flex;
+}
+
+.left-side-ad .ad-image3 {
+    z-index: 0;
+}
+
+.left-side-ad .ad-showcase {
+    z-index: 1;
+}
+
+
+
+
+.right-right-ad {
+    background-color: rgba(93, 155, 212, 0.596);
+    width: 100%;
+}
+
+.right-side-ad-stuff {
+    text-align: center;
+    margin-top: 30%;
+}
+
+.right-side-ad-stuff h1 {
+    font-size: 50px;
+}
+
+.right-side-ad-stuff p {
+    font-size: 25px;
+}
+
+.right-side-ad-stuff button {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.right-side-ad-stuff button:hover {
+    background-color: rgba(41, 113, 180, 0.596);
+}
+
+
+
+
+.ad_showcase {
+    position: absolute;
+    top: 110%;
+    left: 7%;
+}

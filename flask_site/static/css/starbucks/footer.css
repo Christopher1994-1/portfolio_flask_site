@@ -1,0 +1,48 @@
+.main_footer {
+    margin: auto;
+    margin-left: 20px;
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+.second_footer_items {
+    display: flex;
+}
+
+.second_footer_items h5 a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+}
+.second_footer_items h5 a:hover {
+    text-decoration: underline;
+}
+
+
+.second_footer_items h4 {
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+.first_footer_items a {
+    font-size: 25px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.first_footer_items a:hover {
+    color: rgb(68, 68, 68);
+}

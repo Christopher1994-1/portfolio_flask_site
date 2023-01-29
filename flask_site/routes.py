@@ -41,7 +41,7 @@ def send_email(first_name, last_name=default_value, company=default_value, email
 
 
 
-
+home_page = []
 
 
 
@@ -51,6 +51,13 @@ def send_email(first_name, last_name=default_value, company=default_value, email
 # Home page
 @app.route('/')
 def index():
+    global home_page
+    if len(home_page) > 0:
+        home_page = []
+        home_page.append(1)
+    else:
+        home_page.append(1)
+    
     return render_template('index.html')
 
 
@@ -83,6 +90,10 @@ def contact():
 # dropdown website design
 @app.route('/web_design.html')
 def web_design():
+    global home_page
+    if len(home_page) > 0:
+        home_page = []
+        home_page.append(0)
     return render_template('web_design.html')
 
 
@@ -192,6 +203,32 @@ def starbucks_site():
 @app.route('/tattoo_shop.html')
 def tattoo_shop():
     return render_template('tattoo_shop.html')
+
+
+
+
+
+
+
+
+
+
+
+
+# Website Demo Project ~ Starbucks Website ~
+@app.route('/starbucks_website.html')
+def starbucks_website():
+    value = home_page[0]
+    return render_template('starbucks_website.html', value=value)
+
+
+
+# Website Demo Project ~ Tattoo Website ~
+@app.route('/tattoo_mock.html')
+def tattoo_mock():
+    return render_template('tattoo_mock.html')
+
+
 
 
 

@@ -1,0 +1,35 @@
+{% block navbar %}
+<link rel="stylesheet" href="/static/css/starbucks/navbar.css">
+
+
+<header class="header">
+
+    <div class="left-side-navbar-items">
+        <a href="#" class="logo"><img src="/static/images/image.png" alt="" width="70" height="70"></a>
+        <ul class="left-side-navbar-ul">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Rewards</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            {% if value == 1 %}
+                <li><a href="{{ url_for ('index') }}">Back to Portfolio</a></li>
+            {% else %}
+                <li><a href="{{ url_for ('web_design') }}">Back to Portfolio</a></li>
+            {% endif %}
+        </ul>
+    </div>
+
+    <div class="right-side-navbar-items">
+        <ul class="main-nav">
+            <li><a href="#">Find a store</a></li>
+        </ul>
+        <div class="navbar-buttons">
+            <button id="navbar-button-one">Sign in</button>
+            <button id="navbar-button-two">Join now</button>
+        </div>
+    </div>
+</header> 
+
+
+
+
+{% endblock %}

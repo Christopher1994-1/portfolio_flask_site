@@ -1,0 +1,48 @@
+
+.ad2 {
+    position: relative; /* required for overlapping */
+}
+
+.ad-image img {
+    width: 100%; /* expands to full width of parent container */
+    height: 60%;
+}
+
+.ad-stuff-container {
+    position: absolute; /* overlaps the image div */
+    width: 70%;
+    top: 50%; /* centers vertically */
+    left: 50%; /* centers horizontally */
+    transform: translate(-50%, -50%); /* offsets the top and left properties to center the element */
+    display: flex; /* allows for left and right alignment of elements */
+    margin-top: 10px;
+}
+
+.ad-stuff {
+    width: 50%; /* takes up half the width of the parent container */
+    text-align: center; /* aligns text to the left */
+    height: 50%;
+    margin-top: 10%;
+}
+.ad-stuff h1 {
+    font-size: 50px;
+}
+.ad-stuff p {
+    font-size: 25px;
+}
+.ad-stuff button {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: transparent;
+}
+.ad-stuff button:hover {
+    background: rgba(46, 141, 158, 0.5);
+
+}
+
+.coffee-image {
+    width: 50%; /* takes up half the width of the parent container */
+    text-align: right; /* aligns image to the right */
+}

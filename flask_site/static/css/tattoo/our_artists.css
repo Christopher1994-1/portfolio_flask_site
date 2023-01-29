@@ -1,0 +1,48 @@
+hr {
+    width: 60%;
+    color: white;
+    margin: auto;
+    display: block;
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+
+.meet_our_artists {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgba(66, 66, 66, 0.473);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+}
+
+.meet_our_artists h1 {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+
+.artists {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.artists p {
+    color: white;
+    margin-top: 10px;
+}
+
+.artist_one_links {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 23px;
+}
+
+.artist_one_links a {
+    color: rgb(204, 44, 44);
+}

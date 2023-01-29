@@ -1,0 +1,41 @@
+{% extends '/starbucks_remake/base.html' %}
+
+
+{% block content %}
+
+    {% block ad %}
+        {% include '/starbucks_remake/ad_one.html' %}
+    {% endblock ad%}
+
+        <br>
+
+    {% block adTWO %}
+        {% include '/starbucks_remake/ad_two.html' %}
+    {% endblock adTWO %}
+
+        <br>
+
+    {% block adTHREE %}
+        {% include '/starbucks_remake/ad_three.html' %}
+    {% endblock adTHREE %}
+
+        <br>
+
+    {% block adFOUR %}
+        {% include '/starbucks_remake/last_ad.html' %}
+    {% endblock adFOUR %}
+
+    <p style="width: 400px; margin: auto; text-align: center;">*At participating stores.</p>
+    <hr>
+    <br>
+
+    {% block firstFooter %}
+        {% include '/starbucks_remake/first_footer.html' %}
+    {% endblock firstFooter %}
+
+
+
+
+
+
+{% endblock content %}

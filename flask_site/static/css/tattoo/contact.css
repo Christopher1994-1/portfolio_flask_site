@@ -1,0 +1,179 @@
+.contact_thing {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.contact_thing img {
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+}
+
+
+.contact_us_inner_div {
+    text-align: left;
+    position: absolute;
+    padding: 40px;
+    background-color: rgba(128, 128, 128, 0.274);
+    border-radius: 20px;
+    top: 2570;
+    left: 220;
+}
+
+.contact_us_inner_div h1 {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.contact_us_inner_div p {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.contact_us_inner_div h3 {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+
+
+.contact_us_inner_div input {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(161, 161, 161, 0.363);
+    padding: 7px;
+    border: 2px solid black;
+}
+
+.contact_us_inner_div input::placeholder {
+    color: black;
+}
+
+
+.contact_us_inner_div button {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+.quote_us {
+    text-align: left;
+    position: absolute;
+    padding: 40px;
+    background-color: rgba(128, 128, 128, 0.274);
+    border-radius: 20px;
+    top: 2570;
+    left: 720;
+    height: 58%;
+}
+.quote_us h1 {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.quote_names {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote_us #input_name {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(161, 161, 161, 0.363);
+    padding: 7px;
+    border: 2px solid black;
+    width: 47%;
+}
+.quote_us #input_name::placeholder {
+    color: black;
+}
+
+.quote_us #input_email {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(161, 161, 161, 0.363);
+    padding: 7px;
+    border: 2px solid black;
+    width: 47%;
+}
+.quote_us #input_email::placeholder {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+.quote_sub_phone {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.quote_sub_phone #input_subject {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(161, 161, 161, 0.363);
+    padding: 7px;
+    border: 2px solid black;
+    width: 47%;
+}
+.quote_sub_phone #input_subject::placeholder {
+    color: black;
+}
+
+.quote_sub_phone #input_phone {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(161, 161, 161, 0.363);
+    padding: 7px;
+    border: 2px solid black;
+    width: 47%;
+}
+.quote_sub_phone #input_phone::placeholder {
+    color: black;
+}
+
+
+
+
+
+.quote_us #input_message {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(161, 161, 161, 0.363);
+    padding: 7px;
+    height: 40%;
+    border: 2px solid black;
+}
+.quote_us #input_message::placeholder {
+    color: black;
+}
+
+
+
+
+
+.quote_us button {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+}

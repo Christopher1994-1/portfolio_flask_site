@@ -1,0 +1,41 @@
+.third_thing {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    height: 80%;
+}
+
+.third_thing img {
+    height: 100%;
+}
+
+
+.left_side_thing {
+    height: 60%;
+    margin-top: 120px;
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+.left_side_thing h1 {
+    width: 65%;
+}
+
+.left_side_thing h2 {
+    font-size: 25px;
+    font-family: Great Vibes;
+}
+
+.left_side_thing button {
+    padding: 15px;
+    width: 30%;
+    color: white;
+    border-radius: 30px;
+    background-color: black;
+}
+
+.left_side_thing hr {
+    width: 40%;
+}

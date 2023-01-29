@@ -1,0 +1,23 @@
+.ad {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(146, 210, 240, 0.664);
+    margin-top: 3px;
+}
+
+.ad h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+
+.ad h2 {
+    font-size: 20px;
+}
+.ad h2 a {
+    color: black;
+}
+.ad h2 a:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,27 @@
+.main-first-footer {
+    display: flex;
+    margin: auto;
+    margin-left: 20px;
+    width: 90%;
+}
+
+.main-first-footer .thing {
+    margin-right: 2%;
+}
+
+
+.main-first-footer .thing h4 {
+    font-size: 20px;
+}
+
+.main-first-footer .thing a {
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+.main-first-footer .thing a:hover {
+    color: rgb(0, 0, 0);
+}
+

@@ -1,0 +1,43 @@
+.last_ad {
+    display: flex;
+    justify-content: space-between;
+    background-color: gainsboro;
+    margin-bottom: 8px;
+}
+
+
+
+
+.left_side {
+    text-align: center;
+    width: 60%;
+    height: 40%;
+    margin-top: 8%;
+    background-color: gainsboro;
+}
+.left_side h1 {
+    font-size: 50px;
+}
+.left_side p {
+    font-size: 25px;
+}
+.left_side p a {
+    color: rgb(23, 95, 29);
+}
+.left_side button {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: transparent;
+}
+.left_side button:hover {
+    background-color: rgb(192, 192, 192);
+}
+
+
+
+
+.right_side {
+    border-left: 1px solid black;
+}
