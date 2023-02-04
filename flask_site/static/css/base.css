@@ -5,7 +5,7 @@
     text-decoration: none;
 }
 
-
+/* CSS code for the navbar header thing */
 header {
     position: fixed;
     top: 0; left:0; right: 0;
@@ -34,12 +34,12 @@ header .logo:hover {
 
 header .navbar ul {
     list-style: none;
+    display: flex;
     margin-top: 7px;
 }
 
 header .navbar ul li {
     position: relative;
-    float: left;
     text-decoration: none;
 }
 
@@ -58,28 +58,33 @@ header .navbar ul li a:hover {
     text-decoration: none;
 }
 
+
+
+
+/* CSS code for the dropdown thing */
 header .navbar ul li ul {
     position: absolute;
-    left: 0;
+    bottom: -210;
     width: 200px;
     background: rgb(255, 255, 255);
     display: none;
 }
-
 header .navbar ul li ul li {
     width: 100%;
-    border-top: 1px solid rgba(0,0,0,.1);
+    position: relative;
+    right: 15px;
+    border-top: 1px solid rgba(46, 43, 43, 0.295);
 }
-
-
 header .navbar ul li ul li ul {
     left: 200px;
     top: 0;
 }
-
 header .navbar ul li:hover > ul {
     display: initial;
 }
+
+
+
 
 
 
