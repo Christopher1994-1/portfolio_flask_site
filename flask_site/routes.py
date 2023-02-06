@@ -188,6 +188,13 @@ def weather_site():
 def investor_site():
     return render_template('investor_site.html')
 
+
+# Website Design Projects ~ UFO Site ~
+@app.route('/ufo_site.html')
+def ufo_site():
+    return render_template('ufo_site.html')
+
+
 # Website Design Projects ~ Smoke Shop ~
 @app.route('/smoke_shop.html')
 def smoke_shop():
