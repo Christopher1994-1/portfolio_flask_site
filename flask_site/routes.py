@@ -43,10 +43,16 @@ def send_email(first_name, last_name=default_value, company=default_value, email
 
 home_page = []
 
-
+under_maintenance = False
 
 ##############################################################################
 # website routes
+
+
+# Maintenance page ~
+@app.route('/maintenance1.html')
+def maintenance1():
+    return render_template('maintenance1.html')
 
 # Home page
 @app.route('/')
@@ -58,7 +64,10 @@ def index():
     else:
         home_page.append(1)
     
-    return render_template('index.html')
+    if under_maintenance:
+        return render_template('maintenance1.html')
+    else:
+        return render_template('index.html')
 
 
 
@@ -68,7 +77,11 @@ def index():
 # The about page
 @app.route('/about1.html')
 def about1():
-    return render_template('about1.html')
+    
+    if under_maintenance:
+        return render_template('maintenance1.html')
+    else:
+        return render_template('about1.html')
 
 
 # contact page
@@ -84,7 +97,11 @@ def contact():
         send_email(first_name, last_name, company, email, message)
         flash('Email has been sent')
         return redirect(url_for("contact"))
-    return render_template('contact.html', form=form)
+    
+    if under_maintenance:
+        return render_template('maintenance1.html')
+    else:
+        return render_template('/contact.html', form=form)
 
 
 # dropdown website design
@@ -94,31 +111,48 @@ def web_design():
     if len(home_page) > 0:
         home_page = []
         home_page.append(0)
-    return render_template('web_design.html')
+        
+    if under_maintenance:
+        return render_template('maintenance1.html')
+    else:
+        return render_template('/web_design.html')
 
 
 # dropdown backend web
 @app.route('/backend_web.html')
 def backend_web():
-    return render_template('backend_web.html')
+    if under_maintenance:
+        return render_template('maintenance1.html')
+    else:
+        return render_template('/backend_web.html')
 
 
 # dropdown programming
 @app.route('/programming.html')
 def programming():
-    return render_template('programming.html')
+    
+    if under_maintenance:
+        return render_template('maintenance1.html')
+    else:
+        return render_template('/programming.html')
 
 
 # resume route
 @app.route('/resume.html')
 def resume():
-    return render_template('resume.html')
+    if under_maintenance:
+        return render_template('maintenance1.html')
+    else:
+        return render_template('/resume.html')
 
 
 # contacts page
 @app.route('/contacts_gui.html')
 def contacts_gui():
-    return render_template('contacts_gui.html')
+    if under_maintenance:
+        return render_template('maintenance1.html')
+    else:
+        return render_template('/contacts_gui.html')
 
 
 
@@ -136,7 +170,10 @@ def full_calculator():
               "https://raw.githubusercontent.com/Christopher1994-1/full_calculator_gui_oop/main/images/currency_exchange_look.png": "This is the currency exchange option, I am using the ExchangeRate API for up to date rates. The user types in a number in the first 0 input and which ever currency they have selected.",
               "https://raw.githubusercontent.com/Christopher1994-1/full_calculator_gui_oop/main/images/temp_look.png":"Finally, this is the temperature converter option, much like the currency exchange option and the same layout but without the use of an API and just some standard class methods to do the convertering.",
               }
-    return render_template('full_calculator.html', images=images)
+    if under_maintenance:
+        return render_template('maintenance1.html')
+    else:
+        return render_template('/full_calculator.html', images=images)
 
 
 
@@ -212,6 +249,12 @@ def tattoo_shop():
     return render_template('tattoo_shop.html')
 
 
+# Website Design Projects ~ Dentist Site ~
+@app.route('/dentist_about.html')
+def dentist_about():
+    return render_template('dentist_about.html')
+
+
 
 
 
@@ -236,6 +279,11 @@ def tattoo_mock():
     return render_template('tattoo_mock.html')
 
 
+
+# Website Demo Project ~ Dentist ~
+@app.route('/dentist.html')
+def dentist():
+    return render_template('dentist.html')
 
 
 

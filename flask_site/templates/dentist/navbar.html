@@ -1,0 +1,95 @@
+{% block navbar %}
+
+
+<link rel="stylesheet" href="/static/css/dentist/test.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+
+<div class="first-nav">
+    <div class="left-side">
+        <div class="phone-number">
+            <img src="/static/images/dentist/phone.png" alt="" width="20" height="20">
+            <h1>+1-702-000-0000</h1>
+        </div>
+
+        <div class="address">
+            <img src="/static/images/dentist/loc.png" alt="" width="20" height="20">
+            <h1>35 West Dental Street, California 1004</h1>
+        </div>
+
+        <div class="email">
+            <img src="/static/images/dentist/mail.png" alt="" width="20" height="20">
+            <a href="#"><h1>support@rola.com</h1></a>
+        </div>
+    </div>
+    <div class="right-side">
+            <a href="#" target="_blank" class="social-icon1">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="#" target="_blank" class="social-icon1">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="#" target="_blank" class="social-icon1">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a href="#" target="_blank" class="social-icon1">
+                <i class="fa fa-linkedin"></i>
+              </a>
+    </div>
+</div>
+
+
+
+<div class="navbar-placeholder"></div>
+
+
+
+<div class="second-navbar">
+
+    <div class="company-name">
+        <a href="{{ url_for ('index') }}"><h1>Rola</h1></a>
+    </div>
+
+    {% include '/dentist/small_screen_nav.html' %}
+
+    <div class="links">
+        <a href="{{ url_for ('index') }}">Home</a>
+        <a href="#">Dentists</a>
+        <a href="#" id="dropdown">Services ↓</a>
+            <ul id="services-dropdown">
+                <li><a href="#">Teeth Cleaning</a></li>
+                <li><a href="#">Teeth Whitening</a></li>
+                <li><a href="#">Orthodontics</a></li>
+                <li><a href="#">Dental Implants</a></li>
+            </ul>
+        <a href="#" id="pages">Pages ↓</a>
+            <ul id="pages-dropdown">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Appointment</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Services</a></li>
+                <li><a href="#">Coming Soon</a></li>
+            </ul>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="button">
+        <button>Book Appointment</button>
+    </div>
+</div>
+
+
+
+<script src="/static/js/dentist/dropdown-second-nav.js"></script>
+<script src="/static/js/dentist/navbar-dropdown-fix.js"></script>
+<script src="/static/js/dentist/small_screen_js.js"></script>
+
+
+{% endblock navbar %}

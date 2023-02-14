@@ -1,0 +1,42 @@
+.maintenance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    height: 100vh;
+  }
+  .maintenance-heading {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .maintenance-heading h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .maintenance-heading p {
+    font-size: 18px;
+    margin: 10px 0 0 0;
+  }
+  .maintenance-content {
+    text-align: center;
+  }
+  .maintenance-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .maintenance-content p {
+    font-size: 18px;
+    margin: 0;
+  }
+  .maintenance-content a {
+    color: #4183c4;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .maintenance-content a:hover {
+    text-decoration: underline;
+  }

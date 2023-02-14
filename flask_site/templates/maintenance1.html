@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Under Maintenance</title>
+{% endblock title %}
+
+
+{% block content %}
+
+<link rel="stylesheet" href="/static/css/maintenance.css">
+
+
+
+<div class="maintenance">
+    <div class="maintenance-heading">
+      <h1>We'll be back soon!</h1>
+      <p>We're currently performing some maintenance work. We apologize for any inconvenience.</p>
+    </div>
+    <div class="maintenance-content">
+      <img src="/static/images/maintenance.png" alt="Under maintenance" width="200" height="200">
+      <p>Please check back later, again sorry for any inconvenience</p>
+    </div>
+  </div>
+
+
+{% endblock content %}

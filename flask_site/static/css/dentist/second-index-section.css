@@ -1,0 +1,313 @@
+/* CSS code for the main second index section */
+.second-section {
+    padding: 20px;
+    background-color: rgba(191, 205, 223, 0.151);
+}
+
+/* CSS code for the first block of stuff */
+.first-thing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* CSS code for the h1 header for the first block */
+.first-thing .first-thing-h1 {
+    width: 50%;
+}
+
+
+/* CSS code for the button for the first block */
+.first-thing .second-section-button button {
+    background-color: rgb(89, 157, 247);
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    margin-right: 20px;
+    align-items: center;
+    border: none;
+    width: 250px;
+    transition: background-color 0.3s ease-in-out;
+}
+.first-thing .second-section-button button:hover {
+    background-color: rgb(125, 178, 247);
+}
+
+
+
+
+
+
+.second-thing {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card {
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-bottom: 60px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:989px) {
+    /* h1 header */
+    .first-thing-h1 h1 {
+        width: 90%;
+        font-size: 25px;
+    }
+
+    /* button */
+    .second-section-button {
+        padding: 15px;
+        width: 250px;
+    }
+
+    /* image itself */
+    .second-thing img {
+        height: 260;
+    }
+}
+
+@media(max-width:915px) {
+    /* h1 header */
+    .first-thing-h1 h1 {
+        width: 90%;
+        font-size: 25px;
+    }
+
+    /* button */
+    .second-section-button {
+        padding: 15px;
+        width: 250px;
+    }
+
+    /* image itself */
+    .second-thing img {
+        height: 240;
+    }
+
+    /* card title itself */
+    .card h5 {
+        font-size: 15px;
+    }
+
+    /* card paragraph itself */
+    .card p {
+        font-size: 15px;
+    }
+}
+
+
+
+
+@media(max-width:829px) {
+    /* h1 header */
+    .first-thing-h1 h1 {
+        width: 90%;
+        font-size: 22px;
+    }
+
+    .first-thing .second-section-button button {
+        background-color: rgb(89, 157, 247);
+        padding: 13px;
+        border-radius: 15px;
+        color: white;
+        margin-right: 20px;
+        align-items: center;
+        border: none;
+        width: 230px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    /* image itself */
+    .second-thing img {
+        height: 210;
+    }
+
+    /* card title itself */
+    .card h5 {
+        font-size: 13px;
+    }
+
+    /* card paragraph itself */
+    .card p {
+        font-size: 13px;
+    }
+}
+
+
+
+
+@media(max-width:762px) {
+    /* h1 header */
+    .first-thing-h1 h1 {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    /* button */
+    .second-section-button button{
+        width: 130px;
+        padding: 5px;
+    }
+
+    /* image itself */
+    .second-thing img {
+        height: 180;
+    }
+
+    /* card title itself */
+    .card h5 {
+        font-size: 13px;
+    }
+
+    /* card paragraph itself */
+    .card p {
+        font-size: 11px;
+    }
+}
+
+
+
+@media(max-width:688px) {
+    /* h1 header */
+    .first-thing-h1 h1 {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    /* button */
+    .second-section-button button{
+        width: 80px;
+        padding: 0;
+        margin-right: 0;
+    }
+
+    /* image itself */
+    .second-thing img {
+        height: 140;
+    }
+
+    /* card title itself */
+    .card h5 {
+        font-size: 13px;
+    }
+
+    /* card paragraph itself */
+    .card p {
+        font-size: 9px;
+    }
+}
+
+
+
+
+
+
+@media(max-width:582px) {
+    /* h1 header */
+    .first-thing-h1 h1 {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    /* button */
+    .second-section-button button{
+        width: 80px;
+        padding: 0;
+    }
+
+    /* image itself */
+    .second-thing img {
+        height: 110;
+    }
+
+    /* card title itself */
+    .card h5 {
+        font-size: 9px;
+    }
+
+    /* card paragraph itself */
+    .card p {
+        font-size: 9px;
+    }
+
+    .card a {
+        padding: 0;
+    }
+}
+
+
+
+@media(max-width:829px) {
+    /* h1 header */
+    .first-thing-h1 h1 {
+        width: 90%;
+        font-size: 22px;
+    }
+
+    .first-thing .second-section-button button {
+        background-color: rgb(89, 157, 247);
+        padding: 13px;
+        border-radius: 15px;
+        color: white;
+        margin-right: 20px;
+        align-items: center;
+        border: none;
+        width: 210px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .second-thing {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* image itself */
+    .second-thing img {
+        height: 170;
+    }
+
+    /* card title itself */
+    .card h5 {
+        font-size: 13px;
+    }
+
+    /* card paragraph itself */
+    .card p {
+        font-size: 13px;
+    }
+
+
+    .card {
+        margin-right: 0px;
+        margin-top: 0px;
+        cursor: pointer;
+        transition: transform 0.3s;
+        margin-bottom: 60px;
+    }
+
+    .second-section {
+        width: 100%;
+    }
+}

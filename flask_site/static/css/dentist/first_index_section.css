@@ -1,0 +1,559 @@
+/* css code for the main container */
+.first-index-section {
+    display: flex;
+}
+
+
+.first-side {
+    width: 50%;
+    background-color: rgba(169, 189, 214, 0.219);
+    padding: 10px;
+}
+
+.first-side h1 {
+    font-size: 80px;
+    margin-top: 80px;
+}
+
+
+#button-one {
+    background-color: rgb(89, 157, 247);
+    padding: 15px;
+    border-radius: 15px;
+    margin-right: 20px;
+    align-items: center;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+#button-one:hover {
+    background-color: rgb(125, 178, 247);
+}
+
+#button-two {
+    background-color: rgb(214, 218, 223);
+    padding: 15px;
+    border-radius: 15px;
+    align-items: center;
+    border: solid  rgb(125, 178, 247);
+    transition: background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+#button-two:hover {
+    background-color: rgb(125, 178, 247);
+    color: white;
+}
+
+.second-side {
+    width: 50%;
+}
+
+.second-side img {
+    width: 100%;
+} 
+
+
+
+/* ##################################################################################################################
+##################################################################################################################
+################################################################################################################## */
+
+
+
+.buttom-things {
+    display: flex;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+
+}
+.first-buttom {
+    background-color: rgb(38, 156, 127);
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.first-buttom:hover {
+    background-color: rgb(125, 178, 247);
+    transform: scale(1.02);
+}
+.img-h1 {
+    display: flex;
+    align-items: center;
+}
+.img-h1 h1 {
+    font-size: 27px;
+}
+.first-buttom a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.second-buttom {
+    background-color: rgb(202, 137, 39);
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.second-buttom:hover {
+    background-color: rgb(125, 178, 247);
+    transform: scale(1.02);
+}
+.img-h1 {
+    display: flex;
+    align-items: center;
+}
+.img-h1 h1 {
+    font-size: 27px;
+}
+.second-buttom a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.third-buttom {
+    background-color: rgb(22, 61, 112);
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.third-buttom:hover {
+    background-color: rgb(125, 178, 247);
+    transform: scale(1.02);
+}
+.img-h1 {
+    display: flex;
+    align-items: center;
+}
+.img-h1 h1 {
+    font-size: 27px;
+}
+.third-buttom a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+@media(max-width:1119px) {
+    .first-side {
+        padding: 0;
+    }
+    .first-side h1 {
+        margin-top: 0;
+        font-size: 75px;
+    }
+}
+ 
+
+
+@media(max-width:1083px) {
+    .first-side {
+        padding: 0;
+    }
+    .first-side h1 {
+        margin-top: 0;
+        font-size: 70px;
+    }
+
+    /* .first-index-section {
+    } */
+}
+
+
+@media(max-width:1039px) {
+    .first-side {
+        padding: 0;
+    }
+    .first-side h1 {
+        margin-top: 0;
+        font-size: 65px;
+    }
+
+    /* .first-index-section {
+    } */
+}
+
+/* CSS CODE 1029PX  */
+@media(max-width:1029px) {
+    .first-side {
+        padding: 0;
+    }
+    .first-side h1 {
+        margin-top: 0;
+        font-size: 55px;
+    }
+
+    .first-buttom {
+        padding: 20px;
+    }
+
+    .second-buttom {
+        padding: 20px;
+    }
+
+    .third-buttom {
+        padding: 20px;
+    }
+
+    .img-h1 h1 {
+        font-size: 20px;
+    }
+
+}
+/* CSS CODE 880PX  */
+@media(max-width:880px) {
+    .first-side {
+        padding: 0;
+    }
+    .first-side h1 {
+        margin-top: 0;
+        font-size: 45px;
+    }
+}
+/* CSS CODE 842PX  */
+@media(max-width:842px) {
+    .first-side {
+        padding: 0;
+    }
+    .first-side h1 {
+        margin-top: 0;
+        font-size: 45px;
+    }
+
+    .first-buttom {
+        padding: 18px;
+    }
+
+    .second-buttom {
+        padding: 18px;
+    }
+
+    .third-buttom {
+        padding: 18px;
+    }
+
+    .img-h1 h1 {
+        font-size: 13px;
+    }
+
+    .first-buttom p {
+        font-size: 11px;
+    }
+
+    .second-buttom p {
+        font-size: 11px;
+    }
+
+    .third-buttom p {
+        font-size: 11px;
+    }
+
+}
+
+@media(max-width:743px) {
+    .first-side {
+        padding: 5px;
+    }
+    .first-side h1 {
+        margin-top: 0;
+        font-size: 35px;
+    }
+
+    #button-one {
+        padding: 5px;
+        margin-right: 0;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    #button-two {
+        padding: 5px;
+        margin-right: 0;
+        width: 50%;
+    }
+
+    .button-divs {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media(max-width:684px) {
+    .first-side {
+        padding: 5px;
+    }
+    .first-side h1 {
+        margin-top: 0;
+        font-size: 25px;
+    }
+
+    #button-one {
+        padding: 5px;
+        margin-right: 0;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    #button-two {
+        padding: 5px;
+        margin-right: 0;
+        width: 50%;
+    }
+
+    .button-divs {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width:657px) {
+    .first-side {
+        padding: 5px;
+    }
+    .first-side h1 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    #button-one {
+        padding: 0px;
+        margin-right: 0;
+        width: 50%;
+        margin-bottom: 20px;
+        border: 2px solid rgb(89, 157, 247);
+    }
+
+    #button-two {
+        padding: 0px;
+        margin-right: 0;
+        width: 50%;
+    }
+
+    .button-divs {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+@media(max-width:614px) {
+    .first-side {
+        padding: 5px;
+    }
+    .first-side h1 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    #button-one {
+        padding: 0px;
+        margin-right: 0;
+        width: 50%;
+        margin-bottom: 20px;
+        border: 2px solid rgb(89, 157, 247);
+    }
+
+    #button-two {
+        padding: 0px;
+        margin-right: 0;
+        width: 50%;
+    }
+
+    .button-divs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-side p {
+        font-size: 15px;
+    }
+}
+
+
+@media(max-width:606px) {
+    .first-side {
+        padding: 5px;
+    }
+    .first-side h1 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    #button-one {
+        padding: 0px;
+        margin-right: 0;
+        width: 50%;
+        margin-bottom: 20px;
+        border: 2px solid rgb(89, 157, 247);
+    }
+
+    #button-two {
+        padding: 0px;
+        margin-right: 0;
+        width: 50%;
+    }
+
+    .button-divs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-side p {
+        font-size: 12px;
+    }
+    
+
+    .first-buttom {
+        padding: 15px;
+    }
+
+    .second-buttom {
+        padding: 15px;
+    }
+
+    .third-buttom {
+        padding: 15px;
+    }
+
+    .img-h1 h1 {
+        font-size: 13px;
+    }
+
+    .first-buttom p {
+        font-size: 10px;
+    }
+
+    .second-buttom p {
+        font-size: 10px;
+    }
+
+    .third-buttom p {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:574px) {
+    .first-side {
+        padding: 5px;
+    }
+    .first-side h1 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    #button-one {
+        padding: 0px;
+        margin-right: 0;
+        width: 50%;
+        margin-bottom: 20px;
+        border: 2px solid rgb(89, 157, 247);
+        font-size: 15px;
+    }
+
+    #button-two {
+        padding: 0px;
+        margin-right: 0;
+        width: 50%;
+        font-size: 15px;
+    }
+
+    .button-divs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-side p {
+        font-size: 12px;
+    }
+}
+
+
+
+@media(max-width:554px) {
+    .first-side {
+        padding: 5px;
+    }
+    .first-side h1 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    #button-one {
+        padding: 0px;
+        margin-right: 0;
+        width: 50%;
+        margin-bottom: 20px;
+        border: 2px solid rgb(89, 157, 247);
+        font-size: 12px;
+    }
+
+    #button-two {
+        padding: 0px;
+        margin-right: 0;
+        width: 50%;
+        font-size: 12px;
+    }
+
+    .buttom-things {
+        width: 100%;
+    }
+
+    .button-divs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-side p {
+        font-size: 12px;
+    }
+
+    
+    .first-buttom {
+        padding: 13px;
+    }
+
+    .second-buttom {
+        padding: 13px;
+    }
+
+    .third-buttom {
+        padding: 13px;
+    }
+
+    .img-h1 h1 {
+        font-size: 13px;
+    }
+
+    .first-buttom p {
+        font-size: 11px;
+    }
+
+    .second-buttom p {
+        font-size: 11px;
+    }
+
+    .third-buttom p {
+        font-size: 11px;
+    }
+}

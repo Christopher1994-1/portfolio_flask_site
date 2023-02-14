@@ -1,0 +1,60 @@
+.fifth-container {
+    display: flex;
+    padding: 50px;
+    background-image: url('/static/images/dentist/backgrounf.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.fifth-left-side {
+    width: 50%;
+}
+
+
+
+.fifth-right-side {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 57px;
+}
+
+
+#btn1 {
+    margin-right: 15px;
+    background-color: rgba(89, 157, 247, 0);
+    padding: 15px;
+    border-radius: 15px;
+    margin-right: 20px;
+    align-items: center;
+    border: 2px solid white;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+#btn1:hover {
+    background-color: white;
+    color: rgb(89, 157, 247);
+}
+
+
+#btn2 {
+    margin-right: 15px;
+    background-color: rgb(22, 61, 112);
+    padding: 15px;
+    border-radius: 15px;
+    margin-right: 20px;
+    align-items: center;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+#btn2:hover {
+    background-color: white;
+    color: rgb(89, 157, 247);
+    border: 1px solid black;
+}

@@ -1,0 +1,151 @@
+.nav {
+  border-radius: 5px;
+  display: none;
+}
+
+.nav ul li a {
+  color: rgb(27, 27, 27);
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+
+#dropdown-header {
+  font-size: 20px;
+  font-weight: 500;
+  background-color: gainsboro;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav ul {
+  position: absolute;
+  background: rgb(236, 234, 234);
+  list-style: none;
+  top: 21%;
+  left: 20%;
+  width: 45%;
+  border-radius: 5px;
+  display: none;
+}
+[id^=btn]:checked + ul {
+  display: block;
+}
+
+
+.nav .menu:before {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: rgb(160, 160, 160);
+  right: 20px;
+  top: -10px;
+  transform: rotate(45deg);
+  z-index: -1;
+
+}
+
+.nav ul li {
+  line-height: 40px;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(179, 176, 176, 0.404);
+}
+
+
+.nav ul li label {
+  font-size: 18px;
+  color: rgb(27, 27, 27);
+  cursor: pointer;
+}
+
+
+.nav ul ul {
+  position: static;
+}
+
+.nav ul ul li {
+  line-height: 30px;
+  border-bottom: none;
+}
+
+
+.nav ul li span {
+  font-size: 20px;
+  float: right;
+  padding: 0 10px;
+}
+
+
+/* CSS CODE FOR THE DROPDOWN DROPDOWN */
+.nav ul ul li {
+  font-size: 17px;
+  width: 200%;
+}
+
+
+.nav ul li a:hover, .nav ul li label:hover {
+  color: blue;
+}
+
+
+
+.nav input {
+  display: none;
+}
+
+
+
+@media(max-width:766px) {
+  .nav ul {
+    top: 24%;
+  } 
+
+  .nav ul ul li {
+    width: 250%;
+  }
+}
+
+
+
+
+@media(max-width:649px) {
+  .nav ul {
+    top: 27%;
+  } 
+
+  .nav ul ul li {
+    width: 250%;
+  }
+
+  
+}
+
+
+@media(max-width:612px) {
+  .nav ul {
+    top: 27%;
+  } 
+
+  .nav ul ul li {
+    width: 350%;
+    padding-left: 0px;
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+

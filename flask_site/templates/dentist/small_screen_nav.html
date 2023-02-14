@@ -1,0 +1,63 @@
+{% block small %}
+
+
+<link rel="stylesheet" href="/static/css/dentist/media.css">
+
+<div class="nav">
+
+    <!-- Main dropdown button click -->
+    <label for="btn" class="button" id="dropdown-header">Drop Down
+        <span>+</span>
+    </label>
+    <input type="checkbox" id="btn">
+
+    <!-- dropdown menu -->
+    <ul class="menu">
+
+        <li><a href="#">Home</a></li>
+
+        <li>
+            <label for="btn-2" class="first">Services
+                <span>+</span>
+            </label>
+            <input type="checkbox" id="btn-2">
+            
+            <ul>
+                <li><a href="#">Teeth Cleaning</a></li>
+                <li><a href="#">Teeth Whitening</a></li>
+                <li><a href="#">Orthodontics</a></li>
+                <li><a href="#">Dental Implants</a></li>
+            </ul>
+        </li>
+
+
+        <li>
+            <label for="btn-3" class="second">Pages
+                <span>+</span>
+            </label>
+            <input type="checkbox" id="btn-3">
+            
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Appointment</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Services</a></li>
+                <li><a href="#">Coming Soon</a></li>
+            </ul>
+        </li>
+
+
+        <li><a href="#">Contact Us</a></li>
+
+
+    </ul>
+</div>
+
+<script src="/static/js/dentist/dropdown-resize.js"></script>
+
+<script src="/static/js/dentist/small_screen_js.js"></script>
+
+{% endblock small %}

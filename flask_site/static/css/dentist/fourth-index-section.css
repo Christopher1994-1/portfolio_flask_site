@@ -1,0 +1,378 @@
+/* CSS code for the main container for fourth-section-container */
+.fourth-section-container {
+    background-color: rgba(191, 205, 223, 0.151);
+}
+
+
+/* CSS for the header h1 */
+.fourth-section-container h1 {
+    width: 60%;
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+}
+
+
+/* CSS code for the bottom cards container  */
+.fourth-stuff {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+
+
+
+/* CSS code for the thing1 container for first card */
+.thing1 {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.521);
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.342);
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.thing1:hover {
+    transform: scale(1.02);
+}
+
+/* CSS code for the txt-img containter for the image and header text */
+.txt-img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.txt-img img {
+    position: relative;
+    border-radius: 100px;
+    background-color: rgb(89, 157, 247);;
+    left: 30;
+}
+.txt-img h1 {
+    font-size: 20px;
+    position: relative;
+    bottom: 30;
+    left: 10;
+}
+
+
+
+
+/* CSS CODE FOR SCREEN SIZE OF 1119 PIXELS */
+@media(max-width:1119px) {
+
+    /* main container */
+    .fourth-section-container {
+        background-color: rgba(191, 205, 223, 0.151);
+    }
+
+    /* stuff inside main container container */
+    /* .fourth-stuff {
+        border: 1px solid black;
+    } */
+
+
+    /* card containers */
+    /* .thing1 {
+        border: 1px solid black;
+    } */
+
+    /* card main header h1 */
+    .thing1 h1 {
+        font-size: 20px;
+    }
+
+    /* card main paragraph */
+    /* .thing1 p {
+        border: 1px solid black;
+    } */
+
+
+    .txt-img img {
+        position: relative;
+        border-radius: 100px;
+        background-color: rgb(89, 157, 247);;
+        left: 0;
+    }
+    /* .txt-img h1 {
+        font-size: 20px;
+        position: relative;
+        bottom: 30;
+        left: 10;
+    } */
+
+}
+
+
+
+
+
+/* CSS CODE FOR SCREEN SIZE OF 1008 PIXELS */
+@media(max-width:1008px) {
+
+    /* main container */
+    .fourth-section-container {
+        background-color: rgba(191, 205, 223, 0.151);
+    }
+
+    /* stuff inside main container container */
+    /* .fourth-stuff {
+        border: 1px solid black;
+    }
+
+
+    /* card containers */
+    /* .thing1 {
+        border: 1px solid rgb(255, 0, 0);
+    }  */
+
+    /* card main paragraph */
+    /* .thing1 p {
+        border: 1px solid black;
+    } */
+
+    .txt-img {
+        display: block;
+        padding: 0;
+    }
+
+    .txt-img img {
+        position: relative;
+        border-radius: 100px;
+        background-color: rgb(89, 157, 247);;
+        left: 0;
+        margin-bottom: -60;
+        /* border: 1px solid black; */
+    }
+    .txt-img h1 {
+        font-size: 17px;
+        position: relative;
+        /* border: 1px solid black; */
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+
+}
+
+
+
+
+
+
+/* CSS CODE FOR SCREEN SIZE OF 955 PIXELS */
+@media(max-width:955px) {
+
+    /* main container */
+    .fourth-section-container {
+        background-color: rgba(191, 205, 223, 0.151);
+    }
+
+    /* stuff inside main container container */
+    /* .fourth-stuff {
+        border: 1px solid black;
+    } */
+
+
+    /* card containers */
+    .thing1 {
+        /* border: 1px solid rgb(255, 0, 0); */
+        padding: 0;
+    }
+
+    /* card main paragraph */
+    .thing1 p {
+        /* border: 1px solid black; */
+        font-size: 14px;
+    }
+
+    .txt-img {
+        display: block;
+        /* border: 1px solid black; */
+        padding: 0;
+    }
+
+    .txt-img img {
+        position: relative;
+        border-radius: 100px;
+        background-color: rgb(89, 157, 247);;
+        left: 0;
+        margin-bottom: -60;
+        /* border: 1px solid black; */
+    }
+    .txt-img h1 {
+        font-size: 16px;
+        position: relative;
+        /* border: 1px solid black; */
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+
+}
+
+
+
+
+/* CSS CODE FOR SCREEN SIZE OF 915 PIXELS */
+@media(max-width:915px) {
+
+    /* main container */
+    .fourth-section-container {
+        background-color: rgba(191, 205, 223, 0.151);
+    }
+
+    /* stuff inside main container container */
+    /* .fourth-stuff {
+        border: 1px solid black;
+    } */
+
+
+    /* card containers */
+    /* .thing1 {
+        border: 1px solid rgb(255, 0, 0);
+    } */
+
+    /* card main paragraph */
+    .thing1 p {
+        /* border: 1px solid black; */
+        font-size: 13px;
+    }
+
+    .txt-img {
+        display: block;
+        /* border: 1px solid black; */
+        padding: 0;
+    }
+
+    .txt-img img {
+        position: relative;
+        border-radius: 100px;
+        background-color: rgb(89, 157, 247);;
+        left: 0;
+        margin-bottom: -60;
+        /* border: 1px solid black; */
+    }
+    .txt-img h1 {
+        font-size: 15px;
+        position: relative;
+        /* border: 1px solid black; */
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+
+}
+
+
+
+
+
+/* CSS CODE FOR SCREEN SIZE OF 790 PIXELS */
+@media(max-width:790px) {
+
+    /* main container */
+    .fourth-section-container {
+        background-color: rgba(191, 205, 223, 0.151);
+    }
+
+    /* stuff inside main container container */
+    .fourth-stuff {
+        /* border: 1px solid rgb(255, 0, 212); */
+        width: 95%;
+        margin-right: 10px;
+    }
+
+
+    /* card containers */
+    /* .thing1 {
+        border: 1px solid rgb(255, 0, 0);
+    } */
+
+    /* card main paragraph */
+    .thing1 p {
+        /* border: 1px solid black; */
+        font-size: 13px;
+    }
+
+    .txt-img {
+        display: block;
+        /* border: 1px solid black; */
+        padding: 0;
+    }
+
+    .txt-img img {
+        position: relative;
+        border-radius: 100px;
+        background-color: rgb(89, 157, 247);;
+        left: 0;
+        margin-bottom: -60;
+        /* border: 1px solid black; */
+    }
+    .txt-img h1 {
+        font-size: 15px;
+        position: relative;
+        /* border: 1px solid black; */
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+
+}
+
+
+
+/* CSS CODE FOR SCREEN SIZE OF 647 PIXELS */
+@media(max-width:647px) {
+
+    /* main container */
+    .fourth-section-container {
+        background-color: rgba(191, 205, 223, 0.151);
+    }
+
+    /* stuff inside main container container */
+    /* .fourth-stuff {
+        border: 1px solid black;
+    } */
+
+
+    /* card containers */
+    /* .thing1 {
+        border: 1px solid rgb(255, 0, 0);
+    } */
+
+    /* card main paragraph */
+    .thing1 p {
+        /* border: 1px solid black; */
+        font-size: 11px;
+    }
+
+    .txt-img {
+        display: block;
+        /* border: 1px solid black; */
+        padding: 0;
+    }
+
+    .txt-img img {
+        position: relative;
+        border-radius: 100px;
+        background-color: rgb(89, 157, 247);;
+        left: 0;
+        margin-bottom: -60;
+        /* border: 1px solid black; */
+    }
+    .txt-img h1 {
+        font-size: 15px;
+        position: relative;
+        /* border: 1px solid black; */
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+
+}

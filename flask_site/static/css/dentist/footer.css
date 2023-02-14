@@ -1,0 +1,963 @@
+.main_footer hr {
+    color: white;
+}
+
+
+/* CSS CODE FOR THE CONTAINER FOR THE LINKS */
+.footer-flex {
+    display: flex;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* CSS CODE FOR ROLA SIDE */
+.footer-one {
+    margin-right: 20px;
+    padding: 15px;
+    text-align: left;
+}
+.footer-one h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.footer-one p {
+    color: white;
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    transition: width 0.5s ease-in-out;
+  }
+  .social-icon:hover {
+    background-color: #ffffffa6;
+
+  }
+
+  .social-icon .fa {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.459);
+    font-weight: bold;
+  }
+
+
+/* CSS CODE FOR THE USEFUL LINKS */
+.footer-two {
+    margin-right: 20px;
+    padding: 15px;
+}
+.footer-two-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-two h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+
+.footer-two a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+/* CSS CODE FOR OUR SERVICES  */
+.footer-three {
+    margin-right: 20px;
+    padding: 15px;
+}
+.footer-three-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-three h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.footer-three a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* CSS CODE FOR SUPPORT  */
+.footer-four {
+    margin-right: 20px;
+    padding: 15px;
+}
+.footer-four-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-four h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.footer-four a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+/* CSS CODE FOR NEWSLETTER */
+.final-footer {
+    margin-right: 20px;
+    padding: 15px;
+    width: 30%;
+    text-align: left;
+}
+.final-footer h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.final-footer p {
+    width: 75%;
+    color: white;
+}
+.email-submit {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 20px auto;
+  }
+
+  .email-submit input[type="email"] {
+    flex: 1;
+    height: 80%;
+    height: 140%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 10px;
+  }
+
+  .email-submit i {
+    color: #000000;
+    font-size: 60px;
+    padding-right: 10px;
+    position: relative;
+    right: 64;
+    cursor: pointer;
+    bottom: 1;
+  }
+  .email-submit i:hover {
+    color: #1824697e;
+  }
+
+
+/* CSS CODE FOR THE BOTTOM OF THE FOOTER */
+#copyright {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+#copyright a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* ======================================================================================================== */
+
+/* Second footer code */
+
+.main_footer2 {
+    display: none;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+/* CSS CODE FOR THE CONTAINER FOR THE LINKS */
+.footer-flex2 {
+    display: flex;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS code for screen size of 1119 pixels */
+@media(max-width:1119px) {
+
+    /* CSS CODE FOR THE MAIN FOOTER CONTAINER */
+.main_footer {
+    padding: 10px;
+    border: 1px solid green;
+}
+
+/* CSS CODE FOR THE CONTAINER FOR THE LINKS */
+.footer-flex {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid blueviolet;
+}
+
+/* CSS CODE FOR ROLA SIDE */
+.footer-one {
+    margin-right: 20px;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid red;
+}
+.footer-one h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.footer-one p {
+    color: white;
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    transition: width 0.5s ease-in-out;
+  }
+  .social-icon:hover {
+    background-color: #ffffffa6;
+
+  }
+
+  .social-icon .fa {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.459);
+    font-weight: bold;
+  }
+
+
+/* CSS CODE FOR THE USEFUL LINKS */
+.footer-two {
+    margin-right: 20px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.footer-two-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-two h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+
+.footer-two a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+
+/* CSS CODE FOR OUR SERVICES  */
+.footer-three {
+    margin-right: 20px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.footer-three-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-three h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.footer-three a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* CSS CODE FOR SUPPORT  */
+.footer-four {
+    margin-right: 20px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.footer-four-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-four h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.footer-four a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+/* CSS CODE FOR NEWSLETTER */
+.final-footer {
+    margin-right: 20px;
+    padding: 15px;
+    width: 30%;
+    text-align: left;
+    border: 1px solid red;
+}
+.final-footer h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.final-footer p {
+    width: 75%;
+    color: white;
+}
+.email-submit {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 20px auto;
+  }
+
+  .email-submit input[type="email"] {
+    flex: 1;
+    height: 80%;
+    height: 140%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 10px;
+  }
+
+  .email-submit i {
+    color: #000000;
+    font-size: 60px;
+    padding-right: 10px;
+    position: relative;
+    right: 64;
+    cursor: pointer;
+    bottom: 1;
+  }
+  .email-submit i:hover {
+    color: #1824697e;
+  }
+
+
+/* CSS CODE FOR THE BOTTOM OF THE FOOTER */
+#copyright {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+#copyright a {
+    text-decoration: none;
+}
+
+
+}
+
+
+
+
+
+
+
+
+/* CSS code for screen size of 1075 pixels */
+@media(max-width:1075px) {
+
+    /* CSS CODE FOR THE MAIN FOOTER CONTAINER */
+.main_footer {
+    padding: 0px;
+    border: 1px solid green;
+}
+
+/* CSS CODE FOR THE CONTAINER FOR THE LINKS */
+.footer-flex {
+    display: flex;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid blueviolet;
+}
+
+/* CSS CODE FOR ROLA SIDE */
+.footer-one {
+    margin-right: 20px;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid red;
+}
+.footer-one h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.footer-one p {
+    color: white;
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    transition: width 0.5s ease-in-out;
+  }
+  .social-icon:hover {
+    background-color: #ffffffa6;
+
+  }
+
+  .social-icon .fa {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.459);
+    font-weight: bold;
+  }
+
+
+/* CSS CODE FOR THE USEFUL LINKS */
+.footer-two {
+    margin-right: 20px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.footer-two-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-two h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+
+.footer-two a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+
+/* CSS CODE FOR OUR SERVICES  */
+.footer-three {
+    margin-right: 20px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.footer-three-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-three h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.footer-three a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* CSS CODE FOR SUPPORT  */
+.footer-four {
+    margin-right: 20px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.footer-four-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-four h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.footer-four a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+/* CSS CODE FOR NEWSLETTER */
+.final-footer {
+    margin-right: 20px;
+    padding: 15px;
+    width: 30%;
+    text-align: left;
+    border: 1px solid red;
+}
+.final-footer h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.final-footer p {
+    width: 75%;
+    color: white;
+}
+.email-submit {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 20px auto;
+  }
+
+  .email-submit input[type="email"] {
+    flex: 1;
+    height: 80%;
+    height: 140%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 10px;
+  }
+
+  .email-submit i {
+    color: #000000;
+    font-size: 60px;
+    padding-right: 10px;
+    position: relative;
+    right: 64;
+    cursor: pointer;
+    bottom: 1;
+  }
+  .email-submit i:hover {
+    color: #1824697e;
+  }
+
+
+/* CSS CODE FOR THE BOTTOM OF THE FOOTER */
+#copyright {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+#copyright a {
+    text-decoration: none;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS code for screen size of 1058 pixels */
+@media(max-width:1058px) {
+
+    /* CSS CODE FOR THE MAIN FOOTER CONTAINER */
+.main_footer {
+    padding: 0px;
+    border: 1px solid green;
+}
+
+/* CSS CODE FOR THE CONTAINER FOR THE LINKS */
+.footer-flex {
+    display: flex;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid blueviolet;
+}
+
+/* CSS CODE FOR ROLA SIDE */
+.footer-one {
+    margin-right: 20px;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid red;
+}
+.footer-one h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.footer-one p {
+    color: white;
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    transition: width 0.5s ease-in-out;
+  }
+  .social-icon:hover {
+    background-color: #ffffffa6;
+
+  }
+
+  .social-icon .fa {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.459);
+    font-weight: bold;
+  }
+
+
+/* CSS CODE FOR THE USEFUL LINKS */
+.footer-two {
+    margin-right: 20px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.footer-two-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-two h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+
+.footer-two a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+
+/* CSS CODE FOR OUR SERVICES  */
+.footer-three {
+    margin-right: 20px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.footer-three-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-three h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.footer-three a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* CSS CODE FOR SUPPORT  */
+.footer-four {
+    margin-right: 20px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.footer-four-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-four h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.footer-four a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+/* CSS CODE FOR NEWSLETTER */
+.final-footer {
+    margin-right: 0px;
+    padding: 15px;
+    width: 30%;
+    text-align: left;
+    border: 1px solid red;
+}
+.final-footer h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.final-footer p {
+    width: 75%;
+    color: white;
+}
+.email-submit {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 20px auto;
+  }
+
+  .email-submit input[type="email"] {
+    flex: 1;
+    height: 80%;
+    height: 140%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 10px;
+  }
+
+  .email-submit i {
+    color: #000000;
+    font-size: 60px;
+    padding-right: 10px;
+    position: relative;
+    right: 64;
+    cursor: pointer;
+    bottom: 1;
+  }
+  .email-submit i:hover {
+    color: #1824697e;
+  }
+
+
+/* CSS CODE FOR THE BOTTOM OF THE FOOTER */
+#copyright {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+#copyright a {
+    text-decoration: none;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS code for screen size of 1021 pixels */
+@media(max-width:1021px) {
+
+    /* CSS CODE FOR THE MAIN FOOTER CONTAINER */
+.main_footer {
+    padding: 0px;
+    border: 1px solid green;
+}
+
+/* CSS CODE FOR THE CONTAINER FOR THE LINKS */
+.footer-flex {
+    display: flex;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid blueviolet;
+}
+
+/* CSS CODE FOR ROLA SIDE */
+.footer-one {
+    margin-right: 20px;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid red;
+}
+.footer-one h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.footer-one p {
+    color: white;
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    transition: width 0.5s ease-in-out;
+  }
+  .social-icon:hover {
+    background-color: #ffffffa6;
+
+  }
+
+  .social-icon .fa {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.459);
+    font-weight: bold;
+  }
+
+
+/* CSS CODE FOR THE USEFUL LINKS */
+.footer-two {
+    margin-right: 20px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.footer-two-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-two h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+
+.footer-two a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+
+/* CSS CODE FOR OUR SERVICES  */
+.footer-three {
+    margin-right: 20px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.footer-three-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-three h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.footer-three a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* CSS CODE FOR SUPPORT  */
+.footer-four {
+    margin-right: 20px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.footer-four-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-four h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.footer-four a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+/* CSS CODE FOR NEWSLETTER */
+.final-footer {
+    margin-right: 0px;
+    padding: 15px;
+    width: 25%;
+    text-align: left;
+    border: 1px solid red;
+}
+.final-footer h3 {
+    color: rgba(89, 157, 247, 0.432);
+}
+.final-footer p {
+    width: 100%;
+    color: white;
+}
+.email-submit {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 20px auto;
+  }
+
+  .email-submit input[type="email"] {
+    flex: 1;
+    height: 80%;
+    height: 140%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 10px;
+  }
+
+  .email-submit i {
+    color: #000000;
+    font-size: 60px;
+    padding-right: 10px;
+    position: relative;
+    right: 64;
+    cursor: pointer;
+    bottom: 1;
+  }
+  .email-submit i:hover {
+    color: #1824697e;
+  }
+
+
+/* CSS CODE FOR THE BOTTOM OF THE FOOTER */
+#copyright {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+#copyright a {
+    text-decoration: none;
+}
+
+
+}

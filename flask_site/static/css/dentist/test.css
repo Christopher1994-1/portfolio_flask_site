@@ -1,0 +1,402 @@
+/* First navbar css code for container */
+.first-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(22, 61, 112);
+}
+/* Left side div container */
+.left-side {
+  display: flex;
+  width: 60%;
+}
+.phone-number {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  color: white;
+}
+.phone-number h1 {
+  margin-left: 3px;
+  margin-top: 3px;
+}
+.address {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  color: white;
+}
+.address h1 {
+  margin-left: 3px;
+  margin-top: 4px;
+}
+.email {
+  display: flex;
+  align-items:center;
+  margin-right: 20px;
+  color: white;
+}
+.email h1 {
+  margin-left: 3px;
+  margin-top: 4px;
+}
+
+/* CSS code for the line left to right underline */
+.email a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.email a:hover {
+  color: rgb(46, 126, 231);
+  text-decoration: none;
+}
+.email a:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: rgb(46, 126, 231);
+  transition: width 0.3s ease-in-out;
+}
+.email a:hover:after {
+  width: 100%;
+  left: 0;
+}
+.left-side h1 {
+  font-size: 15px;
+}
+
+
+
+.right-side {
+  margin-right: 15px;
+}
+.social-icon1 {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: #1E90FF;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.social-icon1 .fa {
+  font-size: 20px;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* CSS code for the second navbar */
+.second-navbar {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.company-name {
+  margin-left: 20px;
+}
+
+.company-name a {
+  text-decoration: none;
+  color: rgb(89, 157, 247);
+}
+.company-name a:hover {
+  text-decoration: none;
+  color: rgb(76, 132, 204);
+}
+
+
+
+
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+.links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 20px;
+}
+.links a:hover {
+  color: rgb(46, 126, 231);
+  text-decoration: none;
+}
+.links a:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background-color: rgb(125, 178, 247);
+  transition: width 0.3s ease-in-out;
+}
+.links a:hover:after {
+  width: 100%;
+  left: 0;
+}
+.links a:hover {
+  color: rgb(125, 178, 247);
+}
+
+
+/* dropdown menu for services */
+.links ul {
+  position: absolute;
+  width: 200px;
+  background: rgb(250, 248, 248);
+  list-style: none;
+  left: 38%;
+  border-radius: 10px;
+  top: 16%;
+  display: none;
+}
+
+.links ul li {
+  position: relative;
+  right: 17px;
+  padding: 5px;
+}
+
+#dropdown:hover + #services-dropdown, #services-dropdown:hover {
+  display: block;
+}
+
+#services-dropdown {
+  display: none;
+}
+
+
+
+/* dropdown menu for pages */
+.links #pages-dropdown {
+  position: absolute;
+  width: 200px;
+  background: rgb(250, 248, 248);
+  list-style: none;
+  left: 48%;
+  border-radius: 10px;
+  top: 16%;
+  display: none;
+}
+
+.links ul li {
+  position: relative;
+  right: 17px;
+  padding: 5px;
+}
+
+#pages:hover + #pages-dropdown, #pages-dropdown:hover {
+  display: block;
+}
+
+#pages-dropdown {
+  display: none;
+}
+
+
+
+
+
+
+.second-navbar button {
+  background-color: rgb(89, 157, 247);
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+  margin-right: 20px;
+  align-items: center;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+.second-navbar button:hover {
+  background-color: rgb(125, 178, 247);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================================================================== */
+
+
+
+/* CSS CODE FOR SMALLER SCREENS */
+
+
+/* CSS CODE FOR FIRST NAVBAR SETTING */
+/* CSS CODE FOR SCREEN WITH OF 767 PIXELS */
+@media (max-width: 767px) {
+  .first-nav {
+    flex-direction: column;
+  }
+
+  .left-side {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .right-side {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS CODE FOR SECOND NAVBAR SETTING */
+
+
+/* CSS CODE FOR SCREEN WITH OF 1119 PIXELS */
+@media(max-width: 1119px) {
+  .second-navbar #services-dropdown {
+    top: 16%;
+    left: 35%;
+  }
+  
+  .links #pages-dropdown {
+      left: 45%;
+  }
+}
+
+
+
+/* CSS CODE FOR SCREEN WITH OF 1109 PIXELS */
+@media(max-width: 1109px) {
+  .second-navbar #services-dropdown {
+    top: 16%;
+    left: 35%;
+  }
+  
+  .links #pages-dropdown {
+      left: 45%;
+  }
+}
+
+
+/* CSS CODE FOR SCREEN WITH OF 1087 PIXELS */
+@media(max-width: 1087px) {
+  .second-navbar #services-dropdown {
+    top: 17%;
+    left: 32%;
+  }
+  
+  .links #pages-dropdown {
+      left: 45%;
+  }
+}
+
+
+/* CSS CODE FOR SECOND NAVBAR SETTING */
+/* CSS CODE FOR SCREEN WITH OF 1027 PIXELS */
+@media(max-width: 1027px) {
+  #services-dropdown {
+    top: 18%;
+    left: 35%;
+  }
+  
+  .links #pages-dropdown {
+      left: 45%;
+      top: 18%;
+  }
+}
+
+
+/* CSS CODE FOR SECOND NAVBAR SETTING */
+/* CSS CODE FOR SCREEN WITH OF 995 PIXELS */
+@media(max-width: 995px) {
+  #services-dropdown {
+    top: 18%;
+    left: 34%;
+  }
+  
+  .links #pages-dropdown {
+      left: 44%;
+      top: 18%;
+  }
+}
+
+
+/* CSS CODE FOR SECOND NAVBAR SETTING */
+/* CSS CODE FOR SCREEN WITH OF 866 PIXELS */
+@media(max-width: 866px) {
+  #services-dropdown {
+    top: 18%;
+    left: 33%;
+  }
+  
+  .links #pages-dropdown {
+      left: 43%;
+      top: 18%;
+  }
+
+}
+
+/* CSS CODE FOR SECOND NAVBAR SETTING */
+/* CSS CODE FOR SCREEN WITH OF 820 PIXELS */
+@media (max-width: 820px) {
+  .links {
+    display: none;
+  }
+
+  /* .nav {
+    display: initial;
+  } */
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,833 @@
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(191, 205, 223, 0.151);
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding: 20px;
+  }
+  
+  .review-page {
+    display: none;
+  }
+  
+  #review-page-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  #review-page-2 {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+  }
+  
+  .review {
+    width: 45%;
+    height: 200px;
+    background-color: #8fa5ec38;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  .page-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .page-indicator-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .page-indicator-circle:hover {
+    transform: scale(1.2);
+  }
+  
+  #page-indicator-1 {
+    background-color: #333;
+  }
+  
+  #page-indicator-1:hover {
+    background-color: #333 !important;
+  }
+  
+
+
+.header-button {
+    display: flex;
+    width: 80%;
+}
+
+.header-button .header-div {
+    width: 70%;
+}
+
+.header-button .button-div {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.header-button .button-div button {
+    margin-right: 15px;
+    background-color: rgb(89, 157, 247);
+    padding: 15px;
+    border-radius: 15px;
+    margin-right: 20px;
+    align-items: center;
+    width: 60%;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+.header-button .button-div button:hover {
+    background-color: rgb(125, 178, 247);
+}
+
+
+
+
+
+
+/* CSS code for screen size of 1119 pixels  */
+@media(max-width:1119px) {
+    .reviews-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(191, 205, 223, 0.151);
+      margin-bottom: 20px;
+      margin-top: 40px;
+      padding: 10px;
+    }
+    
+    .review-page {
+      display: none;
+    }
+    
+    #review-page-1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 80%;
+      margin-top: 50px;
+    }
+
+    #review-page-2 {
+      display: none;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 80%;
+      margin-top: 50px;
+    }
+    
+    .review {
+      width: 45%;
+      height: 200px;
+      background-color: #8fa5ec38;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+    }
+    
+    .page-indicator {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    
+    .page-indicator-circle {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #d3d3d3;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .page-indicator-circle:hover {
+      transform: scale(1.2);
+    }
+    
+    #page-indicator-1 {
+      background-color: #333;
+    }
+    
+    #page-indicator-1:hover {
+      background-color: #333 !important;
+    }
+    
+
+
+  .header-button {
+      display: flex;
+      width: 80%;
+      align-items: center;
+  }
+
+  .header-button .header-div {
+      width: 70%;
+  }
+
+  .header-button .button-div {
+      width: 30%;
+      margin: auto;
+      text-align: center;
+  }
+
+
+  .header-button .button-div button {
+      margin-right: 15px;
+      background-color: rgb(89, 157, 247);
+      padding: 15px;
+      border-radius: 15px;
+      margin-right: 20px;
+      align-items: center;
+      width: 60%;
+      border: none;
+      color: white;
+      transition: background-color 0.3s ease-in-out;
+  }
+  .header-button .button-div button:hover {
+      background-color: rgb(125, 178, 247);
+  }
+
+  .review img {
+    width: 160; 
+    height: 30;
+  }
+
+  .review h2 {
+    font-size: 15px;
+  }
+
+  .review p {
+    font-size: 13px;
+  }
+
+  .header-button .header-div h1 {
+    font-size: 25px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS code for screen size of 1007 pixels  */
+@media(max-width:1007px) {
+  .reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(191, 205, 223, 0.151);
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding: 10px;
+  }
+  
+  .review-page {
+    display: none;
+  }
+  
+  #review-page-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  #review-page-2 {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+  }
+  
+  .review {
+    width: 45%;
+    height: 200px;
+    background-color: #8fa5ec38;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  .page-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .page-indicator-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .page-indicator-circle:hover {
+    transform: scale(1.2);
+  }
+  
+  #page-indicator-1 {
+    background-color: #333;
+  }
+  
+  #page-indicator-1:hover {
+    background-color: #333 !important;
+  }
+  
+
+
+.header-button {
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.header-button .header-div {
+    width: 70%;
+}
+
+.header-button .button-div {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.header-button .button-div button {
+    margin-right: 15px;
+    background-color: rgb(89, 157, 247);
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 20px;
+    align-items: center;
+    width: 60%;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+.header-button .button-div button:hover {
+    background-color: rgb(125, 178, 247);
+}
+
+.review img {
+  width: 160; 
+  height: 30;
+}
+
+.review h2 {
+  font-size: 15px;
+}
+
+.review p {
+  font-size: 13px;
+}
+
+.header-button .header-div h1 {
+  font-size: 25px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS code for screen size of 941 pixels  */
+@media(max-width:941px) {
+  .reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(191, 205, 223, 0.151);
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding: 10px;
+  }
+  
+  .review-page {
+    display: none;
+  }
+  
+  #review-page-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  #review-page-2 {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+  }
+  
+  .review {
+    width: 45%;
+    height: 200px;
+    background-color: #8fa5ec38;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  .page-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .page-indicator-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .page-indicator-circle:hover {
+    transform: scale(1.2);
+  }
+  
+  #page-indicator-1 {
+    background-color: #333;
+  }
+  
+  #page-indicator-1:hover {
+    background-color: #333 !important;
+  }
+  
+
+
+.header-button {
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.header-button .header-div {
+    width: 70%;
+}
+
+.header-button .button-div {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.header-button .button-div button {
+    margin-right: 15px;
+    background-color: rgb(89, 157, 247);
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 20px;
+    align-items: center;
+    width: 70%;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+.header-button .button-div button:hover {
+    background-color: rgb(125, 178, 247);
+}
+
+.review img {
+  width: 160; 
+  height: 30;
+}
+
+.review h2 {
+  font-size: 15px;
+}
+
+.review p {
+  font-size: 13px;
+}
+
+.header-button .header-div h1 {
+  font-size: 25px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS code for screen size of 813 pixels  */
+@media(max-width:813px) {
+  .reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(191, 205, 223, 0.151);
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding: 10px;
+  }
+  
+  .review-page {
+    display: none;
+  }
+  
+  #review-page-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  #review-page-2 {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+  }
+  
+  .review {
+    width: 45%;
+    height: 200px;
+    background-color: #8fa5ec38;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  .page-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .page-indicator-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .page-indicator-circle:hover {
+    transform: scale(1.2);
+  }
+  
+  #page-indicator-1 {
+    background-color: #333;
+  }
+  
+  #page-indicator-1:hover {
+    background-color: #333 !important;
+  }
+  
+
+
+.header-button {
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.header-button .header-div {
+    width: 70%;
+}
+
+.header-button .button-div {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.header-button .button-div button {
+    margin-right: 15px;
+    background-color: rgb(89, 157, 247);
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 20px;
+    align-items: center;
+    width: 80%;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+.header-button .button-div button:hover {
+    background-color: rgb(125, 178, 247);
+}
+
+.review img {
+  width: 160; 
+  height: 30;
+}
+
+.review h2 {
+  font-size: 15px;
+}
+
+.review p {
+  font-size: 13px;
+}
+
+.header-button .header-div h1 {
+  font-size: 25px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS code for screen size of 589 pixels  */
+@media(max-width:589px) {
+  .reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(191, 205, 223, 0.151);
+    margin-bottom: 20px;
+    margin-top: 0px;
+    padding: 10px;
+  }
+  
+  .review-page {
+    display: none;
+  }
+  
+  #review-page-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  #review-page-2 {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+  }
+  
+  .review {
+    width: 45%;
+    height: 200px;
+    background-color: #8fa5ec38;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  .page-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .page-indicator-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .page-indicator-circle:hover {
+    transform: scale(1.2);
+  }
+  
+  #page-indicator-1 {
+    background-color: #333;
+  }
+  
+  #page-indicator-1:hover {
+    background-color: #333 !important;
+  }
+  
+
+
+.header-button {
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.header-button .header-div {
+    width: 70%;
+}
+
+.header-button .button-div {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.header-button .button-div button {
+    margin-right: 15px;
+    background-color: rgb(89, 157, 247);
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 20px;
+    align-items: center;
+    width: 80%;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+.header-button .button-div button:hover {
+    background-color: rgb(125, 178, 247);
+}
+
+.review img {
+  width: 130; 
+  height: 20;
+}
+
+.review h2 {
+  font-size: 13px;
+}
+
+.review p {
+  font-size: 11px;
+}
+
+.header-button .header-div h1 {
+  font-size: 25px;
+}
+
+
+}
