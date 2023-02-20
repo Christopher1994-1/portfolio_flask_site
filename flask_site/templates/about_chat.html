@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>CEJ Portfolio | ChatGPT Replica</title>
+{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="/static/css/archive_site.css">
+<link rel="stylesheet" href="/static/css/web_design_mobile.css">
+<link rel="stylesheet" href="/static/css/showcase_skills.css">
+
+<br><br><br><br><br><br><br><br>
+ <!-- Slideshow container -->
+
+<div style="width: 85%; margin: auto;">
+
+ <div class="bd-example">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="127000">
+      <ol class="carousel-indicators my-4">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+
+      </ol>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="/static/images/chat/ScreenShot.png" class="d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item">
+          <img src="/static/images/chat/ScreenShot2.png" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+
+
+      
+
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only" style="color: black; font-weight: bolder;">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only" style="color: black; font-weight: bolder;">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<br><br>
+
+<div class="about-this-site">
+    <h1>About This Site</h1>
+    <hr>
+
+    <p>My project is a ChatGPT replica that uses OpenAI's API to generate responses to user prompts. The web UI is designed to mimic the look and functionality of the ChatGPT interface. The user enters text prompts in the UI, which are sent to a Python backend via Ajax requests. The Python backend then makes a call to OpenAI's API to generate a response based on the user's prompt and then sent back to Ajax.</p>
+    <p>The project also features a side panel that allows the user to adjust the temperature and number of tokens sent to OpenAI's API. The temperature parameter controls the creativity of the AI-generated responses, while the number of tokens parameter determines the length of the response. By adjusting these settings, the user can fine-tune the AI-generated responses to their liking.</p>
+
+</div>
+
+<br>
+<br> <br>
+
+<div class="showcase-skills">
+    <h3>What skills does this project showcase?</h3>
+    <ul>
+      <li><strong>Programming: </strong>I have demonstrated programming skills by creating a web UI and a Python backend to connect with OpenAI's API. I have also used AJAX to facilitate communication between the UI and the backend.</li>
+      <li><strong>Web Development: </strong>I have created a web UI that is user-friendly and mimics the look and feel of the ChatGPT interface. This showcases my ability to design and develop web-based user interfaces.</li>
+      <li><strong>API Integration: </strong>I have integrated OpenAI's API into my project, which requires an understanding of API documentation and how to make API calls using programming languages such as Python.</li>
+      <li><strong>Problem-Solving: </strong>My project required me to solve various technical challenges, such as how to integrate the OpenAI API into this application and how to facilitate communication between the UI and backend. These problem-solving skills are valuable in any programming project.</li>
+      <li><strong>User Experience Design: </strong>The side panel that allows the user to adjust the temperature and number of tokens showcases my ability to design a user experience that is intuitive and provides the user with the tools they need to personalize their experience.</li>
+    </ul>
+  </div>
+
+
+
+  <div class="video-project" style="width: 60%; margin: auto;">
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/800665790?h=3df41c5b42&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="ChatGPT Replica"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  </div>
+
+<br><br><br>
+
+
+<div class="see-code">
+  <a href="https://github.com/Christopher1994-1/ChatGPT_Replica" target="_blank"><h1>See The Code</h1></a>
+  </div>
+
+<br>
+
+
+<script src="/static/js/main_js.js"></script>
+<!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include Bootstrap JavaScript file -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  // Initialize the carousel
+  $('#carouselExampleCaptions').carousel();
+});
+</script>
+
+
+{% endblock %}

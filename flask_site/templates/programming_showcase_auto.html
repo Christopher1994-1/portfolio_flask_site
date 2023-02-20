@@ -1,0 +1,77 @@
+{% block title %}
+    <title>CEJ Portfolio | Automated Web Scrap</title>
+{% endblock title %}
+
+{% block programming_slider %}
+
+<link rel="stylesheet" href="/static/css/programming_projects.css">
+<link rel="stylesheet" href="/static/css/showcase_skills.css">
+
+
+
+<div class="project_name_and_description">
+    <h1>Python Automation Web Scraping</h1>
+    <hr>
+    <p>My Deal Hunter is an automated web scraping project that helps me stay on top of the latest deals at my favorite store. With DealHunter, I can easily set up a system that automatically collects and formats the weekly deals data from my store's website and sends it to my phone as a text message, so I never miss out on a good deal.</p>
+    <p>Using the power of web scraping and automation, DealHunter simplifies the process of monitoring weekly deals, saving me time and effort. Simply configure the project to run whenever you log into your computer, and let it do the rest. The project can be customized to work with any store or website, allowing you to tailor it to your specific needs.</p>
+</div>
+
+
+<div class="main_container">
+
+    <div class="second_container">
+        {% for text in images %}
+
+        <div class="image_text_container">
+
+            <div class="slider_img">
+                <img src="/static/images/auto.png" alt="" height="280" width="230">
+            </div>
+
+            <div class="slider_text">
+                <p>{{ text }}</p>
+            </div>
+
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="arrow_buttons">
+        <a class="prev" onclick="plusSlides(-1)">Prev</a>
+        <br><br>
+        <a class="next" onclick="plusSlides(1)">Next</a>
+    </div>
+
+</div>
+
+
+<div class="showcase-skills">
+    <h3>What skills does this project showcase?</h3>
+    <ul>
+      <li><strong>Web Scraping: </strong>My Python script uses a web scraping library like BeautifulSoup or Scrapy to extract data from my local grocery store website. This data could include information about the current sales, such as product name, original price, and sale price.</li>
+      <li><strong>Formatting Data: </strong>Once the data is extracted from the website, my script processes and formats it into a more user-friendly format.</li>
+      <li><strong>Email Notification: </strong>If the current date is outside of the sales range, my script sends an email notification to my specified email address. The email notification could include information about the sales that are currently active, as well as details about any discounts or promotions that are available.</li>
+      <li><strong>Automatic Execution: </strong>To ensure that the script runs every time I log into your computer, I have set it up to run as a startup program.</li>
+    </ul>
+  </div>
+
+
+<div class="buttom_links" style="margin-top: 20px;">
+
+    <div class="check-out-this-link">
+        <a href="https://github.com/Christopher1994-1/Deal_Hunter/blob/master/run.py" target="_blank"><h1>Check Out The Code</h1></a>
+    </div>
+
+
+    <div class="links-github">
+        <div class="inside-github">
+            <a href="https://github.com/Christopher1994-1/Deal_Hunter" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+</div>
+
+<br><br>
+  <script src="/static/js/script.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+  {% endblock programming_slider %}

@@ -1,12 +1,13 @@
 import math
 from unittest.case import doModuleCleanups
-from flask import Flask, render_template, redirect, request, flash, url_for, send_from_directory
+from flask import Flask, render_template, redirect, request, flash, url_for, send_from_directory, jsonify
 from flask_site.forms import ContactMe
 from flask_site import app
 import os
 import requests
 import time
 import smtplib
+import json
 
 
 
@@ -33,6 +34,46 @@ def send_email(first_name, last_name=default_value, company=default_value, email
 
         smtp.sendmail(my_email, receiver, msg)
 
+
+
+
+
+def api_response(prompt, tokens, temp):
+    import openai
+    """
+    Generates a text response based on a given prompt using the OpenAI API.
+    
+    Parameters:
+        prompt (str): The text prompt that the API will use as the starting point for generating a response.
+    
+    Returns:
+        str: The generated text response.
+        
+    Example:
+        response = api_response("What is the weather like today?")
+        print(response)
+        # Output: "The weather today is sunny with a high of 75 degrees."
+    """
+    # Use your API key
+    openai.api_key = os.environ.get("OpenAI_Key")
+
+    
+    
+    if tokens == 0:
+        tokens = 100
+    
+        
+
+
+    model_response = str(openai.Completion.create(
+    model="text-davinci-003",
+    prompt=prompt,
+    max_tokens=tokens,
+    temperature=temp
+    ))
+    json_obj = json.loads(model_response)
+    response = json_obj["choices"][0]["text"]
+    return response
 
 
 
@@ -209,6 +250,17 @@ def openai():
     return render_template("/openai.html", images=images)
 
 
+# Website Demo Project ~ Tattoo Website ~
+@app.route('/web_scrap.html')
+def web_scrap():
+    images = ["A easy automated web scraping python script that helps me stay up to date with my favorite grocery store deals"]
+    return render_template('web_scrap.html', images=images)
+
+
+
+
+
+
 
 # Website Design Projects ~ Archive Site ~
 @app.route('/archive_site.html')
@@ -270,6 +322,43 @@ def dentist_about():
 def starbucks_website():
     value = home_page[0]
     return render_template('starbucks_website.html', value=value)
+
+
+
+
+# Website Demo Project ~ ChatGPT Replica ~
+@app.route('/chat_demo.html', methods=["GET", "POST"])
+def chat_demo():
+    # example prompts
+    example_prompt_one = "Explain quantum computing in simple terms"
+    example_prompt_two = "Got any creative ideas for a 10 year old's birthday?"
+    example_prompt_three = "How do I make an HTTP request in JavaScript?"
+    return render_template('chat_demo.html', 
+                           example_prompt_one=example_prompt_one,
+                           example_prompt_two=example_prompt_two,
+                           example_prompt_three=example_prompt_three)
+
+@app.route('/about_chat.html')
+def about_chat():
+    images = ["A easy automated web scraping python script that helps me stay up to date with my favorite grocery store deals"]
+    return render_template('about_chat.html')
+
+
+
+@app.route('/my_backend_endpoint', methods=['POST'])
+def my_backend_function():
+    input_text = request.json.get('text')
+    temp = request.json.get('temp')
+    tokens = int(request.json.get('tokens'))
+    
+    if temp == "0":
+        temp = 0.9
+    else:
+        temp = float(temp)
+        
+    api = api_response(input_text, tokens, temp)
+    return jsonify({'result': api})
+
 
 
 
