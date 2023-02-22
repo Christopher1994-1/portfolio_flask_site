@@ -80,7 +80,7 @@ header .navbar ul li ul li ul {
     top: 0;
 }
 header .navbar ul li:hover > ul {
-    display: initial;
+    display: block;
 }
 
 
@@ -121,9 +121,12 @@ header label {
         width: 100%;
     }
 
-    header .navbar ul li ul {
-        position: relative;
-        width: 100%;
+
+    header .navbar ul {
+        list-style: none;
+        display: flex;
+        margin-top: 7px;
+        flex-direction: column;
     }
 
     header .navbar ul li ul li {
@@ -137,6 +140,14 @@ header label {
 
     #menu-bar:checked ~ .navbar {
         display: initial;
+    }
+
+
+    header .navbar ul li ul {
+        position: relative;
+        bottom: 0px;
+        background: rgb(255, 255, 255);
+
     }
 }
 

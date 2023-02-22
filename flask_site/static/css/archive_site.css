@@ -136,3 +136,17 @@
 .see-code a:hover {
   color: darkred;
 }
+
+
+
+.video-project {
+  margin: auto;
+  width: 80%;
+}
+
+
+@media(max-width:1110px) {
+  .video-project {
+    width: 95%;
+  }
+}
