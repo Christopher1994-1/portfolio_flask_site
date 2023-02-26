@@ -376,6 +376,11 @@ def dentist():
 
 
 
+# Website Route ~ Certificates ~
+@app.route('/certificates.html')
+def certificates():
+    return render_template('certificates.html')
+
 
 #test route
 @app.route('/test.html')
