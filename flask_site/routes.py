@@ -310,7 +310,10 @@ def dentist_about():
 
 
 
-
+# Page for the BigFoot Dataset website
+@app.route('/bigfoot_site')
+def bigfoot_site():
+    return render_template('bigfoot_site.html')
 
 
 
