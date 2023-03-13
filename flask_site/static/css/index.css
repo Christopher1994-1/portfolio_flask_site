@@ -37,13 +37,14 @@
 }
 
 /* css code for the buttons container for the first box */
-/* .main-box-buttons {
-    border: 2px solid black;
-} */
+.main-box-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
 /* css code for the first button in the button container */
 .get-in-touch-btn {
     padding: 10px;
-    display: inline-block;
 }
 
 .get-in-touch-btn a {
@@ -65,7 +66,6 @@
 
 /* css code for the second button in the button container */
 .resume-btn {
-    display: inline-block;
     padding: 10px;
 }
 
@@ -189,6 +189,7 @@
 }
 
 @media(max-width:991px) {
+    /* Container for the two boxes, info and image */
     .two-front-boxes {
         width: 400px;
         margin: auto;
@@ -203,8 +204,27 @@
     }
 
     .box1 p {
-        font-size: 15px;
-        width: 220px;
+        font-size: 13px;
+        width: 90%;
+        font-weight: 500;
+    }
+
+    .box1 h1 {
+        font-size: 35px;
+    }
+
+
+    .main-box-buttons {
+        width: 100%;
+    }
+
+    .get-in-touch-btn {
+        padding: 0;
+    }
+
+
+    .resume-btn {
+        padding: 0;
     }
 
 

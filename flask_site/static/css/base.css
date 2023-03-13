@@ -64,7 +64,7 @@ header .navbar ul li a:hover {
 /* CSS code for the dropdown thing */
 header .navbar ul li ul {
     position: absolute;
-    bottom: -210;
+    bottom: -280;
     width: 200px;
     background: rgb(255, 255, 255);
     display: none;
@@ -101,6 +101,10 @@ header label {
 
 
 @media(max-width:991px){
+
+
+
+    
     header{
         padding: 20px;
     }

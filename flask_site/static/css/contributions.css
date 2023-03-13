@@ -1,0 +1,26 @@
+#contributions-header {
+    border: 2px solid black;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+.contributions-container {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.project-showcase {
+    padding: 40px;
+    width: 80%;
+    margin: auto;
+}

@@ -317,6 +317,19 @@ def bigfoot_site():
 
 
 
+# Page for the Contributions dropdown page
+@app.route('/contributions')
+def contributions():
+    return render_template('contributions.html')
+
+
+
+# Page for the contrbutions/commits - python clock
+@app.route('/commits/python_clock')
+def python_clock():
+    project_name = "Python Clock"
+    return render_template('commits.html', project_name=project_name)
+
 
 
 
