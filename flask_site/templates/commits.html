@@ -19,9 +19,9 @@
     <br>
 
     <ul>
-        <li><strong><a href="https://github.com/JohnRick120/Python_Clock/commit/060e4a5cd0bda97ffedec4d0af0a625f7e6155de">#060e4a5</a></strong> added datetime var, months dict, new layout.</li>
-        <li><strong><a href="https://github.com/JohnRick120/Python_Clock/commit/5c1d8d3f72fd82bdf9270df1249a7b1f2fadef9a">#5c1d8d3</a></strong> updated read me.</li>
-        <li><strong><a href="https://github.com/JohnRick120/Python_Clock/commit/729524c1bd64626808db938e6b43f21bc850ed8d">#729524c</a></strong> finshed update method and added readme image.</li>
+        {% for row in commits.items() %}
+        <li><strong><a href="{{ row[1][0] }}" target="_blank">{{ row[0] }}</a></strong> {{ row[1][1]}}</li>
+        {% endfor %}
     </ul>
 </div>
 

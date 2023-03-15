@@ -17,6 +17,10 @@
     border-bottom: 2px solid black;
 }
 
+.contributions-container ul li {
+    margin-bottom: 10px;
+}
+
 
 .what-is-open-source-p {
     width: 80%;

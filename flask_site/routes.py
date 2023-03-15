@@ -261,7 +261,6 @@ def web_scrap():
 
 
 
-
 # Website Design Projects ~ Archive Site ~
 @app.route('/archive_site.html')
 def archive_site():
@@ -328,7 +327,21 @@ def contributions():
 @app.route('/commits/python_clock')
 def python_clock():
     project_name = "Python Clock"
-    return render_template('commits.html', project_name=project_name)
+    commits = {'#060e4a5': ['https://github.com/JohnRick120/Python_Clock/commit/060e4a5cd0bda97ffedec4d0af0a625f7e6155de', 'added datetime var, months dict, new layout.'],
+               "#5c1d8d3": ['https://github.com/JohnRick120/Python_Clock/commit/5c1d8d3f72fd82bdf9270df1249a7b1f2fadef9a', 'updated read me.'],
+               "#729524c": ['https://github.com/JohnRick120/Python_Clock/commit/729524c1bd64626808db938e6b43f21bc850ed8d', 'finshed update method and added readme image.'],}
+    return render_template('commits.html', project_name=project_name, commits=commits)
+
+
+
+# Page for the contributions/commits - weatherapp
+@app.route('/commits/weatherapp')
+def weatherapp():
+    project_name = "WeatherApp"
+    commits = {
+        "#c3756a1": ['https://github.com/Christopher1994-1/WeatherApp/commit/c3756a1dad670ce85f9ecb4ba1e85d386250cb65', 'updated README.md'],
+    }
+    return render_template('commits.html', project_name=project_name, commits=commits)
 
 
 
