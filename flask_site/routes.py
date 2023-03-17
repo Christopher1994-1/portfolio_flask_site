@@ -340,6 +340,7 @@ def weatherapp():
     project_name = "WeatherApp"
     commits = {
         "#c3756a1": ['https://github.com/Christopher1994-1/WeatherApp/commit/c3756a1dad670ce85f9ecb4ba1e85d386250cb65', 'updated README.md'],
+        "#661037e": ['https://github.com/Christopher1994-1/WeatherApp/commit/661037e787d2c274c4aed26a9310a730aa638166','changed capitalize() method to title() method']
     }
     return render_template('commits.html', project_name=project_name, commits=commits)
 
