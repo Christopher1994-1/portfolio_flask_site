@@ -1,0 +1,58 @@
+{% block navbar %}
+
+
+<div class="navbar">
+
+    <h1>Feane</h1>
+
+
+
+    <div class="hambuger_menu">
+        <input type="checkbox" id="menu-bar" onclick="menu_select()">
+        <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+
+        <div class="dropdown">
+
+            <div class="icons-btn1">
+                
+                <div class="icons">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+        
+                <div class="btn">
+                    <a href="#"><button>Order Online</button></a>
+                </div>
+            </div>
+
+
+            <div class="links1">
+                <a href="{{ url_for('web_design') }}">HOME</a>
+                <a href="#">MENU</a>
+                <a href="#">ABOUT</a>
+                <a href="#">BOOK TABLE</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="links">
+        <a href="{{ url_for('web_design') }}">HOME</a>
+        <a href="#">MENU</a>
+        <a href="#">ABOUT</a>
+        <a href="#">BOOK TABLE</a>
+    </div>
+
+
+    <div class="icons-btn">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <a href="#"><button>Order Online</button></a>
+    </div>
+</div>
+
+
+{% endblock navbar %}

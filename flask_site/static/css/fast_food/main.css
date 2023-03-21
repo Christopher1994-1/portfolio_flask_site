@@ -1,0 +1,1254 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 99%;
+  }
+  .navbar h1 {
+    font-family: cursive;
+    width: 20%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  .navbar .hambuger_menu {
+    display: none;
+  }
+  .navbar .hambuger_menu input {
+    visibility: hidden;
+  }
+  .navbar .links {
+    width: 35%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .navbar .links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.5s ease;
+  }
+  .navbar .links a:hover {
+    color: rgb(218, 156, 23);
+  }
+  .navbar .icons-btn {
+    width: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar .icons-btn i {
+    color: white;
+    cursor: pointer;
+  }
+  .navbar .icons-btn i:hover {
+    color: rgb(218, 156, 23);
+  }
+  .navbar .icons-btn button {
+    padding: 10px;
+    background-color: rgb(218, 156, 23);
+    width: 100%;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  .navbar .icons-btn button:hover {
+    background-color: rgb(187, 134, 20);
+  }
+  
+  .jumbotron-image {
+    width: 100%;
+    height: 700px;
+    margin: 0;
+    padding: 0;
+    background-image: url("/static/images/sites/fast_food/test.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .jumbotron-image .jumbo-div {
+    width: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 28%;
+    left: 9%;
+  }
+  .jumbotron-image .jumbo-div h1 {
+    color: white;
+    font-family: cursive;
+  }
+  .jumbotron-image .jumbo-div p {
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  .jumbotron-image .jumbo-div a button {
+    padding: 10px;
+    background-color: rgb(218, 156, 23);
+    width: 30%;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  .jumbotron-image .jumbo-div a button:hover {
+    background-color: rgb(187, 134, 20);
+  }
+  
+  .two-options-main-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+  .two-options-main-container .option {
+    background-color: #252A2D;
+    display: flex;
+    padding: 20px;
+    width: 45%;
+    border-radius: 20px;
+  }
+  .two-options-main-container .option img {
+    border-radius: 100px;
+    border: 5px solid rgb(218, 156, 23);
+    transition: transform 0.2s ease-in-out;
+  }
+  .two-options-main-container .option img:hover {
+    transform: scale(1.2);
+  }
+  .two-options-main-container .option .option-des {
+    width: 70%;
+  }
+  .two-options-main-container .option .option-des h5 {
+    color: white;
+    font-size: 30px;
+    font-family: cursive;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5px;
+  }
+  .two-options-main-container .option .option-des p {
+    color: white;
+    font-size: 25px;
+    margin-left: 5px;
+    font-family: cursive;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .two-options-main-container .option .option-des a button {
+    padding: 10px;
+    background-color: rgb(218, 156, 23);
+    width: 50%;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  .two-options-main-container .option .option-des a button:hover {
+    background-color: rgb(187, 134, 20);
+  }
+  
+  .our-menu-header {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+  }
+  .our-menu-header h1 {
+    font-family: cursive;
+  }
+  
+  .menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+    overflow: auto;
+    max-height: 500px;
+    background-color: rgba(220, 220, 220, 0.274);
+    border-radius: 20px;
+    /* Scrollbar */
+  }
+  .menu-container::-webkit-scrollbar {
+    width: 6px;
+    height: 3px;
+  }
+  .menu-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .menu-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+  .menu-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .menu-container::-webkit-scrollbar-corner {
+    background: #f1f1f1;
+  }
+  .menu-container .menu {
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+  .menu-container .menu-group-heading {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+  }
+  .menu-container .menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+  }
+  .menu-container .menu-group .menu-item {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+  }
+  .menu-container .menu-group .menu-item img {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 1.5em;
+  }
+  .menu-container .menu-group .menu-item a button {
+    border: none;
+    background-color: rgb(218, 156, 23);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  .menu-container .menu-group .menu-item a button:hover {
+    background-color: rgb(236, 179, 56);
+  }
+  .menu-container .menu-group .menu-item-text {
+    flex-grow: 1;
+  }
+  .menu-container .menu-group .menu-item-text .menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .menu-container .menu-group .menu-item-text .menu-item-name {
+    margin-right: 1.5em;
+  }
+  .menu-container .menu-group .menu-item-text .menu-item-description {
+    line-height: 1.6;
+  }
+  
+  .we-are-company {
+    width: 100%;
+    margin: auto;
+    height: 700px;
+    background-color: #252A2D;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .we-are-company img {
+    width: 550px;
+    height: 550px;
+    margin-left: 10px;
+  }
+  .we-are-company .company-info {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-right: 25px;
+  }
+  .we-are-company .company-info p {
+    font-size: 20px;
+    color: white;
+    font-family: cursive;
+    font-weight: 100;
+  }
+  .we-are-company .company-info a button {
+    padding: 20px;
+    background-color: rgb(218, 156, 23);
+    width: 30%;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+  }
+  .we-are-company .company-info a button:hover {
+    background-color: rgb(224, 178, 79);
+  }
+  
+  .we_are_company_info {
+    background-color: #252A2D;
+    display: flex;
+    justify-content: space-around;
+    height: 700px;
+    display: none;
+  }
+  .we_are_company_info .company-info {
+    width: 70%;
+    position: absolute;
+    text-align: center;
+    height: 40%;
+    margin-right: 30%;
+  }
+  .we_are_company_info .company-info p {
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    font-weight: 100;
+  }
+  .we_are_company_info .company-info a button {
+    padding: 20px;
+    background-color: rgb(218, 156, 23);
+    width: 30%;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+  }
+  .we_are_company_info .company-info a button:hover {
+    background-color: rgb(224, 178, 79);
+  }
+  .we_are_company_info img {
+    width: 450px;
+    height: 450px;
+    margin-top: 30%;
+    position: absolute;
+    margin-left: 35%;
+  }
+  
+  .book_a_table {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(220, 220, 220, 0.562);
+    padding: 10px;
+  }
+  .book_a_table h1 {
+    font-family: cursive;
+  }
+  .book_a_table .booked-table-form {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+  }
+  .book_a_table .booked-table-form input {
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+  .book_a_table .booked-table-form a button {
+    padding: 15px;
+    background-color: rgb(218, 156, 23);
+    width: 30%;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+  }
+  .book_a_table .booked-table-form a button:hover {
+    background-color: rgb(224, 178, 79);
+  }
+  .book_a_table .google-maps {
+    width: 48%;
+  }
+  
+  .footer {
+    background-color: #252A2D;
+    height: 40%;
+    text-align: center;
+  }
+  .footer .three-divs-flex {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+  }
+  .footer .three-divs-flex .footer1 {
+    width: 30%;
+    text-align: center;
+  }
+  .footer .three-divs-flex .footer1 h1 {
+    color: white;
+    font-family: cursive;
+    font-size: 27px;
+  }
+  .footer .three-divs-flex .footer1 .location {
+    margin-bottom: 10px;
+    color: white;
+  }
+  .footer .three-divs-flex .footer1 .location a {
+    color: white;
+    text-decoration: none;
+  }
+  .footer .three-divs-flex .footer1 .location a:hover {
+    color: rgb(218, 156, 23);
+  }
+  .footer .three-divs-flex .footer1 .location:hover {
+    color: rgb(218, 156, 23);
+  }
+  .footer .three-divs-flex .footer1 .phone {
+    margin-bottom: 10px;
+    color: white;
+  }
+  .footer .three-divs-flex .footer1 .phone a {
+    color: white;
+    text-decoration: none;
+  }
+  .footer .three-divs-flex .footer1 .phone a:hover {
+    color: rgb(218, 156, 23);
+  }
+  .footer .three-divs-flex .footer1 .phone:hover {
+    color: rgb(218, 156, 23);
+  }
+  .footer .three-divs-flex .footer1 .email {
+    color: white;
+  }
+  .footer .three-divs-flex .footer1 .email a {
+    color: white;
+    text-decoration: none;
+  }
+  .footer .three-divs-flex .footer1 .email a:hover {
+    color: rgb(218, 156, 23);
+  }
+  .footer .three-divs-flex .footer1 .email:hover {
+    color: rgb(218, 156, 23);
+  }
+  .footer .three-divs-flex .footer2 {
+    width: 30%;
+    text-align: center;
+  }
+  .footer .three-divs-flex .footer2 h1 {
+    font-family: cursive;
+    color: white;
+    font-size: 27px;
+  }
+  .footer .three-divs-flex .footer2 p {
+    color: white;
+    font-weight: 100;
+  }
+  .footer .three-divs-flex .footer2 .social-media-links {
+    font-size: 20px;
+    color: white;
+  }
+  .footer .three-divs-flex .footer2 .social-media-links i {
+    cursor: pointer;
+  }
+  .footer .three-divs-flex .footer2 .social-media-links i:hover {
+    color: rgb(218, 156, 23);
+  }
+  .footer .three-divs-flex .footer3 {
+    width: 30%;
+    text-align: center;
+    color: white;
+  }
+  .footer .three-divs-flex .footer3 h1 {
+    font-size: 27px;
+    font-family: cursive;
+  }
+  .footer .p {
+    color: white;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 1115px) {
+    .we-are-company img {
+      width: 450px;
+      height: 450px;
+    }
+    .we-are-company .company-info {
+      width: 50%;
+    }
+    .we-are-company .company-info p {
+      font-size: 20px;
+    }
+    .we-are-company .company-info a button {
+      width: 50%;
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 1016px) {
+    .book_a_table {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgba(220, 220, 220, 0.562);
+      padding: 10px;
+    }
+    .book_a_table h1 {
+      font-family: cursive;
+    }
+    .book_a_table .booked-table-form {
+      display: flex;
+      flex-direction: column;
+      width: 48%;
+    }
+    .book_a_table .booked-table-form input {
+      margin-bottom: 10px;
+      padding: 15px;
+    }
+    .book_a_table .booked-table-form a button {
+      padding: 15px;
+      background-color: rgb(218, 156, 23);
+      width: 40%;
+      border-radius: 20px;
+      font-size: 20px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+    }
+    .book_a_table .booked-table-form a button:hover {
+      background-color: rgb(224, 178, 79);
+    }
+    .book_a_table .google-maps {
+      width: 48%;
+    }
+    .book_a_table .google-maps iframe {
+      height: 330px;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .menu-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5em;
+    }
+    .menu-container .menu {
+      font-family: sans-serif;
+      font-size: 16px;
+    }
+    .menu-container .menu-group-heading {
+      margin: 0;
+      padding-bottom: 1em;
+      border-bottom: 2px solid #ccc;
+    }
+    .menu-container .menu-group {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .menu-container .menu-group .menu-item {
+      display: flex;
+    }
+    .menu-container .menu-group .menu-item img {
+      width: 125px;
+      height: 125px;
+      flex-shrink: 0;
+      -o-object-fit: cover;
+         object-fit: cover;
+      margin-right: 1.5em;
+    }
+    .menu-container .menu-group .menu-item-text {
+      flex-grow: 1;
+    }
+    .menu-container .menu-group .menu-item-text .menu-item-heading {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+    }
+    .menu-container .menu-group .menu-item-text .menu-item-name {
+      margin-right: 1.5em;
+    }
+    .menu-container .menu-group .menu-item-text .menu-item-description {
+      line-height: 1.6;
+    }
+  }
+  @media (max-width: 983px) {
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;
+      width: 99%;
+    }
+    .navbar .links {
+      display: none;
+    }
+    .navbar .icons-btn {
+      display: none;
+    }
+    .navbar .hambuger_menu {
+      display: initial;
+      font-size: 40px;
+    }
+    .navbar .hambuger_menu label {
+      color: white;
+      cursor: pointer;
+    }
+    .navbar .hambuger_menu .dropdown {
+      background-color: rgba(255, 255, 255, 0.247);
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      position: absolute;
+      width: 90%;
+      top: 70%;
+      right: 0%;
+      display: none;
+    }
+    .navbar .hambuger_menu .dropdown .links1 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .navbar .hambuger_menu .dropdown .links1 a {
+      margin-bottom: 10px;
+      color: white;
+      font-size: 30px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .navbar .hambuger_menu .dropdown .links1 a:hover {
+      color: rgb(218, 156, 23);
+    }
+    .navbar .hambuger_menu .dropdown .icons {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 10px;
+    }
+    .navbar .hambuger_menu .dropdown .icons i {
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+    }
+    .navbar .hambuger_menu .dropdown .icons i:hover {
+      color: rgb(218, 156, 23);
+    }
+    .navbar .hambuger_menu .dropdown .btn button {
+      padding: 10px;
+      background-color: rgb(218, 156, 23);
+      width: 100%;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      color: white;
+      margin-bottom: 10px;
+    }
+    .navbar .hambuger_menu .dropdown .btn button:hover {
+      background-color: rgb(187, 134, 20);
+    }
+    .navbar .hambuger_menu #menu-bar:checked ~ .dropdown {
+      display: initial;
+    }
+  }
+  @media (max-width: 975px) {
+    .two-options-main-container {
+      display: flex;
+      width: 90%;
+      margin: auto;
+      justify-content: space-around;
+    }
+    .two-options-main-container .option {
+      background-color: #252A2D;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      align-items: center;
+      width: 35%;
+      border-radius: 20px;
+    }
+    .two-options-main-container .option img {
+      border-radius: 100px;
+      border: 5px solid rgb(218, 156, 23);
+      transition: transform 0.2s ease-in-out;
+    }
+    .two-options-main-container .option img:hover {
+      transform: scale(1.2);
+    }
+    .two-options-main-container .option .option-des {
+      width: 70%;
+      text-align: center;
+    }
+    .two-options-main-container .option .option-des h5 {
+      color: white;
+      font-size: 20px;
+      font-family: cursive;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 5px;
+    }
+    .two-options-main-container .option .option-des p {
+      color: white;
+      font-size: 20px;
+      margin-left: 5px;
+      font-family: cursive;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    .two-options-main-container .option .option-des a button {
+      padding: 10px;
+      background-color: rgb(218, 156, 23);
+      width: 80%;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      color: white;
+    }
+    .two-options-main-container .option .option-des a button:hover {
+      background-color: rgb(187, 134, 20);
+    }
+  }
+  @media (max-width: 881px) {
+    .jumbotron-image {
+      background-position: center;
+    }
+    .jumbotron-image .jumbo-div {
+      width: 70%;
+      padding: 10px;
+      position: absolute;
+      top: 28%;
+      left: 9%;
+    }
+    .jumbotron-image .jumbo-div h1 {
+      color: white;
+      font-family: cursive;
+    }
+    .jumbotron-image .jumbo-div p {
+      color: white;
+      font-size: 20px;
+      font-weight: 100;
+    }
+    .jumbotron-image .jumbo-div a button {
+      padding: 10px;
+      background-color: rgb(218, 156, 23);
+      width: 30%;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      color: white;
+    }
+    .jumbotron-image .jumbo-div a button:hover {
+      background-color: rgb(187, 134, 20);
+    }
+  }
+  @media (max-width: 844px) {
+    .we-are-company {
+      display: none;
+    }
+    .we_are_company_info {
+      display: block;
+      display: flex;
+    }
+  }
+  @media (max-width: 816px) {
+    .we_are_company_info .company-info {
+      width: 70%;
+      position: absolute;
+      text-align: center;
+      height: 40%;
+      margin-right: 25%;
+    }
+    .we_are_company_info .company-info p {
+      width: 100%;
+      font-size: 25px;
+      color: white;
+      font-weight: 100;
+    }
+    .we_are_company_info .company-info a button {
+      padding: 20px;
+      background-color: rgb(218, 156, 23);
+      width: 40%;
+      border-radius: 20px;
+      font-size: 25px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+    }
+    .we_are_company_info .company-info a button:hover {
+      background-color: rgb(224, 178, 79);
+    }
+    .we_are_company_info img {
+      width: 450px;
+      height: 450px;
+      margin-top: 30%;
+      position: absolute;
+      margin-left: 35%;
+    }
+  }
+  @media (max-width: 776px) {
+    .book_a_table {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(220, 220, 220, 0.562);
+      padding: 10px;
+    }
+    .book_a_table h1 {
+      font-family: cursive;
+    }
+    .book_a_table .booked-table-form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      width: 80%;
+    }
+    .book_a_table .booked-table-form input {
+      margin-bottom: 10px;
+      padding: 15px;
+    }
+    .book_a_table .booked-table-form a button {
+      padding: 15px;
+      background-color: rgb(218, 156, 23);
+      width: 45%;
+      border-radius: 20px;
+      font-size: 20px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+    }
+    .book_a_table .booked-table-form a button:hover {
+      background-color: rgb(224, 178, 79);
+    }
+    .book_a_table .google-maps {
+      width: 78%;
+    }
+    .book_a_table .google-maps iframe {
+      height: 430px;
+    }
+  }
+  @media (max-width: 746px) {
+    .two-options-main-container {
+      display: flex;
+      width: 90%;
+      margin: auto;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+    .two-options-main-container .option {
+      background-color: #252A2D;
+      display: flex;
+      padding: 20px;
+      flex-direction: row;
+      width: 85%;
+      border-radius: 20px;
+      margin-bottom: 15px;
+    }
+    .two-options-main-container .option img {
+      border-radius: 100px;
+      border: 5px solid rgb(218, 156, 23);
+      transition: transform 0.2s ease-in-out;
+    }
+    .two-options-main-container .option img:hover {
+      transform: scale(1.2);
+    }
+    .two-options-main-container .option .option-des {
+      width: 70%;
+    }
+    .two-options-main-container .option .option-des h5 {
+      color: white;
+      font-size: 30px;
+      font-family: cursive;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 5px;
+    }
+    .two-options-main-container .option .option-des p {
+      color: white;
+      font-size: 25px;
+      margin-left: 5px;
+      font-family: cursive;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    .two-options-main-container .option .option-des a button {
+      padding: 10px;
+      background-color: rgb(218, 156, 23);
+      width: 50%;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      color: white;
+    }
+    .two-options-main-container .option .option-des a button:hover {
+      background-color: rgb(187, 134, 20);
+    }
+  }
+  @media (max-width: 726px) {
+    .we_are_company_info .company-info {
+      width: 70%;
+      position: absolute;
+      text-align: center;
+      height: 40%;
+      margin-right: 25%;
+    }
+    .we_are_company_info .company-info p {
+      width: 100%;
+      font-size: 25px;
+      color: white;
+      font-weight: 100;
+    }
+    .we_are_company_info .company-info a button {
+      padding: 20px;
+      background-color: rgb(218, 156, 23);
+      width: 40%;
+      border-radius: 20px;
+      font-size: 25px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+    }
+    .we_are_company_info .company-info a button:hover {
+      background-color: rgb(224, 178, 79);
+    }
+    .we_are_company_info img {
+      width: 350px;
+      height: 350px;
+      margin-top: 40%;
+      position: absolute;
+      margin-left: 35%;
+    }
+    .footer {
+      height: -moz-max-content;
+      height: max-content;
+      margin-bottom: 0;
+    }
+    .footer .three-divs-flex {
+      display: flex;
+      width: 90%;
+      margin: auto;
+      flex-direction: column;
+      padding: 10px;
+      align-items: center;
+    }
+    .footer .three-divs-flex .footer1 {
+      width: 100%;
+      text-align: center;
+    }
+    .footer .three-divs-flex .footer1 h1 {
+      color: white;
+      font-family: cursive;
+      font-size: 27px;
+    }
+    .footer .three-divs-flex .footer1 .location {
+      margin-bottom: 10px;
+      color: white;
+    }
+    .footer .three-divs-flex .footer1 .location a {
+      color: white;
+      text-decoration: none;
+    }
+    .footer .three-divs-flex .footer1 .location a:hover {
+      color: rgb(218, 156, 23);
+    }
+    .footer .three-divs-flex .footer1 .location:hover {
+      color: rgb(218, 156, 23);
+    }
+    .footer .three-divs-flex .footer1 .phone {
+      margin-bottom: 10px;
+      color: white;
+    }
+    .footer .three-divs-flex .footer1 .phone a {
+      color: white;
+      text-decoration: none;
+    }
+    .footer .three-divs-flex .footer1 .phone a:hover {
+      color: rgb(218, 156, 23);
+    }
+    .footer .three-divs-flex .footer1 .phone:hover {
+      color: rgb(218, 156, 23);
+    }
+    .footer .three-divs-flex .footer1 .email {
+      color: white;
+    }
+    .footer .three-divs-flex .footer1 .email a {
+      color: white;
+      text-decoration: none;
+    }
+    .footer .three-divs-flex .footer1 .email a:hover {
+      color: rgb(218, 156, 23);
+    }
+    .footer .three-divs-flex .footer1 .email:hover {
+      color: rgb(218, 156, 23);
+    }
+    .footer .three-divs-flex .footer2 {
+      width: 100%;
+      text-align: center;
+    }
+    .footer .three-divs-flex .footer2 h1 {
+      font-family: cursive;
+      color: white;
+      font-size: 27px;
+    }
+    .footer .three-divs-flex .footer2 p {
+      color: white;
+      font-weight: 100;
+    }
+    .footer .three-divs-flex .footer2 .social-media-links {
+      font-size: 20px;
+      color: white;
+    }
+    .footer .three-divs-flex .footer2 .social-media-links i {
+      cursor: pointer;
+    }
+    .footer .three-divs-flex .footer2 .social-media-links i:hover {
+      color: rgb(218, 156, 23);
+    }
+    .footer .three-divs-flex .footer3 {
+      width: 100%;
+      text-align: center;
+      color: white;
+    }
+    .footer .three-divs-flex .footer3 h1 {
+      font-size: 27px;
+      font-family: cursive;
+    }
+    .footer .p {
+      color: white;
+      font-weight: 500;
+    }
+  }
+  @media (max-width: 626px) {
+    .we_are_company_info .company-info {
+      width: 70%;
+      position: absolute;
+      text-align: center;
+      height: 40%;
+      margin-right: 25%;
+      margin-top: 10%;
+    }
+    .we_are_company_info .company-info p {
+      width: 100%;
+      font-size: 20px;
+      color: white;
+      font-weight: 100;
+    }
+    .we_are_company_info .company-info a button {
+      padding: 15px;
+      background-color: rgb(218, 156, 23);
+      width: 40%;
+      border-radius: 20px;
+      font-size: 20px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+    }
+    .we_are_company_info .company-info a button:hover {
+      background-color: rgb(224, 178, 79);
+    }
+    .we_are_company_info img {
+      width: 350px;
+      height: 350px;
+      margin-top: 50%;
+      position: absolute;
+      margin-left: 35%;
+    }
+  }
+  @media (max-width: 606px) {
+    .jumbotron-image {
+      background-position: center;
+    }
+    .jumbotron-image .jumbo-div {
+      width: 70%;
+      padding: 10px;
+      position: absolute;
+      top: 28%;
+      left: 9%;
+    }
+    .jumbotron-image h1 {
+      color: white;
+      font-family: cursive;
+    }
+    .jumbotron-image p {
+      color: white;
+      font-size: 20px;
+      font-weight: 100;
+    }
+    .jumbotron-image a button {
+      padding: 10px;
+      background-color: rgb(218, 156, 23);
+      width: 40%;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      color: white;
+    }
+    .jumbotron-image a button:hover {
+      background-color: rgb(187, 134, 20);
+    }
+  }
+  @media (max-width: 539px) {
+    .we_are_company_info .company-info {
+      width: 70%;
+      position: absolute;
+      text-align: center;
+      height: 40%;
+      margin-right: 25%;
+      margin-top: 5%;
+    }
+    .we_are_company_info .company-info p {
+      width: 100%;
+      font-size: 20px;
+      color: white;
+      font-weight: 100;
+    }
+    .we_are_company_info .company-info a button {
+      padding: 15px;
+      background-color: rgb(218, 156, 23);
+      width: 50%;
+      border-radius: 20px;
+      font-size: 20px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+    }
+    .we_are_company_info .company-info a button:hover {
+      background-color: rgb(224, 178, 79);
+    }
+    .we_are_company_info img {
+      width: 300px;
+      height: 300px;
+      margin-top: 60%;
+      position: absolute;
+      margin-left: 35%;
+    }
+  }
+  @media (max-width: 526px) {
+    .jumbotron-image {
+      background-position: center;
+    }
+    .jumbotron-image .jumbo-div {
+      width: 70%;
+      padding: 10px;
+      position: absolute;
+      top: 28%;
+      left: 9%;
+    }
+    .jumbotron-image .jumbo-div h1 {
+      color: white;
+      font-family: cursive;
+    }
+    .jumbotron-image .jumbo-div p {
+      color: white;
+      font-size: 20px;
+      font-weight: 100;
+    }
+    .jumbotron-image .jumbo-div a button {
+      padding: 10px;
+      background-color: rgb(218, 156, 23);
+      width: 50%;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      color: white;
+    }
+    .jumbotron-image .jumbo-div a button:hover {
+      background-color: rgb(187, 134, 20);
+    }
+    .two-options-main-container {
+      display: flex;
+      width: 90%;
+      margin: auto;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+    .two-options-main-container .option {
+      background-color: #252A2D;
+      display: flex;
+      padding: 20px;
+      flex-direction: row;
+      width: 85%;
+      border-radius: 20px;
+      margin-bottom: 15px;
+    }
+    .two-options-main-container .option img {
+      border-radius: 100px;
+      border: 5px solid rgb(218, 156, 23);
+      transition: transform 0.2s ease-in-out;
+    }
+    .two-options-main-container .option img:hover {
+      transform: scale(1.2);
+    }
+    .two-options-main-container .option .option-des {
+      width: 70%;
+    }
+    .two-options-main-container .option .option-des h5 {
+      color: white;
+      font-size: 30px;
+      font-family: cursive;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 5px;
+    }
+    .two-options-main-container .option .option-des p {
+      color: white;
+      font-size: 25px;
+      margin-left: 5px;
+      font-family: cursive;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    .two-options-main-container .option .option-des a button {
+      padding: 10px;
+      background-color: rgb(218, 156, 23);
+      width: 70%;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      color: white;
+    }
+    .two-options-main-container .option .option-des a button:hover {
+      background-color: rgb(187, 134, 20);
+    }
+  }
+  @media (max-width: 463px) {
+    .we_are_company_info .company-info {
+      width: 70%;
+      position: absolute;
+      text-align: center;
+      height: 40%;
+      margin-right: 25%;
+      margin-top: 5%;
+    }
+    .we_are_company_info .company-info p {
+      width: 100%;
+      font-size: 20px;
+      color: white;
+      font-weight: 100;
+    }
+    .we_are_company_info .company-info a button {
+      padding: 15px;
+      background-color: rgb(218, 156, 23);
+      width: 50%;
+      border-radius: 20px;
+      font-size: 20px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+    }
+    .we_are_company_info .company-info a button:hover {
+      background-color: rgb(224, 178, 79);
+    }
+    .we_are_company_info img {
+      width: 300px;
+      height: 300px;
+      margin-top: 70%;
+      position: absolute;
+      margin-left: 33%;
+    }
+  }/*# sourceMappingURL=main.css.map */

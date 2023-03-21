@@ -258,6 +258,19 @@ def web_scrap():
 
 
 
+# ++
+
+# Website Route for Fast Food Live Demo
+@app.route("/fast_food_website")
+def fast_food():
+    return render_template('fast_food/fast_food_live_demo.html')
+
+
+# Website Route for about Fast Food website
+@app.route("/about_restaurant")
+def about_restaurant():
+    return render_template('about_restaurant.html')
+
 
 
 
