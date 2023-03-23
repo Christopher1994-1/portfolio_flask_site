@@ -1,0 +1,57 @@
+
+
+<div class="main-navbar-container">
+
+
+    <div class="first">
+
+        <div class="hambuger_menu">
+
+            <input type="checkbox" id="menu-bar" onclick="hamburger_menu_open()">
+            <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+
+            <ul class="dropdown">
+
+                <div class="x-icons">
+                    <div class="x">
+                        <input type="checkbox" id="x" onclick="hamburger_menu_close()">
+                        <label for="x"><i class="fa-solid fa-x"></i></label>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+                <li><a href="{{ url_for('web_design') }}">Home</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <div class="company-logo">
+            <a href="#"><img src="/static/images/sites/subway/company_logo.png" alt=""></a>
+        </div>
+
+        <div class="navbar-links">
+            <a href="{{ url_for('web_design') }}">HOME</a>
+            <a href="#">FIND A SUBWAY</a>
+            <a href="#">REWARDS & DEALS</a>
+            <a href="#">GIFT CARDS</a>
+            <a href="#">CATERING</a>
+        </div>
+    </div>
+
+    <div class="button-icons">
+        <a href="#"><button>START ORDER</button></a>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+
+
+
+</div>
+

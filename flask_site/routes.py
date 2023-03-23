@@ -260,6 +260,28 @@ def web_scrap():
 
 # ++
 
+# Website Route for the Fast Food Live Demo
+@app.route("/subway_live_demo")
+def subway():
+    return render_template('subway/index.html')
+
+
+# Website Route for about Subway website
+@app.route("/about_subway")
+def about_subway():
+    return render_template('about_subway.html')
+
+
+
+# Website Route for second web design page
+@app.route("/web_design_page_two")
+def web_design_two():
+    return render_template('web_design_two.html')
+
+
+
+
+
 # Website Route for Fast Food Live Demo
 @app.route("/fast_food_website")
 def fast_food():

@@ -1,0 +1,33 @@
+{% block card_group %}
+
+<div style="width:90%; margin:auto; margin-top:30px; background-color: gainsboro; padding: 10px;">
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="/static/images/investor-site.jpg" class="card-img-top" height="200" />
+        <div class="card-body">
+          <h5 class="card-title">Flask Investor Remake</h5>
+          <p class="card-text">
+            Featuring a sleek design & clear navigation, our Flask-based website offers a comprehensive investment 
+            experience, including financial data, company news, investor resources, & easy contact options.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">
+            <a href="{{ url_for('investor_site') }}" style="text-decoration: none;">Learn More</a> | 
+            <a href="https://github.com/Christopher1994-1/products_flask_site/blob/main/flask_site/routes.py"  style="text-decoration: none;">See Code</a>
+          </small>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends 'subway/base.html' %}
+
+
+{% block title %}
+    <title>Home | Subway</title>
+{% endblock title %}
+
+
+
+{% block content %}
+
+{% block ad %}
+    {% include 'subway/index_things/front_ads.html' %}
+{% endblock ad %}
+
+
+<br>
+
+{% block menu %}
+    {% include 'subway/index_things/menu_items_carousel.html' %}
+{% endblock menu %}
+
+
+
+<br><br><br><br><br>
+
+
+{% block rewards %}
+    {% include 'subway/index_things/rewards_and_deals.html' %}
+{% endblock rewards %}
+
+
+<br><br><br><br>
+
+
+{% block bestSellers %}
+    {% include 'subway/index_things/bestSellers.html' %}
+{% endblock bestSellers %}
+
+
+<br><br><br><br>
+
+
+
+{% block second_to_last %}
+    {% include 'subway/index_things/second_to_last.html' %}
+{% endblock second_to_last %}
+
+
+
+
+
+<br><br><br>
+
+{% block last_index %}
+    {% include 'subway/index_things/last_index.html' %}
+{% endblock last_index %}
+
+
+
+<br><br>
+
+
+<div class="smaller_screen_button">
+    <a href="#"><button>START ORDER/MENU</button></a>
+</div>
+
+{% endblock content %}
