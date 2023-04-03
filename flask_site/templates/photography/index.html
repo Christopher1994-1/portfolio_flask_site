@@ -1,0 +1,44 @@
+{% extends 'photography/base.html' %}
+
+
+{% block title %}
+    <title>Explore Washington - Home Page</title>
+{% endblock title %}
+
+
+
+{% block content %}
+
+<div class="jumbotron">
+    <div class="inside-jumbotron-info" id="jumbo">
+        <h1>Washington</h1>
+        <p>Experience the darker side of Washington state and the greater Pacific Northwest.</p>
+        <a href="{{ url_for('photo_about') }}"><button>Learn More</button></a>
+    </div>
+</div>
+
+
+
+{% include 'photography/index_things/under_jumbo.html' %}
+
+<br><br><br><br>
+
+
+{% include 'photography/index_things/index_showcase.html' %}
+
+<br><br><br><br>
+
+
+{% include 'photography/index_things/grid_look.html' %}
+
+
+<br><br><br><br>
+
+
+{% include 'photography/index_things/subscribe.html' %}
+
+
+<script src="/static/js/photography/navbar_dropdown.js"></script>
+
+
+{% endblock content %}

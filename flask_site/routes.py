@@ -258,8 +258,6 @@ def web_scrap():
 
 
 
-# ++
-
 # Website Route for the Fast Food Live Demo
 @app.route("/subway_live_demo")
 def subway():
@@ -277,6 +275,38 @@ def about_subway():
 @app.route("/web_design_page_two")
 def web_design_two():
     return render_template('web_design_two.html')
+
+
+
+
+
+# ++
+
+# Website Route for the about photography page
+@app.route('/about_photography_website')
+def photography():
+    return render_template('about_photography.html')
+
+
+# Website Route for photography live demo
+@app.route('/photography_live_demo')
+def live_photo_demo():
+    return render_template('photography/index.html')
+
+
+# Website Route for the about about photography live demo
+@app.route('/photography_live_demo/about')
+def photo_about():
+    return render_template('photography/about.html')
+
+
+# Website Route for the portfolio photography page
+@app.route('/photography_live_demo/porttolio')
+def photo_portfolio():
+    return render_template('photography/portfolio.html')
+
+
+
 
 
 

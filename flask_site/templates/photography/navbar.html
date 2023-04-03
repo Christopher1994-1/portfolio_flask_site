@@ -1,0 +1,69 @@
+{% block navbar %}
+
+
+<div class="navbar">
+
+    <a href="{{ url_for('live_photo_demo') }}"><h1>Explore</h1></a>
+
+    <div class="nav-links">
+        <a href="{{ url_for('photo_about') }}">About</a>
+        <a href="{{ url_for('photo_portfolio') }}">Portfolio</a>
+        <a href="{{ url_for('web_design') }}">Back</a>
+    </div>
+
+
+    <button onclick="navbar_dropdown()">
+        Menu
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</div>
+
+
+<div class="navbar-placeholder"></div>
+
+
+<div class="navbar2">
+
+    <a href="{{ url_for('live_photo_demo') }}"><h1>Explore</h1></a>
+
+    <div class="nav-links">
+        <a href="{{ url_for('photo_about') }}">About</a>
+        <a href="{{ url_for('photo_portfolio') }}">Portfolio</a>
+        <a href="{{ url_for('web_design') }}">Back</a>
+    </div>
+
+
+    <div id="nav_links2">
+        <a href="{{ url_for('photo_about') }}">About</a>
+        <a href="{{ url_for('photo_portfolio') }}">Portfolio</a>
+        <a href="{{ url_for('web_design') }}">Back</a>
+    </div>
+
+
+    <button onclick="navbar_dropdown2()" id="menu-btn">
+        Menu
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <button onclick="navbar_x()" id="menu0x">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+</div>
+
+
+
+<div id="nav_links">
+    <a href="{{ url_for('photo_about') }}">About</a>
+    <a href="{{ url_for('photo_portfolio') }}">Portfolio</a>
+    <a href="{{ url_for('web_design') }}">Back</a>
+</div>
+
+
+
+<script src="/static/js/photography/navbar_dropdown.js"></script>
+<script src="/static/js/photography/navbar.js"></script>
+
+
+{% endblock navbar %}

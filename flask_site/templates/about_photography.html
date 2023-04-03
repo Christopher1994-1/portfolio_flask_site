@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>CEJ Portfolio | Photography</title>
+{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="/static/css/archive_site.css">
+<link rel="stylesheet" href="/static/css/web_design_mobile.css">
+<link rel="stylesheet" href="/static/css/showcase_skills.css">
+
+<br><br><br><br><br><br><br><br>
+ <!-- Slideshow container -->
+
+ <div class="video-container" style="width: fit-content; margin: auto; text-align: center; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ncCpF2F6wIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ </div>
+
+
+
+
+<br><br>
+
+<div class="about-this-site">
+    <h1>About This Site</h1>
+    <hr>
+
+    <p>This website has been designed and developed using the latest technologies, including HTML, CSS or SCSS, and JavaScript, ensuring a seamless user experience that is both responsive and intuitive. </p>
+
+</div>
+
+<br>
+<br> <br>
+
+<div class="showcase-skills">
+    <h3>What skills does this project showcase?</h3>
+    <ul>
+      <li><strong>HTML: </strong>The ability to use HTML to structure the content of the website and ensure that it is accessible and easily readable by web browsers.</li>
+      <li><strong>CSS or SCSS: </strong>The ability to use CSS or SCSS to create visually appealing designs and layout, ensuring that the website is attractive and user-friendly.</li>
+      <li><strong>JavaScript: </strong>The ability to use JavaScript to add interactivity to the website, making it more engaging and intuitive for users.</li>
+      <li><strong>Responsive Design: </strong>The ability to design and develop a website that is responsive and can adapt to different screen sizes, ensuring that the website looks great on any device.</li>
+      <li><strong>User Experience: </strong>The ability to create a website that is easy to use and navigate, ensuring that users have a positive experience while interacting with the website.</li>
+    </ul>
+  </div>
+
+
+
+
+<br><br><br>
+
+
+<div class="see-code">
+  <a href="https://github.com/Christopher1994-1/explore_washington_site" target="_blank"><h1>See The Code</h1></a>
+  </div>
+
+<br>
+
+
+<script src="/static/js/main_js.js"></script>
+<!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include Bootstrap JavaScript file -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  // Initialize the carousel
+  $('#carouselExampleCaptions').carousel();
+});
+</script>
+
+
+{% endblock %}
