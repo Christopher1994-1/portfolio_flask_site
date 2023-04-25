@@ -18,3 +18,4 @@ class ContactMe(FlaskForm):
     email = StringField("Email", validators=[DataRequired(), validators.Email()], render_kw={"placeholder": "Required"})
     message = TextAreaField("Message:", validators=[DataRequired()], render_kw={"placeholder": "Required"})
     submit = SubmitField("Submit")
+

@@ -29,19 +29,18 @@
 
     <div class="col">
       <div class="card h-100">
-        <img src="/static/images/final-archive.png" class="card-img-top"  height="200" />
+        <img src="/static/images/sites/growth.png" class="card-img-top"  height="200" />
         <div class="card-body">
-          <h5 class="card-title">Flask Archive Website</h5>
+          <h5 class="card-title">Client Demo Growth Site</h5>
           <p class="card-text">
-            This family archive website, built with Flask and MySQL, offers a secure login system and allows users 
-            to submit and access historical documents, creating an organized resource for preserving and sharing 
-            family history.
+            I put together a full length small website with several different backend functions including database hosting,
+            email notifications, retrieving and displaying database data, email subscriber storage, product display and pagination
           </p>
         </div>
         <div class="card-footer">
           <small class="text-muted">
-            <a href="{{ url_for('archive_site') }}" style="text-decoration: none;">Learn More</a> | 
-            <a href="https://github.com/Christopher1994-1/archive_flask_website/blob/main/flask_site/routes.py"  style="text-decoration: none;">See Code</a>
+            <a href="{{ url_for('growth_info') }}" style="text-decoration: none;">Learn More</a> | 
+            <a href="{{ url_for('growth_index') }}" style="text-decoration: none;">Demo</a>
           </small>
         </div>
       </div>
@@ -106,6 +105,27 @@
           <small class="text-muted">
             <a href="{{ url_for('bigfoot_site') }}" style="text-decoration: none;">Learn More</a> | 
             <a href="https://github.com/Christopher1994-1/bigfoot-dataset-website" style="text-decoration: none;">See Code</a> | 
+          </small>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="/static/images/final-archive.png" class="card-img-top"  height="200" />
+        <div class="card-body">
+          <h5 class="card-title">Flask Archive Website</h5>
+          <p class="card-text">
+            This family archive website, built with Flask and MySQL, offers a secure login system and allows users 
+            to submit and access historical documents, creating an organized resource for preserving and sharing 
+            family history.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">
+            <a href="{{ url_for('archive_site') }}" style="text-decoration: none;">Learn More</a> | 
+            <a href="https://github.com/Christopher1994-1/archive_flask_website/blob/main/flask_site/routes.py"  style="text-decoration: none;">See Code</a>
           </small>
         </div>
       </div>

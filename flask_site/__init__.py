@@ -34,6 +34,8 @@ mysql_psw = os.environ.get('my_thing')
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///products.db'
+db = SQLAlchemy(app)
 
 
 from flask_site import routes

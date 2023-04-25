@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>CEJ Portfolio | Growth</title>
+{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="/static/css/archive_site.css">
+<link rel="stylesheet" href="/static/css/web_design_mobile.css">
+<link rel="stylesheet" href="/static/css/showcase_skills.css">
+
+<br><br><br><br><br><br><br><br>
+ <!-- Slideshow container -->
+
+ <!-- <div class="video-container" style="width: fit-content; margin: auto; text-align: center; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ncCpF2F6wIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ </div> -->
+
+
+
+
+<br><br>
+
+<div class="about-this-site">
+    <h1>About This Site</h1>
+    <hr>
+
+    <p>Introducing my demo website built on Python's Flask web framework! This demo template is designed 
+      for a marijuana dispensary and offers a variety of impressive features to provide a seamless user experience.</p>
+
+    <p>With multiple SQLite3 databases, the site can easily store and retrieve information on products, reviews, 
+      and admin details. Plus, with a handy email subscription feature, users can stay up-to-date on the latest 
+      dispensary news and products.</p>
+
+    <p>The website's visually stunning design is achieved with HTML, CSS, and JavaScript, creating an 
+      intuitive and user-friendly interface. Its various functions are sure to impress and make for an 
+      exceptional user experience.</p>
+</div>
+
+<br>
+<br> <br>
+
+<div class="showcase-skills">
+    <h3>What skills does this project showcase?</h3>
+    <ul>
+      <li><strong>Python: </strong>A good understanding of Python programming language, including its syntax, data structures, and object-oriented programming principles.</li>
+      <li><strong>Flask Framework: </strong>Knowledge of Flask web framework, including how to create and manage routes, handle HTTP requests and responses, and work with templates.</li>
+      <li><strong>HTML/CSS: </strong>Familiarity with HTML and CSS for creating web pages and styling them.</li>
+      <li><strong>JavaScript: </strong>Knowledge of JavaScript for adding interactivity to web pages, such as forms validation and dynamic page updates.</li>
+      <li><strong>SQLite: </strong>Understanding of SQLite database management system and how to integrate it with Flask to store and retrieve data.</li>
+      <li><strong>Web Development: </strong>Experience using development tools like Git for version control, text editors or integrated development environments (IDEs) for coding, and web debugging tools for testing and troubleshooting.</li>
+      <li><strong>UI/UX Design: </strong>Basic understanding of user interface and user experience design principles, including how to create responsive web designs that work across different devices and screen sizes.</li>
+    </ul>
+  </div>
+
+
+
+
+<br><br><br>
+
+
+<div class="see-code">
+  <a href="#"><h1>See The Code</h1></a>
+  </div>
+
+<br>
+
+
+<script src="/static/js/main_js.js"></script>
+<!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include Bootstrap JavaScript file -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  // Initialize the carousel
+  $('#carouselExampleCaptions').carousel();
+});
+</script>
+
+
+{% endblock %}

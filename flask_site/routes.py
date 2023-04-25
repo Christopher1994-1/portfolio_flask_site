@@ -2,12 +2,16 @@ import math
 from unittest.case import doModuleCleanups
 from flask import Flask, render_template, redirect, request, flash, url_for, send_from_directory, jsonify
 from flask_site.forms import ContactMe
-from flask_site import app
+from flask_site import app, db
 import os
 import requests
 import time
 import smtplib
 import json
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import or_
+from flask_paginate import Pagination, get_page_args
+import sqlite3
 
 
 
@@ -77,7 +81,14 @@ def api_response(prompt, tokens, temp):
 
 
 
-
+class Prods(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50))
+    price = db.Column(db.String(50))
+    category = db.Column(db.String(50))
+    description = db.Column(db.String(50))
+    image_url = db.Column(db.String(50))
+    
 
 
 
@@ -485,3 +496,99 @@ def test():
 
 
 
+
+# routes for growth demo website
+# ===========================================================================================
+
+
+# route for main index page for growth demo website
+@app.route('/growth_index_cej_portfolio_demo')
+def growth_index():
+    return render_template('growth/index.html')
+
+
+
+# route for growth learn more page
+@app.route('/growth_learn_more')
+def growth_info():
+    return render_template('about_growth.html')
+
+
+# route for growth about live demo page
+@app.route('/about_growth_live_demo_page')
+def about_growth_live_demo_page():
+    return render_template('/growth/pages/about.html')
+
+
+
+# route for growth about live demo page
+@app.route('/contact_growth_live_demo_page')
+def contact_growth_live_demo_page():
+    return render_template('/growth/pages/contact.html')
+
+
+
+# route for view all products page
+@app.route('/view_all_products=<int:page_num>')
+def view_all(page_num):
+    
+    per_page = 9
+    search_term = request.args.get('search_term')
+
+    if search_term:
+        query = Prods.query.filter(or_(Prods.category.ilike(f"%{search_term}%")))
+        pages = query.paginate(per_page=per_page, page=page_num, error_out=True)
+        return render_template('growth/product_things/view_all.html', pages=pages)
+    else:
+    
+        pages = Prods.query.paginate(per_page=per_page, page=page_num, error_out=True)
+
+        return render_template('growth/product_things/view_all.html',pages=pages)
+    
+    
+    
+# route for entered search product results
+@app.route('/get_search_results', methods=['GET', 'POST'])
+def get_search_results():
+    per_page = 9
+    page_num = 1
+    search_filter = request.form.get('dropdown')
+    search_term = request.form.get('search')
+    pages = ''
+    
+    # if form is submitted and search filter is none
+    if request.method == "POST":
+    
+        if search_filter == 'none' and search_term != '':
+            query = Prods.query.filter(or_(Prods.name.ilike(f"%{search_term}%")))
+            pages = query.paginate(per_page=per_page, page=page_num, error_out=True)
+        
+        elif search_filter != 'none' and search_term != '':
+            query = Prods.query.filter(or_(Prods.name.ilike(f"%{search_term}%"), Prods.category.ilike(f"%{search_filter}%")))
+            pages = query.paginate(per_page=per_page, page=page_num, error_out=True)
+        
+        else:
+            query = Prods.query.filter(or_(Prods.category.ilike(f"%{search_filter}%")))
+            pages = query.paginate(per_page=per_page, page=page_num, error_out=True)
+        
+    return render_template('growth/product_things/view_all.html', pages=pages, search_term=search_term)
+
+
+
+
+@app.route('/sending_id_number', methods=["GET", "POST"])
+def send_back_description():
+    id = int(request.form.get('id'))
+    
+    db = sqlite3.connect('flask_site/products.db')
+    
+    cur = db.cursor()
+    
+    cur.execute('SELECT description FROM prods WHERE id = ?', (id,))
+    description = cur.fetchall()[0]
+    
+    print(description)
+    print(id)
+
+    response = {'success': True, 'message': description}
+    return jsonify(response)

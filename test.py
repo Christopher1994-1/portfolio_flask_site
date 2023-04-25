@@ -1,6 +1,13 @@
-commits = {"#b3h4j4": ['najan', 'jankjan']}
+import sqlite3
 
 
 
-for i in commits.items():
-    print(i[0])
+db = sqlite3.connect('flask_site/products.db')
+
+cur = db.cursor()
+
+
+for i in cur.execute('SELECT * FROM prods'):
+    print(i)
+    
+    

@@ -1,0 +1,184 @@
+<div class="product-container">
+    {% if pages.items | length != 0 %}
+
+    <h1>View All Our Products</h1>
+    <h5 id="h5-header">Search</h5>
+
+    <div class="search-box">
+        <form action="/get_search_results" method="POST">
+            <input type="search" name="search" id="search" placeholder="search">
+
+                <!-- Below you will be able to add more categories -->
+                <select name="dropdown" id="dropdown">
+                    <option value="" disabled selected>Filter:</option>
+                    <!-- example category: -->
+                    <!-- <option value="exmaple">example</option> -->
+                    <!-- Add the code above for new categories -->
+                    <!-- be sure that the value is the same as the value in the database category -->
+
+                    <!-- Update all values with the categories of your own products, values should be the same -->
+                    <option value="Indicas">Indicas</option>
+                    <option value="Pre-Roll">Pre-Rolls</option>
+                    <option value="Appeal">Appeal</option>
+                    <option value="Accessories">Accessories</option>
+                    <option value="Hybrid">Hybrid</option>
+                    <option value="Sativas">Sativas</option>
+                </select>
+
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="products_paginate">
+        {% for item in pages.items %}
+            <div class="product" id="product-container">
+            
+                <div class="item-details" id="item_details_{{ item.id }}">
+                    <h5>{{ item.name }}</h5>
+
+                    <img src="{{item.image_url}}" alt="" id="product-image">
+
+                    <p>{{ item.price }}</p>
+
+                    <small>Buy in store</small>
+                </div>
+
+                <p class="description" id="description_{{ item.id }}"></p>
+
+
+                <button class="flip-d" id="flip-over-button_{{ item.id }}" onclick="descriptionSlideOver('{{item.id}}')"><i class="fa-solid fa-circle-right"></i></button>
+
+                <button class="flip-items" id="flip-over-button-right_{{ item.id }}" onclick="returnOG()"><i class="fa-solid fa-circle-left"></i></button>
+
+            </div>
+        {% endfor %}
+    </div>
+
+
+
+    <div class="pagination">
+
+        {% if pages.has_prev %}
+            <a href="{{ url_for('view_all', page_num=pages.prev_num) }}" id="btns"><button><i class="fa-solid fa-backward"></i></button></a>
+        {% else %}
+            <span class="disabled" id="btns"><button><i class="fa-solid fa-backward"></i></button></span>
+        {% endif %}
+        
+        {% for num in pages.iter_pages() %}
+            {% if num %}
+            {% if num == pages.page %}
+                <span class="current" id="active-current-count">{{ num }}</span>
+            {% else %}
+                <a href="{{ url_for('view_all', page_num=num) }}" id="current-count">{{ num }}</a>
+            {% endif %}
+            {% else %}
+            <span class="ellipsis" id="dots">…</span>
+            {% endif %}
+        {% endfor %}
+        
+        {% if pages.has_next %}
+            <a href="{{ url_for('view_all', page_num=pages.next_num) }}" id="btns"><button><i class="fa-solid fa-forward"></i></button></a>
+        {% else %}
+            <span class="disabled" id="btns"><button><i class="fa-solid fa-forward"></i></button></span>
+        {% endif %}
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {% elif pages.items | length == 0 and search_term != '' %}
+
+        <h1>View All Our Products</h1>
+        <h5 id="h5-header">Search</h5>
+
+
+        <div class="search-box">
+        <form action="">
+            <input type="search" name="search" id="search" placeholder="search">
+
+                <select name="dropdown" id="dropdown">
+                    <option value="none" disabled selected>Filter:</option>
+                    <option value="Indicas">Indicas</option>
+                    <option value="Pre-Roll">Pre-Rolls</option>
+                    <option value="Appeal">Appeal</option>
+                    <option value="Accessories">Accessories</option>
+                    <option value="Hybrid">Hybrid</option>
+                    <option value="Sativas">Sativas</option>
+                </select>
+
+            <button type="submit">Search</button>
+        </form>
+    </div>
+        <div class="div">
+            <h1>There are no products with '{{search_term}}', try again</h1>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {% else %}
+
+
+        <h1>View All Our Products</h1>
+        <h5 id="h5-header">Search</h5>
+
+
+        <div class="search-box">
+        <form action="">
+            <input type="search" name="search" id="search" placeholder="search">
+
+                <select name="dropdown" id="dropdown">
+                    <option value="none" disabled selected>Filter:</option>
+                    <option value="Indicas">Indicas</option>
+                    <option value="Pre-Roll">Pre-Rolls</option>
+                    <option value="Appeal">Appeal</option>
+                    <option value="Accessories">Accessories</option>
+                    <option value="Hybrid">Hybrid</option>
+                    <option value="Sativas">Sativas</option>
+                </select>
+
+            <button type="submit">Search</button>
+        </form>
+    </div>
+        <div class="div">
+            <h1>There are no products to show, please come back later</h1>
+        </div>
+        {% endif %}
+</div>
+    
+<script src="/static/js/growth/product_transfers.js"></script>
